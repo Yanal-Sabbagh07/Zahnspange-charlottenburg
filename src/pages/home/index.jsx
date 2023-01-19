@@ -23,6 +23,7 @@ const index = () => {
             Berlin-Charlottenburg.
           </h1>
         </div>
+        <div className="welcome-waves"></div>
         <div className="welcome-content-container">
           <p className="welcome-content">
             Mit hochmodernen diagnostischen und therapeutischen Technologien, in
