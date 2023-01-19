@@ -8,7 +8,7 @@ const Navigation = () => {
       <div
         className="navigation__button"
         onClick={() => setnavOpen(!navOpen)}
-        style={{ backgroundColor: navOpen ? "white" : "#0969da" }}
+        style={{ backgroundColor: navOpen ? "white" : "#1f5ca2" }}
       >
         <span className={!navOpen ? "navigation__icon" : "navigation__openHam"}>
           &nbsp;
