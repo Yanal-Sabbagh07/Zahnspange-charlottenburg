@@ -9,19 +9,12 @@ const index = () => {
     <div className="home-page">
       <Header />
       <section className="hero-section">
-        {/* <div className="arrow-1">
-          <ArrowBackIosNewIcon className="arrow-icon" />
-        </div> */}
         <div className="hero-image">
           <Image
-            src={require("../../imgs/hero2.webp")}
+            src={require("../../imgs/hero2.jpg")}
             webp={require("../../imgs/hero2.webp")}
           />
         </div>
-
-        {/* <div className="arrow-2">
-          <ArrowForwardIosIcon className="arrow-icon" />
-        </div> */}
       </section>
       <section className="hero-section2">
         <div className="welcome-title-container">
