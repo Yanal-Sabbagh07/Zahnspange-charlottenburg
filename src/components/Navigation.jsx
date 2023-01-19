@@ -41,22 +41,38 @@ const Navigation = () => {
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/about" className="navigation__link">
+            <Link
+              to="/about"
+              className="navigation__link"
+              onClick={() => setnavOpen(false)}
+            >
               <span>02</span> Über uns
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/treatment" className="navigation__link">
+            <Link
+              to="/treatment"
+              className="navigation__link"
+              onClick={() => setnavOpen(false)}
+            >
               <span>03</span> Leistungen
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/contact" className="navigation__link">
+            <Link
+              to="/contact"
+              className="navigation__link"
+              onClick={() => setnavOpen(false)}
+            >
               <span>04</span> Ablauf einer Behandlung
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/services" className="navigation__link">
+            <Link
+              to="/services"
+              className="navigation__link"
+              onClick={() => setnavOpen(false)}
+            >
               <span>05</span> Kontakt
             </Link>
           </li>

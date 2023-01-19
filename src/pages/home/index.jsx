@@ -1,14 +1,22 @@
 import React from "react";
 import "../../styles/pages/Home.scss";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Header from "../../components/Header";
 const index = () => {
   return (
     <div className="home-page">
       <Header />
       <section className="hero-section">
-        <div className="arrow-1">arrow1</div>
-        <div className="hero-image"></div>
-        <div className="arrow-2">arrow2</div>
+        <div className="arrow-1">
+          <ArrowBackIosNewIcon className="arrow-icon" />
+        </div>
+        <div className="hero-image">
+          <img src={require("../../imgs/hero2.jpg")} alt="hero" />
+        </div>
+        <div className="arrow-2">
+          <ArrowForwardIosIcon className="arrow-icon" />
+        </div>
       </section>
       <section className="hero-section2">
         <div className="welcome-title-container">
