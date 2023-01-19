@@ -25,6 +25,17 @@ const index = () => {
             Berlin-Charlottenburg.
           </h1>
         </div>
+        <div className="welcome-content-container">
+          <p className="welcome-content">
+            Mit hochmodernen diagnostischen und therapeutischen Technologien, in
+            freundlicher und professioneller Umgebung, möchten wir Ihnen bzw.
+            ihrem Kind zu einem gesunden, schönen Lächeln verhelfen. Hier können
+            Sie sich einen Überblick über unsere Praxis, unser Team und unser
+            Behandlungsspektrum verschafften. Vereinbaren Sie gerne einen Termin
+            bei uns und wir freuen uns darauf, Sie in unserer Praxis begrüßen zu
+            dürfen.
+          </p>
+        </div>
       </section>
       <section className="hero-section3">hi2</section>
     </div>
