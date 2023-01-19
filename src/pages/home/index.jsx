@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/pages/Home.scss";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+// import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Image from "react-image-webp";
 import Header from "../../components/Header";
 const index = () => {
