@@ -9,7 +9,7 @@ import Services from "./pages/services/index";
 export const routes = [
   {
     title: "Home",
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
 
