@@ -2,21 +2,26 @@ import React from "react";
 import "../../styles/pages/Home.scss";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import Image from "react-image-webp";
 import Header from "../../components/Header";
 const index = () => {
   return (
     <div className="home-page">
       <Header />
       <section className="hero-section">
-        <div className="arrow-1">
+        {/* <div className="arrow-1">
           <ArrowBackIosNewIcon className="arrow-icon" />
-        </div>
+        </div> */}
         <div className="hero-image">
-          <img src={require("../../imgs/hero2.jpg")} alt="hero" />
+          <Image
+            src={require("../../imgs/hero2.webp")}
+            webp={require("../../imgs/hero2.webp")}
+          />
         </div>
-        <div className="arrow-2">
+
+        {/* <div className="arrow-2">
           <ArrowForwardIosIcon className="arrow-icon" />
-        </div>
+        </div> */}
       </section>
       <section className="hero-section2">
         <div className="welcome-title-container">
