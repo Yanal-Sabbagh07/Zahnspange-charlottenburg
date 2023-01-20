@@ -5,6 +5,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Image from "react-image-webp";
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [delay, setDelay] = useState(3500);
 
   function useInterval(callback, delay) {
     const savedCallback = useRef();
@@ -26,17 +27,19 @@ const Slider = () => {
   const handleClick = (direction) => {
     if (direction === "left") {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 4);
+      setDelay(50000);
     } else {
       setSlideIndex(slideIndex < 4 ? slideIndex + 1 : 0);
+      setDelay(50000);
     }
   };
   useInterval(() => {
-    if (slideIndex < 4) {
+    if (slideIndex < 5) {
       setSlideIndex(slideIndex + 1);
     } else {
       setSlideIndex(0);
     }
-  }, 3500);
+  }, delay);
 
   return (
     <div className="slider-container">
@@ -53,6 +56,8 @@ const Slider = () => {
               ? "translateX(-200vw)"
               : slideIndex === 3
               ? "translateX(-300vw)"
+              : slideIndex === 4
+              ? "translateX(-400vw)"
               : "translateX(0)",
         }}
       >
@@ -65,6 +70,7 @@ const Slider = () => {
             />
           </div>
         </div>
+
         <div className="image-container">
           <div className="hero-image">
             <Image
@@ -74,20 +80,32 @@ const Slider = () => {
             />
           </div>
         </div>
+
         <div className="image-container">
           <div className="hero-image">
             <Image
-              src={require("../imgs/hero2.jpg")}
-              webp={require("../imgs/hero2.webp")}
+              src={require("../imgs/hero3.jpg")}
+              webp={require("../imgs/hero3.webp")}
               className="image3"
             />
           </div>
         </div>
+
         <div className="image-container">
           <div className="hero-image">
             <Image
-              src={require("../imgs/hero1.jpg")}
-              webp={require("../imgs/hero1.webp")}
+              src={require("../imgs/hero6.jpg")}
+              webp={require("../imgs/hero6.webp")}
+              className="image6"
+            />
+          </div>
+        </div>
+
+        <div className="image-container">
+          <div className="hero-image">
+            <Image
+              src={require("../imgs/hero4.jpg")}
+              webp={require("../imgs/hero4.webp")}
               className="image4"
             />
           </div>
