@@ -1,20 +1,19 @@
 import React from "react";
 import "../../styles/pages/Home.scss";
-// import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import Image from "react-image-webp";
-import Header from "../../components/Header";
+// import Image from "react-image-webp";
+import Slider from "../../components/Slider";
+
 const index = () => {
   return (
     <div className="home-page">
-      <Header />
       <section className="hero-section">
-        <div className="hero-image">
+        {/* <div className="hero-image">
           <Image
             src={require("../../imgs/hero2.jpg")}
             webp={require("../../imgs/hero2.webp")}
           />
-        </div>
+        </div> */}
+        <Slider />
       </section>
       <section className="hero-section2">
         <div className="welcome-title-container">
@@ -34,9 +33,21 @@ const index = () => {
             bei uns und wir freuen uns darauf, Sie in unserer Praxis begrüßen zu
             dürfen.
           </p>
+          <p className="welcome-owner-txt">
+            Ihr Praxisteam
+            <span className="welcome-owner"> Dr. Nawras Darkazanly</span> &
+            Partner
+          </p>
+          <div className="termin-button">
+            <a href="#3" className="ayah-button">
+              Beratungstermin buchen!
+            </a>
+          </div>
         </div>
       </section>
-      <section className="hero-section3">hi2</section>
+      <section className="hero-section3" id="3">
+        hi2
+      </section>
     </div>
   );
 };

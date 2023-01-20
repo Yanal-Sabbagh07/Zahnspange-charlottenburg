@@ -5,8 +5,6 @@
     height: 70px;
     width: 70px;
     position: fixed;
-    // top: 6rem;
-    // right: 6rem;
     border-radius: 50%;
     z-index: 2000;
     text-align: center;
@@ -15,7 +13,7 @@
     cursor: pointer;
 
     top: 10px;
-    right: 24px;
+    right: 39px;
   }
 
   &__background {
@@ -121,7 +119,6 @@
   }
   &__openHam {
     background: transparent;
-    // transition: all 0.5s ease;
   }
   &__openHam::before {
     content: "";
@@ -133,7 +130,6 @@
     transform: rotate(135deg);
     top: 35px;
     left: 20px;
-    // transition: all 0.5s ease;
   }
   &__openHam::after {
     content: "";
@@ -143,7 +139,6 @@
     background-color: #333;
     border-radius: 5px;
     transform: rotate(-135deg);
-    // transition: all 0.5s ease;
     top: 35px;
     left: 20px;
   }
@@ -158,17 +153,4 @@
   &__icon-close + &__button &__icon {
     background-color: red;
   }
-  // &__checkbox:checked + &__button &__icon {
-  //   background-color: transparent;
-  // }
-
-  // &__checkbox:checked + &__button &__icon::before {
-  //   transform: rotate(135deg);
-  //   top: 0;
-  // }
-
-  // &__checkbox:checked + &__button &__icon::after {
-  //   transform: rotate(-135deg);
-  //   top: 0;
-  // }
 }

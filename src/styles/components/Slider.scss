@@ -1,0 +1,99 @@
+@import "../variables.scss";
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
+
+  .arrow {
+    width: 50px;
+    height: 50px;
+    background-color: #1f5ca2;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 800;
+  }
+  .arrow:hover {
+    opacity: 1;
+  }
+  .arrow-left {
+    left: 32px;
+  }
+  .arrow-right {
+    right: 44px;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .images-wrapper {
+    height: 100%;
+    display: flex;
+    transition: all 1s ease;
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+  }
+  .image-container {
+    width: 100vw;
+    height: 99vh;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+
+    .image1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      // margin-top: 90px;
+    }
+    .image2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 75%;
+    }
+    .image3 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      // margin-top: 90px;
+    }
+    .image4 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 75%;
+    }
+  }
+}
