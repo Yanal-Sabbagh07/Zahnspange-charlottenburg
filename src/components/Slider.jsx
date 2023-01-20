@@ -26,10 +26,10 @@ const Slider = () => {
 
   const handleClick = (direction) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 4);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 5);
       setDelay(50000);
     } else {
-      setSlideIndex(slideIndex < 4 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < 5 ? slideIndex + 1 : 0);
       setDelay(50000);
     }
   };
@@ -58,6 +58,8 @@ const Slider = () => {
               ? "translateX(-300vw)"
               : slideIndex === 4
               ? "translateX(-400vw)"
+              : slideIndex === 5
+              ? "translateX(-500vw)"
               : "translateX(0)",
         }}
       >
@@ -87,6 +89,16 @@ const Slider = () => {
               src={require("../imgs/hero3.jpg")}
               webp={require("../imgs/hero3.webp")}
               className="image3"
+            />
+          </div>
+        </div>
+
+        <div className="image-container">
+          <div className="hero-image">
+            <Image
+              src={require("../imgs/hero7.jpg")}
+              webp={require("../imgs/hero7.webp")}
+              className="image7"
             />
           </div>
         </div>
