@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/pages/Home.scss";
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 const Hole = () => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBQP1RyhTjaE0LNdUiAXrKKBG4bv4xOqcA",
+    googleMapsApiKey: process.env.REACT_APP_API_KEY,
   });
   if (!isLoaded) return <div>loading screen</div>;
   return <Map />;
