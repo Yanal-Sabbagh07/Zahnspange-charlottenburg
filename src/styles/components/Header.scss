@@ -53,16 +53,43 @@
       z-index: 4000;
       // border: 1px solid yellow;
 
+      .icons-container {
+        // background-color: red;
+        width: 20%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        :hover {
+          color: #20ade4;
+          // transform: rotate(-5deg);
+          transform: scale(1.025);
+          transition: all 0.2s ease;
+        }
+      }
+
       .icon {
         width: 32px;
         height: 32px;
-        cursor: pointer;
         color: #1f5ca2;
-        // padding-right: 90px;
+      }
+      .phone-icon-container {
+        // border: 1px solid black;
 
-        :hover {
-          color: #20ade4;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 40%;
+        height: 50%;
+      }
+      .header-phone-number {
+        color: #1f5ca2;
+        height: 100%;
+        font-weight: 600;
+        padding-left: 10px;
+        align-self: center;
+        height: 50%;
       }
     }
   }

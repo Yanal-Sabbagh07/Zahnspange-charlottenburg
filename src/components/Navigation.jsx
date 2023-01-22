@@ -17,7 +17,7 @@ const Navigation = () => {
 
       <div
         className="navigation__background"
-        style={{ transform: navOpen ? "scale(100)" : "scale(1)" }}
+        style={{ transform: navOpen ? "scale(150)" : "scale(1)" }}
       >
         &nbsp;
       </div>

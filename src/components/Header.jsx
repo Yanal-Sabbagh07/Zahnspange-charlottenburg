@@ -4,28 +4,47 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import PlaceIcon from "@mui/icons-material/Place";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-
+import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <div className="header-container">
       <div className="logo-container">
         <div className="logo-wrapper">
-          <img src="../imgs/logo.webp" alt="logo" className="logo" />
+          <Link to="/">
+            <img src="../imgs/logo.webp" alt="logo" className="logo" />
+          </Link>
         </div>
       </div>
       <div className={"social-container"}>
         <div className="social-wrapper">
-          <div className="phone-container">
+          <div className="icons-container">
+            <a href="mailto:info@zahnspange-charlottenburg.de">
+              <EmailIcon className="icon" />
+            </a>
+          </div>
+          <div className="icons-container">
+            <a
+              href="https://goo.gl/maps/DHKyNRQ9tzcoiURw8"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <PlaceIcon className="icon" />
+            </a>
+          </div>
+          <div className="icons-container">
+            <a
+              data-testid="linkElement"
+              href="https://www.doctolib.de/praxis/berlin/kieferorthopaedie-dr-nawras-darkazanly/booking/new-patient?profile_skipped=true&amp;specialityId=1325"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <CalendarMonthIcon className="icon" />
+            </a>
+          </div>
+          <div className="phone-icon-container">
             <PhoneIcon className="icon" />
-          </div>
-          <div className="email-container">
-            <EmailIcon className="icon" />
-          </div>
-          <div className="phone-container">
-            <PlaceIcon className="icon" />
-          </div>
-          <div className="phone-container">
-            <CalendarMonthIcon className="icon" />
+
+            <span className="header-phone-number">030 - 3414 060</span>
           </div>
         </div>
       </div>
