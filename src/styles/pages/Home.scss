@@ -151,7 +151,7 @@
       z-index: 100;
       opacity: 1;
       bottom: 0;
-      animation: animateWave 7s linear infinite;
+      animation: animateWave 5s linear infinite;
       animation-play-state: paused;
     }
     .wave#wave-1:hover {
@@ -161,12 +161,13 @@
       z-index: 99;
       opacity: 0.5;
       bottom: 10px;
-      animation: animateWave2 7s linear infinite;
-      animation-play-state: paused;
+      animation: animateWave2 5s linear infinite;
+      animation-play-state: running;
     }
+
     @keyframes animateWave {
       0% {
-        background-position-x: 100vw;
+        background-position-x: 88vw;
       }
       100% {
         background-position-x: 0px;
@@ -177,7 +178,7 @@
         background-position-x: 0;
       }
       100% {
-        background-position-x: 100vw;
+        background-position-x: 88vw;
       }
     }
   }
