@@ -9,6 +9,8 @@
   display: flex;
   // border-bottom: 1px solid $color-scale-blue-7;
   z-index: 100;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   // z-index: 1500;
   .hidden {
     display: none;
@@ -64,7 +66,7 @@
         :hover {
           color: #20ade4;
           // transform: rotate(-5deg);
-          transform: scale(1.025);
+          transform: scale(1.08);
           transition: all 0.2s ease;
         }
       }
@@ -87,7 +89,7 @@
         color: #1f5ca2;
         height: 100%;
         font-weight: 600;
-        padding-left: 10px;
+        padding-left: 16px;
         align-self: center;
         height: 50%;
       }

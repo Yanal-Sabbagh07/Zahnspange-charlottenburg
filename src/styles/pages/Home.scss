@@ -18,34 +18,33 @@
 
 .hero-section2 {
   width: 100%;
-  height: 100vh;
-
-  background-attachment: fixed;
-  background-blend-mode: multiply;
+  height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  scroll-snap-align: start;
+  justify-content: space-between;
+  scroll-snap-align: end; // control where to stop after scrolling
+  // border: 1px solid red;
+  margin-top: 90px;
+  position: relative;
 
   .welcome-title-container {
-    margin-top: 90px;
     width: 60%;
-    height: 12vh;
+    height: 15%;
     // border: 1px solid black;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 0px;
+    justify-content: flex-end;
+    // margin-bottom: 0px;
     // border: 1px solid black;
 
     .welcome-title {
+      padding-top: 32px;
       font-size: 28px;
       letter-spacing: 1px;
-      color: #20ade4;
+      color: #1f5ca2;
       font-weight: 900;
-      // text-align: left;
-      line-height: 40px;
+      line-height: 42px;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     }
@@ -53,226 +52,121 @@
   .welcome-waves {
     // border: 1px solid black;
     width: 100%;
-    height: 30vh;
+    height: 35%;
     background-image: url("../../../public/imgs/waves.jpg");
     // background-attachment: fixed;
-    background-size: 100% 30vh;
+
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
+    position: absolute;
+    top: 15vh;
   }
   .welcome-content-container {
     width: 70%;
-    height: 60vh;
+    height: 48%;
+    // background-color: black;
     // border: 1px solid black;
-
-    border-radius: 8px;
-    .welcome-content {
-      font-size: 18px;
-      color: $color-scale-gray-8;
-      font-weight: 400;
-      letter-spacing: 0.5px;
-      line-height: 28px;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    }
-    .welcome-owner-txt {
-      font-size: 18px;
-      color: #1f5ca2;
-      font-weight: 600;
-      letter-spacing: 0.75px;
-      line-height: 32px;
-      // transform: rotate(-3deg);
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      .welcome-owner {
-        color: #1f5ca2;
-        cursor: pointer;
-        transform: rotate(-8deg);
-      }
-      .welcome-owner:hover {
-        color: #20ade4;
-        transform: rotate(-8deg);
-      }
-    }
-    .termin-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .welcome-last-1 {
+      // background-color: orange;
       width: 100%;
-      padding-top: 8px;
-      .ayah-button {
-        padding: 12px 20px;
+      height: 140px;
+
+      // background-color: red;
+      .welcome-content {
         font-size: 18px;
-        border-radius: 8px;
-        border: 1px #1f5ca2 solid;
+        margin-top: 0px;
+        // background-color: blue;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        line-height: 28px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+    }
+    .welcome-last-2 {
+      width: 100%;
+      height: 60px;
+      // background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      .welcome-owner-txt {
+        margin-top: 14px;
+        // width: 100%;
+        height: 100%;
+        font-size: 18px;
+        // color: #1f5ca2;
+        font-weight: 700;
+        letter-spacing: 0.75px;
+        line-height: 32px;
+        // background-color: green;
+        // transform: rotate(-3deg);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
         cursor: pointer;
-        background-color: #1f5ca2;
-        // box-shadow: 0 0 4px #eee;
-        color: $color-scale-white;
-        text-decoration: none;
-        font-weight: 600;
-        transition: 0.2s;
       }
-      :hover {
-        border: 1px solid #20ade4;
-        background-color: #20ade4;
-        color: #fff;
+      .welcome-owner-txt:hover {
+        color: #20ade4;
+        transform: rotate(-0.75deg);
       }
+    }
+    .welcome-btn {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background-color: red;
     }
   }
 }
 .hero-section3 {
   height: 100vh;
-  background-color: $color-scale-gray-5;
+  background-color: #fff;
   scroll-snap-align: start;
 
   .last-section-container {
     width: 100%;
-    height: 100%;
-    background-color: white;
+    height: calc(100% - 98px);
+    background-color: #1f5ca2;
     display: flex;
-
-    .footer-container {
-      flex: 1.2;
-      height: calc(100% - 120px);
-      background-color: #3586ff;
-      margin-top: 120px;
-      color: #fff;
-      position: relative;
-      .wave {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        background: #fff url("../../../public/imgs/wave-footer.png");
-        background-size: 1000px 100px;
-      }
-      .wave#wave-1 {
-        z-index: 100;
-        opacity: 1;
-        bottom: 0;
-        animation: animateWave 4s linear infinite;
-      }
-      .wave#wave-2 {
-        z-index: 99;
-        opacity: 0.5;
-        bottom: 10px;
-        animation: animateWave2 4s linear infinite;
-      }
-      .footer-content-container {
-        // background-color: red;
-        // border: 1px solid white;
-        margin-top: 100px;
-        height: calc(100% - 100px);
-        // background-color: red;
-        .footer-content-top {
-          width: 100%;
-          height: 63%;
-          // background-color: red;
-          border-bottom: 1px solid #fff;
-          display: flex;
-          .footer-content-left {
-            flex: 1.1;
-            height: 100%;
-            // background-color: black;
-            display: flex;
-
-            .footer-left-details {
-              width: 100%;
-              height: 100%;
-              text-align: left;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-evenly;
-              .details-name {
-                width: 100%;
-                height: 15%;
-                display: flex;
-                // background-color: green;
-                align-items: center;
-                justify-content: center;
-                .name-icon {
-                  flex: 0.25;
-                  text-align: center;
-                  // border: 1px solid white;
-                }
-                .rose {
-                  width: 56px;
-                  height: 36px;
-                  color: white;
-                }
-                .name {
-                  font-size: 20px;
-                }
-                .name-txt {
-                  flex: 0.9;
-                }
-              }
-            }
-          }
-          .footer-content-right {
-            flex: 0.9;
-            height: 90%;
-            // background-color: green;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: 2.5%;
-            // border: 1px solid white;
-            .content-right-title {
-              // border: 1px solid white;
-              width: 100%;
-              height: 20%;
-              color: white;
-              // background-color: #fff;
-              // font-size: 20px;
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-            }
-            .content-right-title2 {
-              // border: 1px solid white;
-              // color: black;
-              width: 100%;
-              height: 20%;
-              // background-color: #fff;
-              display: flex;
-              // font-size: 18px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              .day {
-                flex: 0.3;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                text-align: left;
-              }
-              .time {
-                flex: 0.7;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                text-align: left;
-              }
-            }
-          }
-        }
-        .footer-content-middle {
-          width: 100%;
-          height: 17%;
-          border-bottom: 1px solid #fff;
-        }
-        .footer-content-bottom {
-          width: 100%;
-          height: 20%;
-          // border-bottom: 2px solid #fff;
-          // background-color: red;
-        }
-      }
+    position: relative;
+    top: 100px;
+    .wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: #fff url("../../../public/imgs/wave-footer.png");
+      background-size: 88vw 100px;
+    }
+    .wave#wave-1 {
+      z-index: 100;
+      opacity: 1;
+      bottom: 0;
+      animation: animateWave 7s linear infinite;
+      animation-play-state: paused;
+    }
+    .wave#wave-1:hover {
+      animation-play-state: running;
+    }
+    .wave#wave-2 {
+      z-index: 99;
+      opacity: 0.5;
+      bottom: 10px;
+      animation: animateWave2 7s linear infinite;
+      animation-play-state: paused;
     }
     @keyframes animateWave {
       0% {
-        background-position-x: 1000px;
+        background-position-x: 100vw;
       }
       100% {
         background-position-x: 0px;
@@ -283,18 +177,7 @@
         background-position-x: 0;
       }
       100% {
-        background-position-x: 1000px;
-      }
-    }
-    .google-map-container {
-      flex: 0.8;
-      height: calc(100% - 120px);
-      background-color: none;
-      margin-top: 120px;
-      .google-map {
-        width: calc(100% - 16px);
-        height: 100%;
-        // border: 4px solid blue;
+        background-position-x: 100vw;
       }
     }
   }

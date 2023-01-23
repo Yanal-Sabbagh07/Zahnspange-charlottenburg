@@ -1,0 +1,30 @@
+.termin-button {
+  width: 260px;
+  //   border: 1px solid black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .appointment-button {
+    padding: 16px 26px;
+    font-size: 18px;
+    border-radius: 8px;
+    // border: 1px #1f5ca2 solid;
+    cursor: pointer;
+    background-color: #1f5ca2;
+    // box-shadow: 0 0 4px #eee;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  :hover {
+    // border: 1px solid #20ade4;
+    background-color: #20ade4 !important;
+    color: #fff !important;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  }
+}
