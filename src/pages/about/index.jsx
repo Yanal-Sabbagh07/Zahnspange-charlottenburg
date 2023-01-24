@@ -1,13 +1,23 @@
 import React from "react";
-
-const index = () => {
+import "../../styles/pages/about/About.scss";
+// import { useLocation } from "react-router-dom";
+const About = () => {
   return (
     <div>
-      <div>
-        <h1>About us </h1>
+      <div className="about-us-container">
+        <div className="upper-teath"></div>
+        <div className="about-us-content-container">
+          <div className="about-us-content">
+            <h1>
+              Willkommen in unserer kieferorthopädischen Facharztpraxis in
+              Berlin-Charlottenburg.
+            </h1>
+          </div>
+        </div>
+        <div className="footer-teath"></div>
       </div>
     </div>
   );
 };
 
-export default index;
+export default About;

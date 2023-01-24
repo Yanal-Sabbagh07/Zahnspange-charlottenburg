@@ -26,7 +26,7 @@
   scroll-snap-align: end; // control where to stop after scrolling
   // border: 1px solid red;
   margin-top: 90px;
-  position: relative;
+  // position: relative;
 
   .welcome-title-container {
     width: 60%;
@@ -52,19 +52,19 @@
   .welcome-waves {
     // border: 1px solid black;
     width: 100%;
-    height: 35%;
+    height: 30%;
     background-image: url("../../../public/imgs/waves.jpg");
     // background-attachment: fixed;
 
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 15vh;
+    // position: absolute;
+    // top: 15vh;
   }
   .welcome-content-container {
     width: 70%;
-    height: 48%;
+    height: 50%;
     // background-color: black;
     // border: 1px solid black;
     display: flex;
@@ -145,7 +145,7 @@
       width: 100%;
       height: 100px;
       background: #fff url("../../../public/imgs/wave-footer.png");
-      background-size: 100vw 100px;
+      background-size: 70vw 100px;
     }
     .wave#wave-1 {
       z-index: 100;
@@ -167,7 +167,7 @@
 
     @keyframes animateWave {
       0% {
-        background-position-x: 100vw;
+        background-position-x: 70vw;
       }
       100% {
         background-position-x: 0px;
@@ -178,7 +178,7 @@
         background-position-x: 0;
       }
       100% {
-        background-position-x: 100vw;
+        background-position-x: 70vw;
       }
     }
   }

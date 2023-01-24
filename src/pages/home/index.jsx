@@ -47,8 +47,6 @@ const index = () => {
           <div className="footer-waves">
             <div className="wave" id="wave-1"></div>
             <div className="wave" id="wave-2"></div>
-            <div className="wave" id="wave-3"></div>
-            <div className="wave" id="wave-4"></div>
           </div>
           <Footer />
         </div>
