@@ -1,7 +1,7 @@
 @import "../variables.scss";
 .navigation {
   &__button {
-    background-color: $color-scale-white;
+    background-color: $white;
     height: 70px;
     width: 70px;
     position: fixed;
@@ -21,7 +21,7 @@
     width: 35px;
     border-radius: 50%;
     position: fixed;
-    background-image: radial-gradient(#1f5ca2, #20ade4);
+    background-image: radial-gradient($dark-blue, $light-blue);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -62,14 +62,14 @@
       font-size: 28px;
       font-weight: 300;
       padding: 1rem 2rem;
-      color: $color-scale-white;
+      color: $white;
       text-decoration: none;
       text-transform: uppercase;
       background-image: linear-gradient(
         120deg,
         transparent 0%,
         transparent 50%,
-        $color-scale-white 50%
+        $white 50%
       );
       background-size: 220%;
       transition: all 0.4s;
@@ -83,7 +83,7 @@
     &:hover,
     &:active {
       background-position: 100%;
-      color: $color-scale-blue-7;
+      color: $dark-blue;
       transform: translateX(1rem);
     }
   }
@@ -153,4 +153,7 @@
   &__icon-close + &__button &__icon {
     background-color: red;
   }
+}
+
+@media screen and (max-width: 480px) {
 }

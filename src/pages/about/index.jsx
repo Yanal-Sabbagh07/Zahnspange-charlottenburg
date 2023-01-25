@@ -3,8 +3,8 @@ import "../../styles/pages/about/About.scss";
 // import { useLocation } from "react-router-dom";
 const About = () => {
   return (
-    <div>
-      <div className="about-us-container">
+    <div className="about-us-container">
+      <div className="landing-container">
         <div className="upper-teath"></div>
         <div className="about-us-content-container">
           <div className="about-us-content">
@@ -15,6 +15,9 @@ const About = () => {
           </div>
         </div>
         <div className="footer-teath"></div>
+      </div>
+      <div className="secound-section-container">
+        Here is the secound section
       </div>
     </div>
   );

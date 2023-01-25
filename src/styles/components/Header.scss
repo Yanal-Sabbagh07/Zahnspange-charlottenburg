@@ -65,7 +65,7 @@
         justify-content: center;
         cursor: pointer;
         :hover {
-          color: #20ade4;
+          color: $light-blue;
           // transform: rotate(-5deg);
           transform: scale(1.08);
           transition: all 0.2s ease;
@@ -75,7 +75,7 @@
       .icon {
         width: 32px;
         height: 32px;
-        color: #1f5ca2;
+        color: $dark-blue;
       }
       .phone-icon-container {
         // border: 1px solid black;
@@ -87,7 +87,7 @@
         height: 50%;
       }
       .header-phone-number {
-        color: #1f5ca2;
+        color: $dark-blue;
         height: 100%;
         font-weight: 600;
         padding-left: 16px;
@@ -101,4 +101,7 @@
     height: 100%;
     // background-color: red;
   }
+}
+
+@media screen and (max-width: 480px) {
 }

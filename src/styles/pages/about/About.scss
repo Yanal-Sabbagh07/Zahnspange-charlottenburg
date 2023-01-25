@@ -1,93 +1,102 @@
+@import "../../variables.scss";
 .about-us-container {
-  width: 100vw;
-  overflow: overlay;
-  height: 100vh;
-  background-color: #fff;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: hidden;
-
-  .upper-teath {
-    // margin-top: 90px;
-    width: 75%;
-    height: 300px;
-    background-image: url("../../../../public/imgs/up-teath.png");
-    background-size: 100% 100%;
-    background-position: bottom;
-    position: absolute;
-    top: -60px;
-    animation: MoveUpDown 3s linear 1;
-  }
-  .about-us-content-container {
-    margin-top: 240px;
+  width: calc(100vw - 17px);
+  overflow: hidden;
+  .landing-container {
     width: 100%;
-    height: calc(100vh - 240px);
+
+    height: 100vh;
     background-color: #fff;
-    animation: fadein 4.2s;
-    .about-us-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+
+    .upper-teath {
+      // margin-top: 90px;
+      width: 684px;
+      height: 250px;
+      background-image: url("../../../../public/imgs/up-teath.png");
+      background-size: 100% 100%;
+      background-position: bottom;
+      position: absolute;
+      top: -37px;
+      animation: MoveUpDown 2.5s linear 1;
+    }
+    .about-us-content-container {
+      margin-top: 240px;
       width: 100%;
-      height: 75%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      h1 {
-        width: 60%;
-        font-size: 28px;
+      height: calc(100vh - 240px);
+      background-color: #fff;
+      animation: fadein 4s;
+      .about-us-content {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        h1 {
+          width: 60%;
+          font-size: 28px;
+        }
+      }
+    }
+    .footer-teath {
+      width: 684px;
+      height: 250px;
+      background-image: url("../../../../public/imgs/down-teath.png");
+      background-size: 100% 100%;
+      background-position: top;
+      position: absolute;
+      bottom: -250px;
+      // margin: 0 auto;
+      // display: none;
+      animation: MoveDowunUp 2.5s linear 1;
+    }
+
+    @keyframes MoveUpDown {
+      0% {
+        top: -160px;
+      }
+
+      50% {
+        top: 22vh;
+      }
+      85% {
+        top: -160px;
+      }
+      100% {
+        top: -37px;
+      }
+    }
+    @keyframes MoveDowunUp {
+      0%,
+      85% {
+        bottom: -250px;
+      }
+
+      50% {
+        bottom: 22vh;
+      }
+    }
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
       }
     }
   }
-  .footer-teath {
-    width: 75%;
-    height: 300px;
-    background-image: url("../../../../public/imgs/down-teath.png");
-    background-size: 100% 100%;
-    position: absolute;
-    bottom: -300px;
-    // margin: 0 auto;
-    // display: none;
-    animation: MoveDowunUp 3s linear 1;
-  }
+  .secound-section-container {
+    width: 100%;
 
-  @keyframes MoveUpDown {
-    0% {
-      top: -210px;
-    }
-
-    50% {
-      top: calc(6vh);
-    }
-    85% {
-      top: -210px;
-    }
-    100% {
-      top: -60px;
-    }
-  }
-  @keyframes MoveDowunUp {
-    0%,
-    85%,
-    100% {
-      bottom: -300px;
-      display: none;
-    }
-
-    50% {
-      bottom: 6vh;
-      display: block;
-    }
-  }
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-    66% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    height: calc(100vh - 90px);
+    background-color: $dark-blue;
   }
 }
