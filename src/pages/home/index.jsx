@@ -44,10 +44,6 @@ const index = () => {
       </section>
       <section className="hero-section3" id="3">
         <div className="last-section-container">
-          <div className="footer-waves">
-            <div className="wave" id="wave-1"></div>
-            <div className="wave" id="wave-2"></div>
-          </div>
           <Footer />
         </div>
       </section>

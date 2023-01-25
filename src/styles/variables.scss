@@ -2,6 +2,7 @@
 
 $dark-blue: #1f5ca2;
 $light-blue: #20ade4;
+$action: #ffff00;
 $white: #ffffff;
 $black: #1b1f24;
 $gray-0: #f6f8fa;
@@ -97,14 +98,16 @@ $coral-9: #510901;
 
 // ---------------------------------------------- Typography -------------------------------------
 
-$xx-small: "1rem";
-$x-smal: "1.2rem";
-$small: "1.4rem";
+$xx-small: 1rem;
+$x-small: 1.2rem;
+$small: 1.4rem;
 
-$medium: "1.6rem";
+$medium: 1.6rem;
 
-$large: "1.8rem";
+$large: 1.8rem;
 
-$x-large: "2rem";
-$xx-large: "2.2rem";
-$xxx-large: "2.4rem";
+$x-large: 2rem;
+$xx-large: 2.2rem;
+$xxx-large: 2.4rem;
+
+$huge: 4.8rem;

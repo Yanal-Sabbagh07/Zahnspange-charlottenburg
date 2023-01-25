@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/components/Header.scss";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -6,6 +6,7 @@ import PlaceIcon from "@mui/icons-material/Place";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { Link } from "react-router-dom";
 export const Header = () => {
+  const [phoneSelected, setPhoneSelected] = useState(false);
   return (
     <div className="header-container">
       <div className="logo-container">
@@ -42,9 +43,22 @@ export const Header = () => {
             </a>
           </div>
           <div className="phone-icon-container">
-            <PhoneIcon className="icon" />
+            <PhoneIcon
+              className="icon"
+              onClick={() => setPhoneSelected(!phoneSelected)}
+              style={{
+                color: phoneSelected && "#20ade4",
+              }}
+            />
 
-            <span className="header-phone-number">030 - 3414 060</span>
+            <span
+              className="header-phone-number"
+              style={{
+                display: phoneSelected && "block",
+              }}
+            >
+              030 - 3414 060
+            </span>
           </div>
         </div>
       </div>

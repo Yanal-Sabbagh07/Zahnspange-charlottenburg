@@ -11,6 +11,70 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.6rem;
 }
+@font-face {
+  font-family: "Merri";
+  src: url("./fonts/Merriweather/Merriweather-Black.ttf"),
+    url("./fonts/Merriweather/Merriweather-BlackItalic.ttf"),
+    url("./fonts/Merriweather/Merriweather-BoldItalic.ttf"),
+    url("./fonts/Merriweather/Merriweather-Italic.ttf"),
+    url("./fonts/Merriweather/Merriweather-Light.ttf"),
+    url("./fonts/Merriweather/Merriweather-LightItalic.ttf"),
+    url("./fonts/Merriweather/Merriweather-Regular.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merri";
+  src: url("./fonts/Merriweather/Merriweather-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merri";
+  src: url("./fonts/Merriweather/Merriweather-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merri";
+  src: url("./fonts/Merriweather/Merriweather-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merri";
+  src: url("./fonts/Merriweather/Merriweather-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merri-sans";
+  src: url("./fonts/Merriweather_Sans/static/MerriweatherSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merri-sans";
+  src: url("./fonts/Merriweather_Sans/static/MerriweatherSans-Medium.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merri-sans";
+  src: url("./fonts/Merriweather_Sans/static/MerriweatherSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merri-sans";
+  src: url("./fonts/Merriweather_Sans/static/MerriweatherSans-ExtraBold.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

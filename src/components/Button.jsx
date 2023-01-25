@@ -11,7 +11,7 @@ const Button = (props) => {
         rel="noreferrer noopener"
         style={{ backgroundColor: props.bgColor, color: props.color }}
       >
-        Beratungstermin buchen!
+        TERMIN VEREINBAREN!
       </a>
     </div>
   );

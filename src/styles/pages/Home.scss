@@ -42,18 +42,17 @@
       padding-top: 32px;
       font-size: 28px;
       letter-spacing: 1px;
-      color: $dark-blue;
+      color: $gray-7;
       font-weight: 900;
       line-height: 42px;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: "Merri";
     }
   }
   .welcome-waves {
     // border: 1px solid black;
     width: 100%;
     height: 30%;
-    background-image: url("../../../public/imgs/waves-1.png");
+    background-image: url("../../../public/imgs/waves.jpg");
     // background-attachment: fixed;
 
     background-size: 100% 100%;
@@ -78,14 +77,13 @@
 
       // background-color: red;
       .welcome-content {
-        font-size: 18px;
+        font-size: $medium;
         margin-top: 0px;
-        // background-color: blue;
+
         font-weight: 400;
         letter-spacing: 0.5px;
         line-height: 28px;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-family: "Merri-sans";
       }
     }
     .welcome-last-2 {
@@ -101,19 +99,17 @@
         // width: 100%;
         height: 100%;
         font-size: 18px;
-        // color: $dark-blue;
-        font-weight: 700;
+        color: $dark-blue;
+        font-weight: 600;
         letter-spacing: 0.75px;
         line-height: 32px;
         // background-color: green;
         // transform: rotate(-3deg);
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-family: "Merri";
         cursor: pointer;
       }
       .welcome-owner-txt:hover {
         color: $light-blue;
-        transform: rotate(-0.75deg);
       }
     }
     .welcome-btn {
@@ -127,60 +123,16 @@
   }
 }
 .hero-section3 {
-  height: 100vh;
+  height: calc(100vh - 94px);
   background-color: #fff;
   scroll-snap-align: start;
+  margin-top: 94px;
 
   .last-section-container {
     width: 100%;
-    height: calc(100% - 98px);
+    height: 100%;
     background-color: $dark-blue;
     display: flex;
-    position: relative;
-    top: 100px;
-    .wave {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100px;
-      background: #fff url("../../../public/imgs/wave-footer.png");
-      background-size: 70vw 100px;
-    }
-    .wave#wave-1 {
-      z-index: 100;
-      opacity: 1;
-      bottom: 0;
-      animation: animateWave 5s linear infinite;
-      animation-play-state: paused;
-    }
-    .wave#wave-1:hover {
-      animation-play-state: running;
-    }
-    .wave#wave-2 {
-      z-index: 99;
-      opacity: 0.5;
-      bottom: 10px;
-      animation: animateWave2 5s linear infinite;
-      animation-play-state: running;
-    }
-
-    @keyframes animateWave {
-      0% {
-        background-position-x: 70vw;
-      }
-      100% {
-        background-position-x: 0px;
-      }
-    }
-    @keyframes animateWave2 {
-      0% {
-        background-position-x: 0;
-      }
-      100% {
-        background-position-x: 70vw;
-      }
-    }
   }
 }
 

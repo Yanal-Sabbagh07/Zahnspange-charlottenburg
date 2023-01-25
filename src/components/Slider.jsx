@@ -26,15 +26,15 @@ const Slider = () => {
 
   const handleClick = (direction) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 5);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
       setDelay(50000);
     } else {
-      setSlideIndex(slideIndex < 5 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
       setDelay(50000);
     }
   };
   useInterval(() => {
-    if (slideIndex < 5) {
+    if (slideIndex < 2) {
       setSlideIndex(slideIndex + 1);
     } else {
       setSlideIndex(0);
@@ -44,7 +44,7 @@ const Slider = () => {
   return (
     <div className="slider-container">
       <div className="arrow arrow-left" onClick={() => handleClick("left")}>
-        <ArrowBackIosNewIcon />
+        <ArrowBackIosNewIcon className="arrow-icon" />
       </div>
       <div
         className="images-wrapper"
@@ -92,39 +92,9 @@ const Slider = () => {
             />
           </div>
         </div>
-
-        <div className="image-container">
-          <div className="hero-image">
-            <Image
-              src={require("../imgs/hero7.jpg")}
-              webp={require("../imgs/hero7.webp")}
-              className="image7"
-            />
-          </div>
-        </div>
-
-        <div className="image-container">
-          <div className="hero-image">
-            <Image
-              src={require("../imgs/hero6.jpg")}
-              webp={require("../imgs/hero6.webp")}
-              className="image6"
-            />
-          </div>
-        </div>
-
-        <div className="image-container">
-          <div className="hero-image">
-            <Image
-              src={require("../imgs/hero4.jpg")}
-              webp={require("../imgs/hero4.webp")}
-              className="image4"
-            />
-          </div>
-        </div>
       </div>
       <div className="arrow arrow-right" onClick={() => handleClick("right")}>
-        <ArrowForwardIosIcon />
+        <ArrowForwardIosIcon className="arrow-icon" />
       </div>
     </div>
   );
