@@ -79,34 +79,31 @@
       .welcome-content {
         font-size: $medium;
         margin-top: 0px;
-
         font-weight: 400;
         letter-spacing: 0.5px;
         line-height: 28px;
         font-family: "Merri-sans";
+        color: $gray-7;
       }
     }
     .welcome-last-2 {
       width: 100%;
       height: 60px;
-      // background-color: black;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
       .welcome-owner-txt {
         margin-top: 14px;
-        // width: 100%;
         height: 100%;
         font-size: 18px;
-        color: $dark-blue;
+
         font-weight: 600;
         letter-spacing: 0.75px;
         line-height: 32px;
-        // background-color: green;
-        // transform: rotate(-3deg);
         font-family: "Merri";
         cursor: pointer;
+        color: $gray-7;
       }
       .welcome-owner-txt:hover {
         color: $light-blue;

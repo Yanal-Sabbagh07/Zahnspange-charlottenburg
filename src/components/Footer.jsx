@@ -6,6 +6,7 @@ import PlaceIcon from "@mui/icons-material/Place";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LocalPrintshopIcon from "@mui/icons-material/LocalPrintshop";
+import CopyrightIcon from "@mui/icons-material/Copyright";
 import Button from "./Button";
 import GoogleMap from "./GoogleMap";
 const Footer = () => {
@@ -81,13 +82,16 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-button-container">
-            <Button bgColor="#FFFF00" color="#424a53" />
+            <Button bgColor="#fff" color="#1f5ca2" />
           </div>
         </div>
       </div>
       <div className="footer-content-bottom">
         <div className="footer-copy-right">
-          &copy; 2022 by Zahnspange Charlottenburg.
+          <strong className="copy-sign">
+            <CopyrightIcon className="c-icon" />{" "}
+          </strong>{" "}
+          2022 by Yanal Al Sabbagh.
         </div>
         <div className="footer-social-media">
           <a
