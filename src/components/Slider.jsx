@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Image from "react-image-webp";
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
-  const [delay, setDelay] = useState(3500);
+  const [delay, setDelay] = useState(7000);
 
   function useInterval(callback, delay) {
     const savedCallback = useRef();
