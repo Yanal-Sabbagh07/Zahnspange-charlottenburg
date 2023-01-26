@@ -12,8 +12,8 @@
     width: 70px;
     height: 70px;
     background-color: transparent;
-    color: $light-blue;
-    border-radius: 50%;
+    color: $dark-blue;
+    // border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,8 +29,8 @@
   }
   .arrow:hover {
     // opacity: 1;
-    background-color: $light-blue;
-    color: $white;
+
+    color: $light-blue;
   }
   .arrow-left {
     left: 32px;
