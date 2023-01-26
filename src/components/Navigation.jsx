@@ -37,7 +37,7 @@ const Navigation = () => {
               className="navigation__link"
               onClick={() => setnavOpen(false)}
             >
-              <span>01</span> Home
+              Home
             </Link>
           </li>
           <li className="navigation__item">
@@ -46,7 +46,7 @@ const Navigation = () => {
               className="navigation__link"
               onClick={() => setnavOpen(false)}
             >
-              <span>02</span> Über uns
+              Über uns
             </Link>
           </li>
           <li className="navigation__item">
@@ -55,7 +55,7 @@ const Navigation = () => {
               className="navigation__link"
               onClick={() => setnavOpen(false)}
             >
-              <span>03</span> Leistungen
+              Leistungen
             </Link>
           </li>
           <li className="navigation__item">
@@ -64,7 +64,7 @@ const Navigation = () => {
               className="navigation__link"
               onClick={() => setnavOpen(false)}
             >
-              <span>04</span> Ablauf einer Behandlung
+              Ablauf einer Behandlung
             </Link>
           </li>
           <li className="navigation__item">
@@ -73,7 +73,7 @@ const Navigation = () => {
               className="navigation__link"
               onClick={() => setnavOpen(false)}
             >
-              <span>05</span> Kontakt
+              Kontakt
             </Link>
           </li>
         </ul>
