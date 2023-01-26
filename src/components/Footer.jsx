@@ -91,7 +91,7 @@ const Footer = () => {
           <strong className="copy-sign">
             <CopyrightIcon className="c-icon" />{" "}
           </strong>{" "}
-          2022 by Yanal Al Sabbagh.
+          2022 made by &nbsp;<span> Yanal Al Sabbagh</span>
         </div>
         <div className="footer-social-media">
           <a

@@ -169,31 +169,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Merri";
+    font-family: "Merri-sans";
     // border: 1px solid #fff;
     .footer-copy-right {
-      font-family: "Merri";
+      font-family: "Merri-sans";
       font-weight: 700;
-      .copy-sign {
-        font-size: $xxx-large;
-        margin-top: 10px;
-        text-align: center;
-        color: white;
-
-        width: 7%;
-        .c-icon {
-          font-size: $xxx-large;
-        }
-      }
       flex: 1;
       height: 50%;
       // border: 1px solid red;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: $large;
-      color: $white;
+      font-size: $medium;
+      color: $gray-2;
       letter-spacing: 0.7px;
+      .copy-sign {
+        // font-size: $xx-large;
+        margin-top: 5px;
+        text-align: center;
+        color: $gray-2;
+
+        width: 7%;
+        .c-icon {
+          font-size: $xxx-large;
+        }
+      }
+      span {
+        cursor: pointer;
+        font-family: "Merri";
+        font-weight: 900;
+        &:hover {
+          color: $light-blue;
+        }
+      }
     }
     .footer-social-media {
       flex: 0.5;
@@ -221,7 +229,7 @@
         }
       }
       .fb:hover {
-        color: $light-blue;
+        color: #3c99dc;
       }
       .ig:hover {
         color: #c13584;
