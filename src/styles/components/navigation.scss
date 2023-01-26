@@ -160,7 +160,7 @@
     &__list {
       text-align: center;
       width: 100vw;
-      transform: translate(-55%, -58%);
+      transform: translate(-55%, -50%);
     }
     &__item {
       margin: 0;
@@ -181,6 +181,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background-size: none;
+        transition: all 0.75s;
+      }
+      &:hover,
+      &:active {
+        transform: translateX(50rem);
       }
     }
   }
