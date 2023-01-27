@@ -149,13 +149,14 @@
 @media screen and (max-width: 480px) {
   .navigation {
     &__button {
-      top: 10px;
+      top: 20px;
       right: 8px;
       width: 50px;
       height: 50px;
     }
     &__background {
-      top: 18px;
+      // z-index: 5000;
+      top: 28px;
       right: 16px;
     }
 
