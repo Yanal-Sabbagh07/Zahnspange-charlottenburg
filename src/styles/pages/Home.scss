@@ -14,6 +14,9 @@
   align-items: center;
   justify-content: center;
   scroll-snap-align: end;
+  .welcome-title-mobile-container {
+    display: none;
+  }
 }
 
 .hero-section2 {
@@ -40,7 +43,7 @@
       height: 100%;
       font-size: 28px;
       letter-spacing: 1px;
-      color: $gray-7;
+      color: $gray-5;
       font-weight: 900;
       line-height: 42px;
       font-family: "Merri";
@@ -153,7 +156,7 @@
       .welcome-title-mobile {
         color: $gray-5;
         font-family: "Merri";
-        font-size: $xxx-large;
+        font-size: $xxxx-large;
         line-height: 42px;
         letter-spacing: 1px;
         // background-color: red;
@@ -166,8 +169,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #f2f2f2;
-      border-radius: 8px;
+      background-color: $gray-2;
+      border-radius: 4px;
       .social-wrapper {
         // background-color: blue;
         width: 100%;
@@ -178,7 +181,7 @@
         .icons-container {
           // border: 1px solid black;
           .icon {
-            font-size: $huge;
+            font-size: $huge-mobile;
             color: $dark-blue;
           }
         }

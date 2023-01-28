@@ -17,7 +17,7 @@ const index = () => {
         <Slider />
         <div className="welcome-title-mobile-container">
           <h1 className="welcome-title-mobile">
-            Willkommen in unserer kieferorthopädischen Facharztpraxis in
+            Willkommen in unserer kieferorthopädischen Facharztpraxis in <br />
             Berlin-Charlottenburg.
           </h1>
         </div>
@@ -48,7 +48,14 @@ const index = () => {
               </a>
             </div>
             <div className="icons-container">
-              <PhoneIcon className="icon" />
+              <a
+                data-testid="linkElement"
+                href="tel:+49 30 3414 060"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <PhoneIcon className="icon" />
+              </a>
             </div>
           </div>
         </div>

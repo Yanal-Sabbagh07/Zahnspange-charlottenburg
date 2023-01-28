@@ -48,7 +48,7 @@
   }
 
   &__item {
-    margin: 1rem;
+    margin: 2rem;
   }
 
   &__link {
@@ -57,7 +57,7 @@
       display: inline-block;
       font-size: 28px;
       font-weight: 300;
-      padding: 1rem 2rem;
+      padding: 1.6rem 4.2rem;
       color: $white;
       text-decoration: none;
       text-transform: uppercase;
@@ -67,7 +67,8 @@
         transparent 50%,
         $white 50%
       );
-      background-size: 220%;
+      background-size: 250%;
+
       transition: all 0.4s;
     }
 
