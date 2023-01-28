@@ -51,32 +51,23 @@
   }
 
   .welcome-waves {
-    // border: 1px solid black;
     width: 100%;
     height: 30%;
     background-image: url("../../../public/imgs/waves.jpg");
-    // background-attachment: fixed;
-
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    // position: absolute;
-    // top: 15vh;
   }
   .welcome-content-container {
     width: 70%;
     height: 50%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     .welcome-last-1 {
-      // background-color: orange;
       width: 100%;
       height: 140px;
-
-      // background-color: red;
       .welcome-content {
         font-size: $medium;
         margin-top: 0px;
@@ -98,7 +89,6 @@
         margin-top: 14px;
         height: 100%;
         font-size: 18px;
-
         font-weight: 600;
         letter-spacing: 0.75px;
         line-height: 32px;
@@ -147,43 +137,79 @@
     align-items: center;
     justify-content: flex-start;
     .welcome-title-mobile-container {
-      // background-color: red;
-      // background-color: black;
-      height: 35%;
+      height: 32.5%;
       display: flex;
       align-items: center;
       justify-content: center;
       .welcome-title-mobile {
         color: $gray-5;
         font-family: "Merri";
-        font-size: $xxxx-large;
+        font-size: $xxx-large;
         line-height: 42px;
-        letter-spacing: 1px;
-        // background-color: red;
+        letter-spacing: 2px;
       }
     }
     .social-container {
       height: 90px;
       width: 100%;
-      // background-color: red;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: $gray-2;
       border-radius: 4px;
       .social-wrapper {
-        // background-color: blue;
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         .icons-container {
-          // border: 1px solid black;
           .icon {
             font-size: $huge-mobile;
             color: $dark-blue;
           }
+        }
+      }
+    }
+  }
+  .hero-section2 {
+    justify-content: flex-start;
+    .welcome-title-container {
+      display: none;
+    }
+    .welcome-waves {
+      width: 100%;
+      height: 25%;
+    }
+    .welcome-content-container {
+      width: 95%;
+      height: 70%;
+
+      justify-content: space-evenly;
+      .welcome-last-1 {
+        width: 100%;
+        height: 300px;
+        // margin-top: 14px;
+        .welcome-content {
+          font-size: $small;
+          letter-spacing: auto;
+          line-height: auto;
+        }
+      }
+      .welcome-last-2 {
+        width: 100%;
+        height: 100%;
+
+        .welcome-owner-txt {
+          margin-top: 14px;
+          height: 100%;
+          font-size: $medium;
+          font-weight: 600;
+          letter-spacing: 0.75px;
+          line-height: 32px;
+          font-family: "Merri";
+          cursor: pointer;
+          color: $gray-7;
         }
       }
     }
