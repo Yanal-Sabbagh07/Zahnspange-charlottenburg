@@ -1,0 +1,31 @@
+@import "../variables.scss";
+.social-container {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .social-container {
+    position: fixed;
+    bottom: 0%;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray-2;
+    border-radius: 4px;
+    .social-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .icons-container {
+        .icon {
+          font-size: $xxxx-large;
+          color: $dark-blue;
+        }
+      }
+    }
+  }
+}
