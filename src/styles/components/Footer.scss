@@ -193,7 +193,7 @@
         // font-size: $xx-large;
         margin-top: 5px;
         text-align: center;
-        color: $gray-2;
+        color: $gray-3;
 
         width: 7%;
         .c-icon {
@@ -363,14 +363,16 @@
     .footer-content-bottom {
       height: 15%;
       flex-direction: column-reverse;
+      justify-content: space-evenly;
       // background-color: #fff;
       // background-color: red;
       .footer-copy-right {
         width: 100%;
         // flex: 1;
         font-size: $small;
+        color: $gray-3;
         span {
-          color: $light-blue;
+          color: $gray-3;
         }
       }
       .footer-social-media {
@@ -379,20 +381,22 @@
         justify-content: center;
         .social-icon-container {
           // background-color: blue;
-          width: 13%;
+          width: 18%;
           font-size: $small;
+          color: $gray-2;
         }
         .footer-impressum-mobile {
           display: block;
-          width: 75%;
+          width: 72%;
           height: 100%;
           // background-color: #fff;
           font-size: small;
           display: flex;
           align-items: center;
           justify-content: space-evenly;
+
           a {
-            color: #f2f2f2;
+            color: $gray-2;
           }
         }
       }

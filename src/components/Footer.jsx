@@ -90,9 +90,13 @@ const Footer = () => {
           <strong className="copy-sign">
             <CopyrightIcon className="c-icon" />{" "}
           </strong>{" "}
-          2022 made by &nbsp;<span> Yanal Al Sabbagh</span>
+          &nbsp;2022 made by &nbsp;<span> Yanal Al Sabbagh</span>
         </div>
         <div className="footer-social-media">
+          <div className="footer-impressum-mobile">
+            <a href="/">Impressum</a>
+            <a href="/">Datenschutzerklärung</a>
+          </div>
           <a
             href="https://www.facebook.com/Zahnspangeberlin"
             target="_blank"
@@ -101,7 +105,6 @@ const Footer = () => {
           >
             <FacebookIcon className="social-icon" />
           </a>
-
           <a
             href="https://www.instagram.com/zahnspangeberlin"
             target="_blank"
@@ -110,10 +113,6 @@ const Footer = () => {
           >
             <InstagramIcon className="social-icon" />
           </a>
-          <div className="footer-impressum-mobile">
-            <a href="/">Impressum</a>
-            <a href="/">Datenschutzerklärung</a>
-          </div>
         </div>
         <div className="footer-impressum">
           <a href="/">Impressum</a>
