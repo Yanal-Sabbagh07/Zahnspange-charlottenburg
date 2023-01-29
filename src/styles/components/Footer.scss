@@ -274,6 +274,7 @@
       .google-map-container {
         // background-color: red;
         flex: 0.8;
+        align-items: flex-end;
         .google-map {
           width: 92.5%;
           height: 90%;
@@ -298,11 +299,11 @@
             .footer-left-details {
               font-size: $x-small;
               .details-name {
-                height: 18%;
+                height: 20%;
                 .name-icon {
                   flex: 0.1;
                   .footer-icon {
-                    font-size: $large;
+                    font-size: $medium;
                   }
                 }
                 .rose {
@@ -314,11 +315,11 @@
                   font-size: $x-small;
                 }
                 .name-txt {
-                  flex: 0.45;
+                  flex: 0.5;
                   font-size: $x-small;
                 }
                 .open-times {
-                  flex: 0.45;
+                  flex: 0.52;
 
                   .btn-footer-descktop {
                     display: none;
@@ -362,6 +363,7 @@
       .footer-copy-right {
         width: 100%;
         // flex: 1;
+        font-size: $small;
       }
       .footer-social-media {
         width: 100%;

@@ -73,7 +73,7 @@ const Footer = () => {
                   </div>
                   <div className="open-times last-open-times">
                     <div className="btn-footer-descktop">
-                      <Button bgColor="#F7DE3A" color="#424a53" />
+                      <Button bgColor="#fff" color="#424a53" />
                     </div>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="btn-footer-mobile">
-            <Button bgColor="#F7DE3A" color="#424a53" />
+            <Button bgColor="#fff" color="#424a53" />
           </div>
         </div>
       </div>
