@@ -1,8 +1,7 @@
 import React from "react";
 import "../../styles/pages/Home.scss";
-// import Image from "react-image-webp";
 import Slider from "../../components/Slider";
-// import GoogleMap from "../../components/GoogleMap";
+import Wave from "../../components/Wave";
 import Footer from "../../components/Footer";
 import Button from "../../components/Button";
 
@@ -18,14 +17,12 @@ const index = () => {
           </h1>
         </div>
       </section>
+
       <section className="hero-section2">
-        <div className="welcome-title-container">
-          <h1 className="welcome-title">
-            Willkommen in unserer kieferorthopädischen Facharztpraxis in
-            Berlin-Charlottenburg.
-          </h1>
-        </div>
-        <div className="welcome-waves"></div>
+        <Wave
+          header="Willkommen in unserer kieferorthopädischen Facharztpraxis in
+          Berlin-Charlottenburg."
+        />
         <div className="welcome-content-container">
           <div className="welcome-last-1">
             <p className="welcome-content">
