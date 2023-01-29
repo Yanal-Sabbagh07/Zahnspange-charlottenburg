@@ -81,7 +81,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="btn-footer-mobile">
-            <Button bgColor="#fff" color="#1f5ca2" />
+            <Button bgColor="#F7DE3A" color="#424a53" />
           </div>
         </div>
       </div>
