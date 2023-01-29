@@ -29,6 +29,7 @@ const Footer = () => {
                     />
                   </div>
                   <div className="name-txt name">Zahnspange Charlottenburg</div>
+                  <div className="open-times">Öffnungszeiten :</div>
                 </div>
 
                 <div className="details-name">
@@ -38,6 +39,10 @@ const Footer = () => {
                   <div className="name-txt">
                     Richard-Wagner-Platz 3 <br /> 10585 Berlin
                   </div>
+                  <div className="open-times">
+                    <div className="day">Mo - Do :</div>
+                    <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
+                  </div>
                 </div>
 
                 <div className="details-name">
@@ -45,6 +50,10 @@ const Footer = () => {
                     <PhoneIcon className="footer-icon" />{" "}
                   </div>
                   <div className="name-txt">030 - 3414 060</div>
+                  <div className="open-times">
+                    <div className="day">Fr :</div>
+                    <div className="time"> Nach Vereinbarung</div>
+                  </div>
                 </div>
 
                 <div className="details-name">
@@ -52,36 +61,26 @@ const Footer = () => {
                     <LocalPrintshopIcon className="footer-icon" />{" "}
                   </div>
                   <div className="name-txt">030 - 3419 787</div>
+                  <div className="open-times"></div>
                 </div>
 
-                <div className="details-name">
+                <div className="details-name email-name">
                   <div className="name-icon">
                     <EmailIcon className="footer-icon" />{" "}
                   </div>
                   <div className="name-txt">
                     info@zahnspange-charlottenburg.de
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="footer-content-right">
-              <div className="footer-right-details">
-                <div className="content-right-title">Öffnungszeiten :</div>
-                <div className="content-right-title2">
-                  <div className="day">Mo - Do :</div>
-                  <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
-                </div>
-                <div className="content-right-title2">
-                  <div className="day">Fr :</div>
-                  <div className="time"> Nach Vereinbarung</div>
-                </div>
-                <div className="empty-container">
-                  <div>&nbsp;</div>
+                  <div className="open-times last-open-times">
+                    <div className="btn-footer-descktop">
+                      <Button bgColor="#F7DE3A" color="#424a53" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="footer-button-container">
+          <div className="btn-footer-mobile">
             <Button bgColor="#fff" color="#1f5ca2" />
           </div>
         </div>
