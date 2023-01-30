@@ -4,11 +4,16 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import PlaceIcon from "@mui/icons-material/Place";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 export const Header = () => {
   const [phoneSelected, setPhoneSelected] = useState(false);
+  let location = useLocation();
   return (
-    <div className="header-container">
+    <div
+      className="header-container"
+      style={{ opacity: location.pathname === "/" ? ".85" : "1" }}
+    >
       <div className="logo-container">
         <div className="logo-wrapper">
           <Link to="/">

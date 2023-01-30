@@ -2,10 +2,10 @@ import React from "react";
 
 const index = () => {
   return (
-    <div>
-      <div>
-        <h1>Services</h1>
-      </div>
+    <div className="leistungen-main-container">
+      <section className="section-1-container">
+        <h1>Our Services</h1>
+      </section>
     </div>
   );
 };

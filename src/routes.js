@@ -5,6 +5,8 @@ import About from "./pages/about/index";
 import Treatment from "./pages/treatment/index";
 import Contact from "./pages/contact/index";
 import Services from "./pages/services/index";
+import Adults from "./pages/treatment/Adults";
+import Kids from "./pages/treatment/Kids";
 
 export const routes = [
   {
@@ -22,6 +24,16 @@ export const routes = [
     title: "Treatment",
     path: "/treatment",
     element: <Treatment />,
+  },
+  {
+    title: "Adults",
+    path: "/treatment/adults",
+    element: <Adults />,
+  },
+  {
+    title: "Kids",
+    path: "/treatment/kids",
+    element: <Kids />,
   },
   {
     title: "Contact",

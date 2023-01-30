@@ -81,6 +81,19 @@ code {
     monospace;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a8a8a8;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin-top: 90px;
+}
+
 @media screen and (max-width: 480px) {
   html {
     overflow: hidden;
