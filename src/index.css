@@ -106,4 +106,15 @@ code {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: red;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
 }
