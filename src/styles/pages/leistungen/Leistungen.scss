@@ -209,7 +209,7 @@
     width: 100vw;
     height: 101%;
     .first-container {
-      // background-color: black;
+      scroll-snap-align: unset;
       height: calc(100vh - 160px);
       .welcome-title-container {
         display: flex;
@@ -255,6 +255,7 @@
       color: white;
       display: flex;
       flex-direction: column;
+      scroll-snap-align: unset;
       .secound-left-container {
         width: 100%;
         height: 50%;
@@ -300,6 +301,7 @@
       }
     }
     .third-container {
+      scroll-snap-align: unset;
       width: 100%;
       height: calc(100vh - 160px);
       display: flex;
@@ -346,6 +348,7 @@
       }
     }
     .footer-container {
+      scroll-snap-align: unset;
       width: 100vw;
       height: 100%;
       margin-top: 0px;
