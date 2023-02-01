@@ -207,7 +207,7 @@
   .leistungen-main-container {
     scroll-snap-type: unset;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     .first-container {
       scroll-snap-align: unset;
       height: calc(100vh - 160px);
