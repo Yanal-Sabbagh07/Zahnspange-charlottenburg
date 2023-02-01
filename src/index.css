@@ -98,13 +98,13 @@ code {
   html {
     overflow: hidden;
     width: 100%;
+    position: relative;
   }
   body {
     font-size: 1.4rem;
     height: 100%;
-    position: fixed;
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    position: fixed;
   }
 
   ::-webkit-scrollbar {
