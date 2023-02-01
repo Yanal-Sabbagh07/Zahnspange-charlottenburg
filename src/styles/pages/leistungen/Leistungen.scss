@@ -2,7 +2,6 @@
 .leistungen-main-container {
   max-width: 100vw;
   height: 100vh;
-
   scroll-behavior: smooth;
   overflow: overlay;
   scroll-snap-type: y mandatory;
@@ -19,10 +18,9 @@
   }
   .secound-container {
     scroll-snap-align: end;
-    overflow: hidden;
+    // overflow: hidden;
     width: 100%;
     height: calc(100vh - 90px);
-    // margin-top: 90px;
     color: white;
 
     display: flex;
@@ -87,12 +85,8 @@
     scroll-snap-align: end;
     width: 100%;
     height: calc(100vh - 90px);
-    // margin-top: 90px;
     color: white;
-
     display: flex;
-    overflow: hidden;
-
     .third-left-container {
       width: 50%;
       height: 100%;
@@ -163,7 +157,6 @@
       height: calc(100vh - 160px);
     }
     .secound-container {
-      overflow: hidden;
       width: 100%;
       height: calc(100vh - 160px);
       color: white;
