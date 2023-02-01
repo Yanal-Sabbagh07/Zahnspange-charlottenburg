@@ -18,7 +18,7 @@
   }
   .secound-container {
     scroll-snap-align: end;
-    // overflow: hidden;
+    overflow: hidden;
     width: 100%;
     height: calc(100vh - 90px);
     color: white;
@@ -40,7 +40,7 @@
         // outline-offset: 0vw;
         background-position: left;
 
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
     }
     .secound-right-container {
@@ -83,6 +83,7 @@
   }
   .third-container {
     scroll-snap-align: end;
+    overflow: hidden;
     width: 100%;
     height: calc(100vh - 90px);
     color: white;
@@ -133,7 +134,7 @@
       background-position: left;
       transition: all 0.5s ease;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         background-position: right;
       }
     }
