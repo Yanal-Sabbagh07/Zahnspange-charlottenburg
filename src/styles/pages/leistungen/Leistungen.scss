@@ -348,20 +348,19 @@
       }
     }
     .footer-container {
-      scroll-snap-align: unset;
+      scroll-snap-align: end;
       width: 100vw;
-      height: calc(100vh - 160px);
+      height: calc(100vh - 90px);
       margin-top: 0px;
       background-color: $dark-blue;
       scroll-snap-align: normal;
       margin-bottom: 70px;
       .last-section-container {
         width: 100vw;
-        height: calc(100vh - 90px);
+        height: calc(100vh - 160px);
         background-color: $light-blue;
         display: flex;
         scroll-snap-align: start;
-        margin-bottom: 70px;
       }
     }
   }
