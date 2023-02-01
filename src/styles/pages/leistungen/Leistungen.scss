@@ -18,12 +18,13 @@
     justify-content: space-between;
   }
   .secound-container {
+    scroll-snap-align: end;
     overflow: hidden;
     width: 100%;
     height: calc(100vh - 90px);
     // margin-top: 90px;
     color: white;
-    scroll-snap-align: end;
+
     display: flex;
 
     .secound-left-container {
@@ -83,11 +84,12 @@
     }
   }
   .third-container {
+    scroll-snap-align: end;
     width: 100%;
     height: calc(100vh - 90px);
     // margin-top: 90px;
     color: white;
-    scroll-snap-align: end;
+
     display: flex;
     overflow: hidden;
 
@@ -143,16 +145,14 @@
     }
   }
   .leistungen-footer-container {
+    scroll-snap-align: end;
     width: 100%;
     height: calc(100vh - 90px);
-    // margin-top: 94px;
-    scroll-snap-align: end;
 
     .last-section-container {
       width: 100%;
       height: 100%;
       background-color: $dark-blue;
-      display: flex;
     }
   }
 }
@@ -272,7 +272,6 @@
       .last-section-container {
         width: 100vw;
         height: 100%;
-        display: flex;
       }
     }
   }
