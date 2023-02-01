@@ -145,14 +145,14 @@
     }
   }
   .leistungen-footer-container {
-    scroll-snap-align: end;
     width: 100%;
     height: calc(100vh - 90px);
 
     .last-section-container {
+      scroll-snap-align: end;
       width: 100%;
       height: 100%;
-      background-color: $dark-blue;
+      background-color: $light-blue;
     }
   }
 }
@@ -268,11 +268,6 @@
     .leistungen-footer-container {
       width: 100vw;
       height: calc(100vh - 160px);
-
-      .last-section-container {
-        width: 100vw;
-        height: 100%;
-      }
     }
   }
 }
