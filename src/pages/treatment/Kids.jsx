@@ -22,9 +22,7 @@ const Kids = () => {
       <section className="kids-sixth-container">6</section>
       <section className="kids-seventh-container">7</section>
       <section className="kids-eight-container">
-        <div className="last-section-container">
-          <Footer />
-        </div>
+        <Footer />
       </section>
     </div>
   );

@@ -22,9 +22,7 @@ const Adults = () => {
       <section className="adults-sexth-container"></section>
       <section className="adults-seventh-container"></section>
       <section className="adults-eight-container">
-        <div className="last-section-container">
-          <Footer />
-        </div>
+        <Footer />
       </section>
     </div>
   );
