@@ -112,7 +112,8 @@ code {
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: red;
+    background-color: #a8a8a8;
+    margin-top: 90px;
   }
   ::-webkit-scrollbar-track {
     display: none;
