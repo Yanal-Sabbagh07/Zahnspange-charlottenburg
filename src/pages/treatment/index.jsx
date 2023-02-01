@@ -45,7 +45,7 @@ const index = () => {
         </div>
         <div className="third-right-container"></div>
       </section>
-      <section className="footer-container">
+      <section className="leistungen-footer-container">
         <div className="last-section-container">
           <Footer />
         </div>
