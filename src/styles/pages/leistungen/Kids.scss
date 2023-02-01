@@ -1,0 +1,135 @@
+@import "../../variables.scss";
+.kids-page-container {
+  max-width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: overlay;
+  scroll-snap-type: y mandatory;
+  //   background-color: red;
+  .kids-first-container {
+    scroll-snap-align: end;
+    margin-top: 90px;
+    width: 100%;
+    height: calc(100% - 90px);
+    // background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .kids-secound-container {
+    scroll-snap-align: end;
+    // margin-top: 90px;
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .kids-third-container {
+    scroll-snap-align: end;
+    // margin-top: 90px;
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .kids-fourth-container {
+    scroll-snap-align: end;
+    // margin-top: 90px;
+    width: 100%;
+    height: calc(100% - 90px);
+    // background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .kids-fifth-container {
+    scroll-snap-align: end;
+    // margin-top: 90px;
+    width: 100%;
+    height: calc(100% - 90px);
+    // background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .kids-sixth-container {
+    scroll-snap-align: end;
+    // margin-top: 90px;
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .kids-seventh-container {
+    scroll-snap-align: end;
+    // margin-top: 90px;
+    width: 100%;
+    height: calc(100% - 90px);
+    // background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .kids-eight-container {
+    scroll-snap-align: end;
+    // margin-top: 90px;
+    width: 100%;
+    height: calc(100% - 90px);
+    // background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .last-section-container {
+      width: 100%;
+      height: 100%;
+      background-color: $dark-blue;
+      display: flex;
+      scroll-snap-align: start;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .kids-page-container {
+    margin-bottom: 70px;
+    width: 100vw;
+    height: 100%;
+    .kids-first-container {
+      height: calc(100vh - 160px);
+    }
+    .kids-secound-container {
+      height: calc(100vh - 160px);
+    }
+    .kids-third-container {
+      height: calc(100vh - 160px);
+    }
+    .kids-fourth-container {
+      height: calc(100vh - 160px);
+    }
+    .kids-fifth-container {
+      height: calc(100vh - 160px);
+    }
+    .kids-sixth-container {
+      height: calc(100vh - 160px);
+    }
+    .kids-seventh-container {
+      height: calc(100vh - 160px);
+    }
+    .kids-eight-container {
+      height: calc(100vh - 160px);
+    }
+  }
+}
