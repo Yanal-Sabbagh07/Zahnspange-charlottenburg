@@ -21,7 +21,7 @@
     overflow: hidden;
     width: 100%;
     height: calc(100vh - 90px);
-    margin-top: 90px;
+    // margin-top: 90px;
     color: white;
     scroll-snap-align: end;
     display: flex;
@@ -166,24 +166,22 @@
     width: 100vw;
     height: 100%;
     .first-container {
-      scroll-snap-align: unset;
       height: calc(100vh - 160px);
     }
     .secound-container {
       overflow: hidden;
       width: 100%;
       height: calc(100vh - 160px);
-      margin-top: 0px;
       color: white;
       display: flex;
       flex-direction: column;
-      scroll-snap-align: unset;
+
       .secound-left-container {
         width: 100%;
         height: 50%;
-        background-position: left;
+        background-position: center;
         &:hover {
-          background-position: right;
+          background-position: center;
           transform: scale(1);
         }
       }
@@ -206,7 +204,7 @@
         .adults-btn-container {
           // background-color: green;
           width: 100%;
-          height: 30%;
+          // height: 30%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -223,7 +221,6 @@
       }
     }
     .third-container {
-      scroll-snap-align: unset;
       width: 100%;
       height: calc(100vh - 160px);
       display: flex;
@@ -246,7 +243,7 @@
         }
         .kids-btn-container {
           width: 95%;
-          height: 30%;
+          // height: 30%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -265,14 +262,13 @@
         transition: all 0.5s ease;
         &:hover {
           transform: scale(1);
-          background-position: right;
+          background-position: left;
         }
       }
     }
     .leistungen-footer-container {
       width: 100vw;
-      height: calc(100vh - 90px);
-      margin-top: 0px;
+      height: calc(100vh - 160px);
 
       .last-section-container {
         width: 100vw;
