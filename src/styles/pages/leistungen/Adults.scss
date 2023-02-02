@@ -5,78 +5,20 @@
   scroll-behavior: smooth;
   overflow: overlay;
   scroll-snap-type: y mandatory;
-  //   background-color: red;
   .adults-first-container {
     scroll-snap-align: end;
     margin-top: 90px;
     width: 100%;
     height: calc(100% - 90px);
-    // background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
-  .adults-secound-container {
+  .adults-treatment-container {
     scroll-snap-align: end;
-    // margin-top: 90px;
     width: 100%;
     height: calc(100% - 90px);
-    background-color: green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .adults-third-container {
-    scroll-snap-align: end;
-    // margin-top: 90px;
-    width: 100%;
-    height: calc(100% - 90px);
-    background-color: yellow;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .adults-fourth-container {
-    scroll-snap-align: end;
-    // margin-top: 90px;
-    width: 100%;
-    height: calc(100% - 90px);
-    // background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .adults-fifth-container {
-    scroll-snap-align: end;
-    // margin-top: 90px;
-    width: 100%;
-    height: calc(100% - 90px);
-    // background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .adults-sixth-container {
-    scroll-snap-align: end;
-    // margin-top: 90px;
-    width: 100%;
-    height: calc(100% - 90px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .adults-seventh-container {
-    scroll-snap-align: end;
-    // margin-top: 90px;
-    width: 100%;
-    height: calc(100% - 90px);
-    // background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,10 +26,8 @@
   }
   .adults-eight-container {
     scroll-snap-align: end;
-    // margin-top: 90px;
     width: 100%;
     height: calc(100% - 90px);
-    // background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,22 +44,7 @@
     .adults-first-container {
       height: calc(100vh - 160px);
     }
-    .adults-secound-container {
-      height: calc(100vh - 160px);
-    }
-    .adults-third-container {
-      height: calc(100vh - 160px);
-    }
-    .adults-fourth-container {
-      height: calc(100vh - 160px);
-    }
-    .adults-fifth-container {
-      height: calc(100vh - 160px);
-    }
-    .adults-sixth-container {
-      height: calc(100vh - 160px);
-    }
-    .adults-seventh-container {
+    .adults-treatment-container {
       height: calc(100vh - 160px);
     }
     .adults-eight-container {

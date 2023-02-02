@@ -16,7 +16,7 @@ const Adults = () => {
           bieten wir zahlreiche unsichtbare Zahnkorrekturen an, die diesen Anspruch gerecht werden."
         />
       </section>
-      <section className="adults-secound-container">
+      <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/aligner.jpg)"
           color="#1f5ca2"
@@ -29,7 +29,7 @@ const Adults = () => {
           gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
         />
       </section>
-      <section className="adults-third-container">
+      <section className="adults-treatment-container">
         <TreatmentSection
           reverse="true"
           image="url(../../imgs/arti2.jpg)"
@@ -43,7 +43,7 @@ const Adults = () => {
           gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
         />
       </section>
-      <section className="adults-fourth-container">
+      <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/fixed.jpg)"
           color="#1f5ca2"
@@ -56,7 +56,7 @@ const Adults = () => {
           gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
         />
       </section>
-      <section className="adults-fifth-container">
+      <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/arti.jpg)"
           reverse="true"
@@ -70,7 +70,7 @@ const Adults = () => {
           gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
         />
       </section>
-      <section className="adults-sixth-container">
+      <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/arti2.jpg)"
           reverse="flase"
@@ -84,7 +84,7 @@ const Adults = () => {
           gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
         />
       </section>
-      <section className="adults-seventh-container">
+      <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/fixed.jpg)"
           reverse="true"
@@ -98,7 +98,7 @@ const Adults = () => {
           gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
         />
       </section>
-      <section className="adults-sixth-container">
+      <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/arti2.jpg)"
           reverse="flase"
@@ -112,7 +112,7 @@ const Adults = () => {
           gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
         />
       </section>
-      <section className="adults-seventh-container">
+      <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/fixed.jpg)"
           reverse="true"

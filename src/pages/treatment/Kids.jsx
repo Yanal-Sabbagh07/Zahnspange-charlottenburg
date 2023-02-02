@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/pages/leistungen/Kids.scss";
 import Footer from "../../components/Footer";
 import WaveSection from "../../components/WaveSection";
+import TreatmentSection from "../../components/TreatmentSection";
 const Kids = () => {
   return (
     <div className="kids-page-container">
@@ -15,12 +16,88 @@ const Kids = () => {
            und die Prognose verbessern."
         />
       </section>
-      <section className="kids-secound-container">secound</section>
-      <section className="kids-third-container">third</section>
-      <section className="kids-fourth-container">fourth</section>
-      <section className="kids-fifth-container">5</section>
-      <section className="kids-sixth-container">6</section>
-      <section className="kids-seventh-container">7</section>
+      <section className="kids-treatment-container">
+        <TreatmentSection
+          image="url(../../imgs/aligner.jpg)"
+          color="#1f5ca2"
+          header="Frühbehandlung:"
+          text="Es gibt keinen zu frühen Besuch in der Kieferorthopädie. Auch im Milchgebiss alter ist ratsam, 
+          die Gebissentwicklung kontrollieren zu lassen, somit kann frühzeitige fehl Stellung festgestellt werden. 
+          Zu kontrollieren sind Störfaktoren die z.B den Gebissentwicklung beeinträchtigen können. 
+          Eine Frühbehandlung kann dies rechtzeitig beseitig und Spätfolgen vermeiden."
+        />
+      </section>
+      <section className="kids-treatment-container">
+        <TreatmentSection
+          reverse="true"
+          image="url(../../imgs/arti2.jpg)"
+          color="#20ade4"
+          header="Herausnehmbare Zahnspange:"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="kids-treatment-container">
+        <TreatmentSection
+          image="url(../../imgs/fixed.jpg)"
+          color="#1f5ca2"
+          header="Feste Zahnspange:"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="kids-treatment-container">
+        <TreatmentSection
+          image="url(../../imgs/arti.jpg)"
+          reverse="true"
+          color="#20ade4"
+          header="Alginer für Teen:"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="kids-treatment-container">
+        <TreatmentSection
+          image="url(../../imgs/arti2.jpg)"
+          reverse="flase"
+          color="#1f5ca2"
+          header="Skeletale Verankerung (AVL):"
+          text="Bei dieser Apparatur handelt es sich um eine komplexe Konstruktion in Kombination mit Mini-Implantaten, die dazu verwendet werden um Backenzähne nach hinten zu bewegen.
+          Ähnlich wie mit einem Headgear, den man früher einsetzte, kann man hiermit, 
+          allerdings „unsichtbar“ und ohne Patienten-Compliance, 
+          die Zähne im Oberkiefer kontinuierlich nach hinten bewegen, um im vorderen Bereich, 
+          z.B. für die Eckzähne, Platz zu schaffen, damit müssen bleibende Zähne nicht entfernt werden."
+        />
+      </section>
+      <section className="kids-treatment-container">
+        <TreatmentSection
+          image="url(../../imgs/fixed.jpg)"
+          reverse="true"
+          color="#20ade4"
+          header="Feste Retainer:"
+          text="Nach Abschluss der kieferorthopädischen Behandlung ist es notwendig, 
+          das erreichte Behandlungsergebnis über einen bestimmten Zeitraum zu stabilisieren. 
+          Zur optimalen Stabilisierung empfehlen wir einen festsitzenden Retainer. 
+          Dieser bietet den besten Schutz vor Änderungen der Zahnstellungen. 
+          Der Retainerdraht wird an die Innenseite der Frontzähne, von außen unsichtbar, 
+          mit winzigen Klebestellen angebracht. Dort kann er über einen längeren Zeitraum belassen werden. 
+          Eine Zahnreinigung wird dadurch nicht behindert. 
+          In anfangs vierteljährlichen und später halbjährlichen Kontrollen wird der Retainer auf Funktionalität 
+          überprüft."
+        />
+      </section>
       <section className="kids-eight-container">
         <Footer />
       </section>

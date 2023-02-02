@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  .kids-secound-container {
+  .kids-treatment-container {
     scroll-snap-align: end;
     // margin-top: 90px;
     width: 100%;
@@ -28,60 +28,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  .kids-third-container {
-    scroll-snap-align: end;
-    // margin-top: 90px;
-    width: 100%;
-    height: calc(100% - 90px);
-    background-color: yellow;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .kids-fourth-container {
-    scroll-snap-align: end;
-    // margin-top: 90px;
-    width: 100%;
-    height: calc(100% - 90px);
-    // background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .kids-fifth-container {
-    scroll-snap-align: end;
-    // margin-top: 90px;
-    width: 100%;
-    height: calc(100% - 90px);
-    // background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .kids-sixth-container {
-    scroll-snap-align: end;
-    // margin-top: 90px;
-    width: 100%;
-    height: calc(100% - 90px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .kids-seventh-container {
-    scroll-snap-align: end;
-    // margin-top: 90px;
-    width: 100%;
-    height: calc(100% - 90px);
-    // background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
+
   .kids-eight-container {
     scroll-snap-align: end;
     // margin-top: 90px;
@@ -104,22 +51,7 @@
     .kids-first-container {
       height: calc(100vh - 160px);
     }
-    .kids-secound-container {
-      height: calc(100vh - 160px);
-    }
-    .kids-third-container {
-      height: calc(100vh - 160px);
-    }
-    .kids-fourth-container {
-      height: calc(100vh - 160px);
-    }
-    .kids-fifth-container {
-      height: calc(100vh - 160px);
-    }
-    .kids-sixth-container {
-      height: calc(100vh - 160px);
-    }
-    .kids-seventh-container {
+    .kids-treatment-container {
       height: calc(100vh - 160px);
     }
     .kids-eight-container {
