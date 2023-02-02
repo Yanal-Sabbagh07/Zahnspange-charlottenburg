@@ -16,7 +16,7 @@ body {
   font-size: 1.6rem;
 }
 #site-wrapper {
-  overflow: auto;
+  overflow: scroll;
   height: 100%;
 }
 @font-face {
@@ -112,6 +112,7 @@ code {
     font-size: 1.4rem;
     height: 100%;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     position: fixed;
   }
 
