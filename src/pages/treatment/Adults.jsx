@@ -18,7 +18,7 @@ const Adults = () => {
       </section>
       <section className="adults-secound-container">
         <TreatmentSection
-          image="url(../../imgs/arti.jpg)"
+          image="url(../../imgs/aligner.jpg)"
           color="#1f5ca2"
           header="Aligner Therapie:"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
