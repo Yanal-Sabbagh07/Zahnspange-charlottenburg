@@ -14,9 +14,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.6rem;
+  position: fixed;
 }
 #site-wrapper {
-  overflow: scroll;
+  overflow: overlay;
   height: 100%;
 }
 @font-face {
