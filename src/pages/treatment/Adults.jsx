@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/pages/leistungen/Adults.scss";
 import Footer from "../../components/Footer";
 import WaveSection from "../../components/WaveSection";
+import TreatmentSection from "../../components/TreatmentSection";
 const Adults = () => {
   return (
     <div className="adults-page-container">
@@ -15,12 +16,116 @@ const Adults = () => {
           bieten wir zahlreiche unsichtbare Zahnkorrekturen an, die diesen Anspruch gerecht werden."
         />
       </section>
-      <section className="adults-secound-container"></section>
-      <section className="adults-third-container"></section>
-      <section className="adults-fourth-container"></section>
-      <section className="adults-fifth-container"></section>
-      <section className="adults-sexth-container"></section>
-      <section className="adults-seventh-container"></section>
+      <section className="adults-secound-container">
+        <TreatmentSection
+          image="url(../../imgs/arti.jpg)"
+          color="#1f5ca2"
+          header="Aligner Therapie:"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="adults-third-container">
+        <TreatmentSection
+          reverse="true"
+          image="url(../../imgs/arti2.jpg)"
+          color="#20ade4"
+          header="Ästhetische Keramik Brackets (AVL)"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="adults-fourth-container">
+        <TreatmentSection
+          image="url(../../imgs/fixed.jpg)"
+          color="#1f5ca2"
+          header="Lingualtechnik"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="adults-fifth-container">
+        <TreatmentSection
+          image="url(../../imgs/arti.jpg)"
+          reverse="true"
+          color="#20ade4"
+          header="Kombinierte kieferchirurgische Kieferorthopädische Therapie"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="adults-sixth-container">
+        <TreatmentSection
+          image="url(../../imgs/arti2.jpg)"
+          reverse="flase"
+          color="#1f5ca2"
+          header="Präprothetische Kieferorthopädie"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="adults-seventh-container">
+        <TreatmentSection
+          image="url(../../imgs/fixed.jpg)"
+          reverse="true"
+          color="#20ade4"
+          header="CMD-Therapie:"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="adults-sixth-container">
+        <TreatmentSection
+          image="url(../../imgs/arti2.jpg)"
+          reverse="flase"
+          color="#1f5ca2"
+          header="Digitale Planung"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="adults-seventh-container">
+        <TreatmentSection
+          image="url(../../imgs/fixed.jpg)"
+          reverse="true"
+          color="#20ade4"
+          header="Rezidiv-Behandlung"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
       <section className="adults-eight-container">
         <Footer />
       </section>

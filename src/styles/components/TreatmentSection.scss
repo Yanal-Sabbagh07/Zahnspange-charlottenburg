@@ -1,0 +1,40 @@
+@import "../variables.scss";
+.treatment-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  .treatment-left {
+    width: 50%;
+    height: 100%;
+    // background-color: red;
+    // background-image: url(../../imgs/hero3.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .treatment-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .tratment-right-title {
+      color: $white;
+      font-family: "Merri";
+      font-size: 3.4rem;
+      font-weight: 900;
+      line-height: 54px;
+      letter-spacing: 1.5px;
+      width: 90%;
+      text-align: left;
+    }
+    .tratment-right-txt {
+      color: $gray-1;
+      font-family: "Merri-sans";
+      width: 90%;
+      font-size: $large;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+}
