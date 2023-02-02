@@ -29,8 +29,8 @@
       width: 50%;
       height: 100%;
       background-image: url(../../../../public/imgs/hero3.webp);
-      background-size: cover;
-      background-position: right;
+      background-size: 120%;
+      background-position: center;
       //   filter: blur(1.5px);
       transition: all 0.5s ease;
       //   outline: calc(50vw / 2) solid #0009;
@@ -39,8 +39,7 @@
         // outline: 0vw solid #1f5ca2;
         // outline-offset: 0vw;
         background-position: left;
-
-        transform: scale(1.05);
+        background-size: 150%;
       }
     }
     .secound-right-container {
@@ -130,12 +129,13 @@
       width: 50%;
       height: 100%;
       background-image: url(../../../../public/imgs/kinder.jpg);
-      background-size: cover;
+      background-size: 120%;
       background-position: left;
+
       transition: all 0.5s ease;
       &:hover {
-        transform: scale(1.05);
-        background-position: right;
+        background-size: 150%;
+        background-position: center;
       }
     }
   }
