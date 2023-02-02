@@ -2,6 +2,7 @@ html {
   font-size: 62.5%;
   /* overflow: hidden; */
   /* height: 100%; */
+  /* position: relative; */
 }
 
 body {
@@ -15,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* -webkit-overflow-scrolling: touch; */
   font-size: 1.6rem;
-  position: fixed;
+  /* position: absolute; */
 }
 /* #site-wrapper {
   overflow: overlay;
