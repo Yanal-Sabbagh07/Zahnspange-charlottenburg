@@ -1,25 +1,26 @@
 html {
   font-size: 62.5%;
-  overflow: hidden;
-  height: 100%;
+  /* overflow: hidden; */
+  /* height: 100%; */
 }
 
 body {
-  overflow: hidden;
-  height: 100%;
+  /* overflow: hidden; */
+  /* height: 100%; */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* -webkit-overflow-scrolling: touch; */
   font-size: 1.6rem;
-  position: fixed;
+  /* position: fixed; */
 }
-#site-wrapper {
+/* #site-wrapper {
   overflow: overlay;
   height: 100%;
-}
+} */
 @font-face {
   font-family: "Merri";
   src: url("./fonts/Merriweather/Merriweather-Black.ttf"),
@@ -105,16 +106,16 @@ code {
 
 @media screen and (max-width: 480px) {
   html {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
-    position: relative;
+    /* position: relative; */
   }
   body {
     font-size: 1.4rem;
-    height: 100%;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    position: fixed;
+    /* height: 100%; */
+    /* overflow-y: scroll; */
+    /* -webkit-overflow-scrolling: touch; */
+    /* position: fixed; */
   }
 
   ::-webkit-scrollbar {
