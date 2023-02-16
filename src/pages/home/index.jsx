@@ -4,12 +4,13 @@ import Slider from "../../components/Slider";
 import Wave from "../../components/Wave";
 import Footer from "../../components/Footer";
 import Button from "../../components/Button";
+import { Link } from "react-router-dom";
 
 const index = () => {
   return (
     <div className="home-page">
       <section className="hero-section" id="/">
-        <Slider />
+        <Slider hero2="hero2" hero1="hero1" hero3="hero3" count={1} />
         <div className="welcome-title-mobile-container">
           <h1 className="welcome-title-mobile">
             Willkommen in unserer kieferorthopädischen Facharztpraxis in <br />
@@ -36,9 +37,9 @@ const index = () => {
             </p>
           </div>
           <div className="welcome-last-2">
-            <p className="welcome-owner-txt">
+            <Link to="/about" className="welcome-owner-txt">
               Ihr Praxisteam Dr. Nawras Darkazanly & Partner
-            </p>
+            </Link>
           </div>
           <div className="welcome-btn">
             <Button bgColor="#1f5ca2" color="#fff" />

@@ -3,7 +3,7 @@ import "../styles/components/Slider.scss";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Image from "react-image-webp";
-const Slider = () => {
+const Slider = (props) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [delay, setDelay] = useState(7000);
 
@@ -26,21 +26,21 @@ const Slider = () => {
 
   const handleClick = (direction) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : props.count);
       setDelay(50000);
     } else {
-      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < props.count ? slideIndex + 1 : 0);
       setDelay(50000);
     }
   };
   useInterval(() => {
-    if (slideIndex < 2) {
+    if (slideIndex < props.count) {
       setSlideIndex(slideIndex + 1);
     } else {
       setSlideIndex(0);
     }
   }, delay);
-
+  console.log(props);
   return (
     <div className="slider-container">
       <div className="arrow arrow-left" onClick={() => handleClick("left")}>
@@ -66,8 +66,8 @@ const Slider = () => {
         <div className="image-container">
           <div className="hero-image">
             <Image
-              src={require("../imgs/hero2.jpg")}
-              webp={require("../imgs/hero2.webp")}
+              src={require(`../imgs/${props.hero2}.jpg`)}
+              webp={require(`../imgs/${props.hero2}.webp`)}
               className="image1"
             />
           </div>
@@ -76,8 +76,8 @@ const Slider = () => {
         <div className="image-container">
           <div className="hero-image">
             <Image
-              src={require("../imgs/hero1.jpg")}
-              webp={require("../imgs/hero1.webp")}
+              src={require(`../imgs/${props.hero1}.jpg`)}
+              webp={require(`../imgs/${props.hero1}.webp`)}
               className="image2"
             />
           </div>
@@ -86,8 +86,8 @@ const Slider = () => {
         <div className="image-container">
           <div className="hero-image">
             <Image
-              src={require("../imgs/hero3.jpg")}
-              webp={require("../imgs/hero3.webp")}
+              src={require(`../imgs/${props.hero3}.jpg`)}
+              webp={require(`../imgs/${props.hero3}.webp`)}
               className="image3"
             />
           </div>

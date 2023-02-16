@@ -5,6 +5,8 @@
   scroll-behavior: smooth;
   overflow: overlay;
   scroll-snap-type: y mandatory;
+  position: relative;
+
   .first-container {
     scroll-snap-align: end;
     margin-top: 90px;
@@ -145,6 +147,8 @@
     width: 100%;
     height: calc(100vh - 90px);
     background-color: $dark-blue;
+    position: absolute;
+    z-index: 100;
   }
 }
 

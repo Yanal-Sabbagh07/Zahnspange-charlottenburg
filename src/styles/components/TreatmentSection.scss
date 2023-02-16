@@ -53,21 +53,24 @@
       justify-content: center;
 
       .tratment-right-title {
-        flex: 0.1;
+        flex: 0.15;
         font-size: $medium;
         line-height: 20px;
         width: 95%;
         // background-color: red;
         margin-bottom: 0px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
       }
       .tratment-right-txt {
-        flex: 0.9;
+        flex: 0.85;
         width: 95%;
         font-size: $small;
         line-height: 22px;
         // background-color: black;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
       }
     }

@@ -5,6 +5,7 @@
   scroll-behavior: smooth;
   overflow: overlay;
   scroll-snap-type: y mandatory;
+  position: relative;
   //   background-color: red;
   .kids-first-container {
     scroll-snap-align: end;
@@ -40,6 +41,8 @@
     align-items: center;
     justify-content: space-between;
     background-color: $dark-blue;
+    position: absolute;
+    z-index: 100;
   }
 }
 

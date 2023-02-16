@@ -96,6 +96,7 @@
         font-family: "Merri";
         cursor: pointer;
         color: $gray-7;
+        text-decoration: none;
       }
       .welcome-owner-txt:hover {
         color: $light-blue;
@@ -122,6 +123,9 @@
     height: 100%;
     background-color: $dark-blue;
     display: flex;
+  }
+  .la {
+    color: red !important;
   }
 }
 

@@ -5,6 +5,7 @@
   scroll-behavior: smooth;
   overflow: overlay;
   scroll-snap-type: y mandatory;
+  position: relative;
   .adults-first-container {
     scroll-snap-align: end;
     margin-top: 90px;
@@ -33,6 +34,8 @@
     align-items: center;
     justify-content: space-between;
     background-color: $dark-blue;
+    position: absolute;
+    z-index: 100;
   }
 }
 

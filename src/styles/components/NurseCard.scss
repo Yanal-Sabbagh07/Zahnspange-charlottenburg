@@ -1,0 +1,76 @@
+@import "../variables.scss";
+
+.card-container {
+  width: 25vw;
+  height: 70vh;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding-bottom: 90px;
+  // background-color: red;
+  // position: relative;
+  // border: 2px solid $gray-5;
+  .image-container {
+    width: 100%;
+    height: 75%;
+    // background-color: blue;
+    // border: 2px solid $gray-5;
+    .nurse-img {
+      width: 75%;
+      height: 100%;
+      border-radius: 24px;
+      box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    }
+  }
+  .details-container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    // opacity: 1;
+    // position: absolute;
+    // bottom: 0;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    // background-color: blue;
+    .details-wrapper {
+      height: 100%;
+      width: 85%;
+
+      .name-container {
+        //   background-color: blue;
+        height: 75%;
+        width: 100%;
+        font-size: $x-large;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $gray-6;
+        // border-bottom: 2px solid $gray-5;
+        // background-color: yellow;
+        font-weight: 900;
+        // padding-left: 8px;
+        font-family: "Merri";
+      }
+      .job-container {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $medium;
+
+        // border-top: 1px solid black;
+        // background-color: red;
+        p {
+          color: $gray-5;
+          // margin-left: 8px;
+        }
+      }
+    }
+  }
+}

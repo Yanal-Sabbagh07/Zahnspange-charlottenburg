@@ -12,7 +12,7 @@ export const Header = () => {
   return (
     <div
       className="header-container"
-      style={{ opacity: location.pathname === "/" ? ".85" : "1" }}
+      style={{ opacity: location.pathname === "/" ? ".88" : "1" }}
     >
       <div className="logo-container">
         <div className="logo-wrapper">

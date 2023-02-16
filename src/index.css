@@ -93,16 +93,17 @@ code {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 14px;
   height: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #a8a8a8;
+  background: #8c959f;
   border-radius: 8px;
 }
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
-  margin-top: 90px;
+  /* margin-top: 90px; */
+  display: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -114,7 +115,7 @@ code {
   body {
     font-size: 1.4rem;
     /* height: 100%; */
-    /* overflow-y: scroll; */
+    /* overflow-y: overlay; */
     /* -webkit-overflow-scrolling: touch; */
     /* position: fixed; */
   }
