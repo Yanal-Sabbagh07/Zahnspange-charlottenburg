@@ -30,20 +30,27 @@
     .secound-left-container {
       width: 50%;
       height: 100%;
-      background-image: url(../../../../public/imgs/hero3.webp);
+      // background-image: url(../../../../public/imgs/hero3.jpeg);
+      // background-size: cover;
+      // background-position: top;
+      // transition: all 0.5s ease;
+      .adult-img{
+        width: 100%;
+      height: 100%;
+        background-image: url(../../../../public/imgs/hero2.webp);
       background-size: 150%;
+      
       background-position: top;
-      //   filter: blur(1.5px);
       transition: all 0.5s ease;
-      //   outline: calc(50vw / 2) solid #0009;
-      //   outline-offset: calc(50vw / -2);
-      &:hover {
+      &:hover  {
         // outline: 0vw solid #1f5ca2;
         // outline-offset: 0vw;
-        background-position: left;
-        background-size: 155%;
+       background-size: 165%;
         transition: all 0.7s ease;
       }
+      }
+    
+     
     }
     .secound-right-container {
       width: 50%;
@@ -131,14 +138,13 @@
     .third-right-container {
       width: 50%;
       height: 100%;
-      background-image: url(../../../../public/imgs/kinder.jpg);
+      background-image: url(../../../../public/imgs/hero1.webp);
       background-size: 150%;
-      background-repeat: no-repeat;
-      background-position: top;
+      background-position: center;
       transition: all 0.7s ease;
       &:hover {
-        background-size: 150%;
-        background-position: right;
+        background-position: center;
+        background-size: 160%;
       }
     }
   }

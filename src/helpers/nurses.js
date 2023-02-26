@@ -1,46 +1,55 @@
 const nurses = [
   {
     id: 1,
-    name: "Stephanie Müller",
-    job: "Zahnmedizinische Fachangestellte",
+    name: "S. Wegener",
+    job: "Praxismanagement Buchhaltung",
     img: "nurse1",
   },
   {
     id: 2,
-    name: "Stephanie Müller",
-    job: "Zahnmedizinische Fachangestellte",
+    name: "L. Waal",
+    job: "Qualitätsmanagement Abrechnung",
     img: "nurse2",
   },
   {
     id: 3,
-    name: "Stephanie Müller",
-    job: "Zahnmedizinische Fachangestellte",
+    name: "L. Miari",
+    job: "Verwaltung Rezeption",
     img: "nurse3",
   },
   {
+    
     id: 4,
-    name: "Stephanie Müller",
+    name: "Y. Amrai",
     job: "Zahnmedizinische Fachangestellte",
     img: "nurse4",
   },
   {
-    id: 6,
-    name: "Stephanie Müller",
-    job: "Zahnmedizinische Fachangestellte",
-    img: "nurse6",
-  },
-  {
     id: 5,
-    name: "Stephanie Müller",
+    name: "D. Khoshnaw",
     job: "Zahnmedizinische Fachangestellte",
     img: "nurse5",
   },
   {
+    id: 6,
+    name: "M. Amer",
+    job: "Zahnmedizinische Fachangestellte Qualitatsmaanagement",
+    img: "nurse6",
+  },
+  
+  {
     id: 7,
-    name: "Stephanie Müller",
-    job: "Zahnmedizinische Fachangestellte",
+    name: "K. Soumah",
+    job: "Auszubildende",
     img: "nurse7",
   },
+  {
+    id: 8,
+    name: "A. Kalanderi",
+    job: "Zahntechniker",
+    img: "nurse8",
+  },
+ 
 ];
 
 export default nurses;

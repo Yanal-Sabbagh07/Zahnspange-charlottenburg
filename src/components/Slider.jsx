@@ -66,7 +66,7 @@ const Slider = (props) => {
         <div className="image-container">
           <div className="hero-image">
             <Image
-              src={require(`../imgs/${props.hero2}.jpg`)}
+              src={require(`../imgs/${props.hero2}${props.type}`)}
               webp={require(`../imgs/${props.hero2}.webp`)}
               className="image1"
             />
@@ -76,7 +76,7 @@ const Slider = (props) => {
         <div className="image-container">
           <div className="hero-image">
             <Image
-              src={require(`../imgs/${props.hero1}.jpg`)}
+              src={require(`../imgs/${props.hero1}${props.type}`)}
               webp={require(`../imgs/${props.hero1}.webp`)}
               className="image2"
             />
@@ -86,8 +86,26 @@ const Slider = (props) => {
         <div className="image-container">
           <div className="hero-image">
             <Image
-              src={require(`../imgs/${props.hero3}.jpg`)}
+              src={require(`../imgs/${props.hero3}${props.type}`)}
               webp={require(`../imgs/${props.hero3}.webp`)}
+              className="image3"
+            />
+          </div>
+        </div>
+        <div className="image-container">
+          <div className="hero-image">
+            <Image
+              src={require(`../imgs/${props.hero4}${props.type}`)}
+              webp={require(`../imgs/${props.hero4}.webp`)}
+              className="image3"
+            />
+          </div>
+        </div>
+        <div className="image-container">
+          <div className="hero-image">
+            <Image
+              src={require(`../imgs/${props.hero5}${props.type}`)}
+              webp={require(`../imgs/${props.hero5}.webp`)}
               className="image3"
             />
           </div>

@@ -30,7 +30,7 @@ function Collapsable() {
         <AccordionDetails className="row">
           <li className="col">2003-2009 </li>
           <li className="col2">
-            Studium und Approbation als Zahnarzt, Universität Mainz //{" "}
+            Studium und Approbation als Zahnarzt, Universität Mainz 
           </li>
         </AccordionDetails>
         <AccordionDetails className="row">

@@ -4,7 +4,7 @@ const index = () => {
   return (
     <div>
       <div>
-        <h1>contact</h1>
+        <h1>Wir freuen uns von Sie zu hören</h1>
       </div>
     </div>
   );

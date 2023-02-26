@@ -58,7 +58,7 @@ const Navigation = () => {
               Leistungen
             </Link>
           </li>
-          <li className="navigation__item">
+          {/* <li className="navigation__item">
             <Link
               to="/contact"
               className="navigation__link"
@@ -66,10 +66,10 @@ const Navigation = () => {
             >
               Ablauf einer Behandlung
             </Link>
-          </li>
+          </li> */}
           <li className="navigation__item">
             <Link
-              to="/services"
+              to="/contact"
               className="navigation__link"
               onClick={() => setnavOpen(false)}
             >

@@ -29,7 +29,9 @@ const index = () => {
         />
       </section>
       <section className="secound-container">
-        <div className="secound-left-container"></div>
+        <div className="secound-left-container">
+          <div className="adult-img"></div>
+        </div>
         <div className="secound-right-container">
           <div className="adults-title-container">
             <h1 className="adults-title">Erwachsenenbehandlung</h1>

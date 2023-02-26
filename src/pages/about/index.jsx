@@ -9,7 +9,8 @@ const About = () => {
   return (
     <div className="aboutus-page-container">
       <section className="slider-contianer">
-        <Slider hero2="team" hero1="hero2" hero3="hero3" count={2} />
+        <Slider hero2="25" hero1="29" hero3="26" hero4="21" hero5="23" count={4} type=".png" />
+        {/* <div className="about-hero-img"></div> */}
       </section>
       <section className="team-section-container">
         <div className="title-container">
@@ -75,9 +76,26 @@ const About = () => {
               job={nurses[5].job}
               img={nurses[5].img}
             />
+            <NurseCard
+              name={nurses[6].name}
+              job={nurses[6].job}
+              img={nurses[6].img}
+            />
+            <NurseCard
+              name={nurses[7].name}
+              job={nurses[7].job}
+              img={nurses[7].img}
+            />
           </div>
         </div>
+        {/* <div className="title-container">
+          <h1 className="title">Unsere Praxis</h1>
+        </div> */}
       </section>
+
+      {/* <section className="slider-contianer">
+        <Slider hero2="25" hero1="29" hero3="26" count={2} type=".png" />
+      </section> */}
     </div>
   );
 };
