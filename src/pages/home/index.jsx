@@ -10,7 +10,17 @@ const index = () => {
   return (
     <div className="home-page">
       <section className="hero-section" id="/">
-        <Slider hero2="6" hero1="hero2" hero3="hero1"  hero4="hero2" hero5="hero2" count={2} type=".jpg" />
+        <Slider hero2="6" 
+          hero1="hero2" 
+          hero1Cn="image2" 
+          hero3="hero1" 
+          hero3Cn="image3"  
+          hero4="hero2" 
+          hero4Cn="chairs" 
+          hero5="hero2"
+          hero5Cn="rooms"
+          count={2} 
+          type=".jpg" />
         <div className="welcome-title-mobile-container">
           <h1 className="welcome-title-mobile">
             Willkommen in unserer kieferorthopädischen Facharztpraxis in <br />

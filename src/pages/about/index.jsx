@@ -9,7 +9,18 @@ const About = () => {
   return (
     <div className="aboutus-page-container">
       <section className="slider-contianer">
-        <Slider hero2="25" hero1="29" hero3="26" hero4="21" hero5="23" count={4} type=".png" />
+        <Slider 
+          hero2="25" 
+          hero1="29" 
+          hero1Cn="image-chair" 
+          hero3="26" 
+          hero3Cn="zahnputz" 
+          hero4="21"
+          hero4Cn="chairs"
+          hero5="23" 
+          hero5Cn="rooms"
+          count={4} 
+          type=".png" />
         {/* <div className="about-hero-img"></div> */}
       </section>
       <section className="team-section-container">

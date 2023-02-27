@@ -84,11 +84,35 @@
       object-fit: cover;
       object-position: 50% 70%;
     }
+    .image-chair {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 25%;
+    }
+    .zahnputz{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 60%;
+    }
+    .chairs{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 55%;
+    }
     .image3 {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: 50% 30%;
+    }
+    .rooms{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 60%;
     }
   }
 }
@@ -142,6 +166,7 @@
         object-fit: cover;
         object-position: 50% 50%;
       }
+  
       .image3 {
         width: 100%;
         height: 100%;

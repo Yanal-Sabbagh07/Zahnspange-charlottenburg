@@ -78,7 +78,7 @@ const Slider = (props) => {
             <Image
               src={require(`../imgs/${props.hero1}${props.type}`)}
               webp={require(`../imgs/${props.hero1}.webp`)}
-              className="image2"
+              className={props.hero1Cn}
             />
           </div>
         </div>
@@ -88,7 +88,7 @@ const Slider = (props) => {
             <Image
               src={require(`../imgs/${props.hero3}${props.type}`)}
               webp={require(`../imgs/${props.hero3}.webp`)}
-              className="image3"
+              className={props.hero3Cn}
             />
           </div>
         </div>
@@ -97,7 +97,7 @@ const Slider = (props) => {
             <Image
               src={require(`../imgs/${props.hero4}${props.type}`)}
               webp={require(`../imgs/${props.hero4}.webp`)}
-              className="image3"
+              className={props.hero4Cn}
             />
           </div>
         </div>
@@ -106,7 +106,7 @@ const Slider = (props) => {
             <Image
               src={require(`../imgs/${props.hero5}${props.type}`)}
               webp={require(`../imgs/${props.hero5}.webp`)}
-              className="image3"
+              className={props.hero5Cn}
             />
           </div>
         </div>
