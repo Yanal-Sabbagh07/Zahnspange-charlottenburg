@@ -19,6 +19,10 @@ const index = () => {
           hero4Cn="chairs" 
           hero5="hero2"
           hero5Cn="rooms"
+          hero6="hero2"
+          hero6Cn="rooms"
+          hero7="hero2"
+          hero7Cn="rooms"
           count={2} 
           type=".jpg" />
         <div className="welcome-title-mobile-container">

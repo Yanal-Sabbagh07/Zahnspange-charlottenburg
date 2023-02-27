@@ -60,6 +60,8 @@ const Slider = (props) => {
               ? "translateX(-400vw)"
               : slideIndex === 5
               ? "translateX(-500vw)"
+              : slideIndex === 6
+              ? "translateX(-600vw)"
               : "translateX(0)",
         }}
       >
@@ -110,6 +112,25 @@ const Slider = (props) => {
             />
           </div>
         </div>
+        <div className="image-container">
+          <div className="hero-image">
+            <Image
+              src={require(`../imgs/${props.hero6}${props.type}`)}
+              webp={require(`../imgs/${props.hero6}.webp`)}
+              className={props.hero6Cn}
+            />
+          </div>
+        </div>
+        <div className="image-container">
+          <div className="hero-image">
+            <Image
+              src={require(`../imgs/${props.hero7}${props.type}`)}
+              webp={require(`../imgs/${props.hero7}.webp`)}
+              className={props.hero7Cn}
+            />
+          </div>
+        </div>
+        
       </div>
       <div className="arrow arrow-right" onClick={() => handleClick("right")}>
         <ArrowForwardIosIcon className="arrow-icon" />

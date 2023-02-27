@@ -11,15 +11,19 @@ const About = () => {
       <section className="slider-contianer">
         <Slider 
           hero2="25" 
-          hero1="29" 
-          hero1Cn="image-chair" 
+          hero1="27" 
+          hero1Cn="rooms" 
           hero3="26" 
           hero3Cn="zahnputz" 
-          hero4="21"
-          hero4Cn="chairs"
+          hero4="24"
+          hero4Cn="rooms"
           hero5="23" 
           hero5Cn="rooms"
-          count={4} 
+          hero6="21"
+          hero6Cn="chairs"
+          hero7="29" 
+          hero7Cn="image-chair" 
+          count={6} 
           type=".png" />
         {/* <div className="about-hero-img"></div> */}
       </section>
