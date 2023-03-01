@@ -30,7 +30,7 @@ const index = () => {
         <div className="welcome-title-mobile-container">
           <h1 className="welcome-title-mobile">
             Willkommen in unserer kieferorthopädischen Facharztpraxis in <br />
-            Berlin-Charlottenburg.
+            <span>Berlin-Charlottenburg</span>
           </h1>
         </div>
       </section>
