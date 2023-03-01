@@ -142,8 +142,7 @@
     width: 100%;
     height: calc(100vh - 90px);
     background-color: $dark-blue;
-    position: absolute;
-    z-index: 100;
+    
   }
 }
 
@@ -260,7 +259,7 @@
     }
     .leistungen-footer-container {
       width: 100%;
-      height: calc(100vh - 90px);
+      height: calc(100dvh - 160px);
     }
   }
 }
