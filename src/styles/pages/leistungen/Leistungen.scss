@@ -154,11 +154,11 @@
     width: 100vw;
     height: 100%;
     .first-container {
-      height: calc(100dvh - 160px);
+      height: calc(100lvh - 160px);
     }
     .secound-container {
       width: 100%;
-      height: calc(100dvh - 160px);
+      height: calc(100lvh - 160px);
       color: white;
       display: flex;
       flex-direction: column;
@@ -214,7 +214,7 @@
     }
     .third-container {
       width: 100%;
-      height: calc(100dvh - 160px);
+      height: calc(100lvh - 160px);
       display: flex;
       flex-direction: column-reverse;
 
@@ -260,7 +260,7 @@
     }
     .leistungen-footer-container {
       width: 100%;
-      height: calc(100dvh - 160px);
+      height: calc(100lvh - 160px);
     }
   }
 }
