@@ -9,16 +9,6 @@ const index = () => {
   return (
     <div className="leistungen-main-container">
       <section className="first-container">
-        {/* <Wave header="Unsere Leistungen für Sie" />
-        <div className="leistungen-content-container">
-          <p className="leistungen-content">
-            Unsere Fachpraxis in Charlottenburg bietet Kindern, Jugendlichen und
-            Erwachsenen professionelle Leistungen auf dem neusten Stand der
-            Technik. Alle Behandler haben jahrzehntelange kieferorthopädische
-            Erfahrung. Schöne und gerade Zähne sind in jedem Alter möglich, man
-            ist nie zu alt für eine kieferorthopädische Behandlung
-          </p>
-        </div> */}
         <WaveSection
           header="Unsere Leistungen für Sie"
           content="Unsere Fachpraxis in Charlottenburg bietet Kindern, Jugendlichen und
