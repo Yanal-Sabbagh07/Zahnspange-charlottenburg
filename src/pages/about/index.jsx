@@ -5,18 +5,20 @@ import Slider from "../../components/Slider";
 import Collapsable from "../../components/Collapsable";
 import NurseCard from "../../components/NurseCard";
 import nurses from "../../helpers/nurses";
+import Footer from "../../components/Footer";
 const About = () => {
   return (
     <div className="aboutus-page-container">
       <section className="slider-contianer">
         <Slider 
-          hero2="25" 
+          hero2="25"
+          hero2Cn="waiting1"
           hero1="27" 
-          hero1Cn="rooms" 
+          hero1Cn="waiting2" 
           hero3="26" 
           hero3Cn="zahnputz" 
           hero4="24"
-          hero4Cn="rooms"
+          hero4Cn="waiting3"
           hero5="23" 
           hero5Cn="rooms"
           hero6="21"
@@ -106,8 +108,15 @@ const About = () => {
         {/* <div className="title-container">
           <h1 className="title">Unsere Praxis</h1>
         </div> */}
-      </section>
+        
 
+        
+      </section>
+      
+      <div className="about-footer">
+        <Footer />
+        </div>
+      
       {/* <section className="slider-contianer">
         <Slider hero2="25" hero1="29" hero3="26" count={2} type=".png" />
       </section> */}

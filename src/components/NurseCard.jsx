@@ -11,7 +11,7 @@ const NurseCard = (props) => {
       ></div> */}
       <div className="image-container">
         <img
-          src={require(`../imgs/${props.img}.png`)}
+          src={require(`../imgs/${props.img}.jpg`)}
           alt="nurse"
           className="nurse-img"
         />

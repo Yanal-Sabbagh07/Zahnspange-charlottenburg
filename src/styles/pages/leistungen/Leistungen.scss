@@ -4,11 +4,11 @@
   height: 100vh;
   scroll-behavior: smooth;
   overflow: overlay;
-  scroll-snap-type: y mandatory;
+  // scroll-snap-type: y mandatory;
   position: relative;
 
   .first-container {
-    scroll-snap-align: end;
+    // scroll-snap-align: end;
     margin-top: 90px;
     width: 100%;
     height: calc(100% - 90px);
@@ -20,7 +20,7 @@
   }
   .secound-container {
     scroll-snap-align: end;
-    overflow: hidden;
+    // overflow: hidden;
     width: 100%;
     height: calc(100vh - 90px);
     color: white;
@@ -38,7 +38,7 @@
         width: 100%;
       height: 100%;
         background-image: url(../../../../public/imgs/hero2.webp);
-      background-size: 150%;
+      background-size: 152%;
       
       background-position: top;
       transition: all 0.5s ease;

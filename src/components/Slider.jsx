@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../styles/components/Slider.scss";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import Image from "react-image-webp";
+// import Image from "react-image-webp";
 const Slider = (props) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [delay, setDelay] = useState(7000);
@@ -26,10 +26,10 @@ const Slider = (props) => {
 
   const handleClick = (direction) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : props.count);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 0);
       setDelay(50000);
     } else {
-      setSlideIndex(slideIndex < props.count ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < props.count ? slideIndex + 1 : props.count);
       setDelay(50000);
     }
   };
@@ -40,7 +40,7 @@ const Slider = (props) => {
       setSlideIndex(0);
     }
   }, delay);
-  console.log(props);
+  // console.log(props);
   return (
     <div className="slider-container">
       <div className="arrow arrow-left" onClick={() => handleClick("left")}>
@@ -67,19 +67,19 @@ const Slider = (props) => {
       >
         <div className="image-container">
           <div className="hero-image">
-            <Image
-              src={require(`../imgs/${props.hero2}${props.type}`)}
-              webp={require(`../imgs/${props.hero2}.webp`)}
-              className="image1"
+            <div
+              // src={require(`../imgs/${props.hero2}${props.type}`)}
+              // webp={require(`../imgs/${props.hero2}.webp`)}
+              className={props.hero2Cn}
             />
           </div>
         </div>
 
         <div className="image-container">
           <div className="hero-image">
-            <Image
-              src={require(`../imgs/${props.hero1}${props.type}`)}
-              webp={require(`../imgs/${props.hero1}.webp`)}
+            <div
+              // src={require(`../imgs/${props.hero1}${props.type}`)}
+              // webp={require(`../imgs/${props.hero1}.webp`)}
               className={props.hero1Cn}
             />
           </div>
@@ -87,47 +87,27 @@ const Slider = (props) => {
 
         <div className="image-container">
           <div className="hero-image">
-            <Image
-              src={require(`../imgs/${props.hero3}${props.type}`)}
-              webp={require(`../imgs/${props.hero3}.webp`)}
-              className={props.hero3Cn}
-            />
+            <div className={props.hero3Cn}/>
           </div>
         </div>
         <div className="image-container">
           <div className="hero-image">
-            <Image
-              src={require(`../imgs/${props.hero4}${props.type}`)}
-              webp={require(`../imgs/${props.hero4}.webp`)}
-              className={props.hero4Cn}
-            />
+          <div className={props.hero4Cn}/>
           </div>
         </div>
         <div className="image-container">
           <div className="hero-image">
-            <Image
-              src={require(`../imgs/${props.hero5}${props.type}`)}
-              webp={require(`../imgs/${props.hero5}.webp`)}
-              className={props.hero5Cn}
-            />
+          <div className={props.hero5Cn}/>
           </div>
         </div>
         <div className="image-container">
           <div className="hero-image">
-            <Image
-              src={require(`../imgs/${props.hero6}${props.type}`)}
-              webp={require(`../imgs/${props.hero6}.webp`)}
-              className={props.hero6Cn}
-            />
+          <div className={props.hero6Cn}/>
           </div>
         </div>
         <div className="image-container">
           <div className="hero-image">
-            <Image
-              src={require(`../imgs/${props.hero7}${props.type}`)}
-              webp={require(`../imgs/${props.hero7}.webp`)}
-              className={props.hero7Cn}
-            />
+          <div className={props.hero7Cn}/>
           </div>
         </div>
         

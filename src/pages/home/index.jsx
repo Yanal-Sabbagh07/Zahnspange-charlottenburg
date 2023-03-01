@@ -10,7 +10,9 @@ const index = () => {
   return (
     <div className="home-page">
       <section className="hero-section" id="/">
-        <Slider hero2="6" 
+        <Slider 
+          hero2="6" 
+          hero2Cn="image1"
           hero1="hero2" 
           hero1Cn="image2" 
           hero3="hero1" 
