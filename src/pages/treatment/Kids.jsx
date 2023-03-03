@@ -18,7 +18,7 @@ const Kids = () => {
       </section>
       <section className="kids-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/aligner.jpg)"
+          image="url(../../imgs/Frühbehandlung.jpeg)"
           color="#1f5ca2"
           header="Frühbehandlung:"
           text="Es gibt keinen zu frühen Besuch in der Kieferorthopädie. Auch im Milchgebiss alter ist ratsam, 
@@ -30,7 +30,7 @@ const Kids = () => {
       <section className="kids-treatment-container">
         <TreatmentSection
           reverse="true"
-          image="url(../../imgs/arti2.jpg)"
+          image="url(../../imgs/Herausnehmbare.jpeg)"
           color="#20ade4"
           header="Herausnehmbare Zahnspange:"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
@@ -43,7 +43,7 @@ const Kids = () => {
       </section>
       <section className="kids-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/fixed.jpg)"
+          image="url(../../imgs/feste.png)"
           color="#1f5ca2"
           header="Feste Zahnspange:"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
@@ -56,7 +56,7 @@ const Kids = () => {
       </section>
       <section className="kids-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/arti.jpg)"
+          image="url(../../imgs/AlignerfürTeenager.png)"
           reverse="true"
           color="#20ade4"
           header="Alginer für Teen:"
@@ -70,7 +70,7 @@ const Kids = () => {
       </section>
       <section className="kids-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/arti2.jpg)"
+          image="url(../../imgs/skelettale.png)"
           reverse="flase"
           color="#1f5ca2"
           header="Skeletale Verankerung (AVL):"
@@ -83,7 +83,7 @@ const Kids = () => {
       </section>
       <section className="kids-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/fixed.jpg)"
+          image="url(../../imgs/festenRetainer.png)"
           reverse="true"
           color="#20ade4"
           header="Feste Retainer:"
