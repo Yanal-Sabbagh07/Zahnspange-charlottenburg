@@ -90,6 +90,25 @@ const Footer = () => {
                   <Button bgColor="#fff" color="#424a53" />
                 </div>
               </div>
+              <div className="opening-times-mobile">
+                <div className="open-times">Öffnungszeiten</div>
+                <div className="open-times">
+                  <div className="day">Mo :</div>
+                  <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
+                </div>
+                <div className="open-times">
+                  <div className="day">Di :</div>
+                  <div className="time"> 09:00 - 12:00 & 14:00 - 18:00</div>
+                </div>
+                <div className="open-times">
+                  <div className="day">Mi - Do :</div>
+                  <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
+                </div>
+                <div className="open-times">
+                  <div className="day">Fr :</div>
+                  <div className="time"> Nach vereinbarung</div>
+                </div>
+              </div>
             </div>
              
           </div>

@@ -25,7 +25,7 @@
 
       .google-map {
         width: 83%;
-        height: 65%;
+        height: 70%;
         border-radius: 24px;
         box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
         border: 8px solid $light-blue;
@@ -52,12 +52,12 @@
           // background-color: blue;
           .footer-left-details {
             // border: 1px solid white;
-            width: 100%;
-            height: 50%;
+            width:100%;
+            height: 52%;
             text-align: left;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
             font-family: "Merri-sans";
             font-weight: 300;
             font-size: $medium;
@@ -112,6 +112,9 @@
                 width: 100%;
               }
             }
+           }
+           .opening-times-mobile{
+            display: none;
            }
         }
         
@@ -232,42 +235,46 @@
 @media screen and (max-width: 480px) {
   .footer-container {
     justify-content: space-between;
+    // background-color: red;
     .footer-content-container {
-      height: 80%;
+      height : 85%;
       flex-direction: column;
       justify-content: space-evenly;
-      // background-color: #fff;
+      // background-color: black;
       .google-map-container {
         // background-color: red;
-        flex: 0.8;
+        flex: 0.6;
         align-items: flex-end;
         .google-map {
           width: 92.5%;
-          height: 90%;
+          height: 95%;
           border: 4px solid $light-blue;
           border-radius: 8px;
         }
       }
       .footer-content-top-container {
-        flex: 1.2;
+        flex: 1.5;
         display: flex;
         flex-direction: column;
-        // background-color: blue;
+        // background-color: black;
         .footer-content-top {
-          height: 70%;
-          // background-color: red;
+          height: 90%;
+          // background-color: green;
           .footer-content-left {
-            // background-color: black;
+            // background-color: red;
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             .footer-left-details {
-              font-size: $x-small;
-              height: 90%;
+              // background-color: black;
+              font-size: $small;
+              height: 50%;
               .details-name {
+                justify-content: flex-start;
                 height: 20%;
                 .name-icon {
+                  padding-right: 8px;
                   flex: 0.1;
                   .footer-icon {
                     font-size: $medium;
@@ -279,13 +286,14 @@
                   color: white;
                 }
                 .name {
-                  font-size: $x-small;
+                  font-size: $small;
                 }
                 .name-txt {
-                  flex: 0.5;
-                  font-size: $x-small;
+                  flex: 0.8;
+                  font-size: $small;
                 }
                 .open-times {
+                  display: none;
                   flex: 0.52;
                   flex-direction: column;
                   justify-content: flex-start;
@@ -309,30 +317,56 @@
                 justify-content: flex-start;
 
                 .name-txt {
-                  flex: 0.7;
+                  flex: 0.9;
                 }
               }
             }
             .last-open-times {
               display: none;
             }
+            .opening-times-mobile{
+              // background-color: blue;
+              // padding-left: 24px;
+              font-size: $small;
+              width: 100%;
+              // text-align: left;
+              height: 50%;
+              display: flex;  
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: space-evenly;
+              .open-times{
+                display: flex;
+                margin-left: 12px;
+                .time{
+                  margin-left: 16px;
+                }
+                
+              }
+             }
           }
           
         }
         .btn-footer-mobile {
           // background-color: #fff;
           width: 100%;
-          height: 10%;
+          height: 13%;
           display: block;
           // background-color: yellow;
           display: flex;
-          align-items: flex-start;
+          align-items: center;
           justify-content: center;
+          
+          .termin-button{
+            width: 95%;
+            height: 80%;
+            // margin-left: 8px;
+          }
         }
       }
     }
     .footer-content-bottom {
-      height: 15%;
+      height: 12%;
       flex-direction: column-reverse;
       justify-content: space-evenly;
       // background-color: #fff;
