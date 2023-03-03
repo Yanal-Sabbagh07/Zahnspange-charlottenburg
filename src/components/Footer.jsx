@@ -40,7 +40,7 @@ const Footer = () => {
                     Richard-Wagner-Platz 3 <br /> 10585 Berlin
                   </div>
                   <div className="open-times">
-                    <div className="day">Mo - Do :</div>
+                    <div className="day">Mo :</div>
                     <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
                   </div>
                 </div>
@@ -51,8 +51,8 @@ const Footer = () => {
                   </div>
                   <div className="name-txt">030 - 3414 060</div>
                   <div className="open-times">
-                    <div className="day">Fr :</div>
-                    <div className="time"> Nach Vereinbarung</div>
+                    <div className="day">Di :</div>
+                    <div className="time"> 09:00 - 12:00 & 14:00 - 18:00</div>
                   </div>
                 </div>
 
@@ -61,7 +61,10 @@ const Footer = () => {
                     <LocalPrintshopIcon className="footer-icon" />{" "}
                   </div>
                   <div className="name-txt">030 - 3419 787</div>
-                  <div className="open-times"></div>
+                  <div className="open-times">
+                    <div className="day">Mi - Do :</div>
+                    <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
+                  </div>
                 </div>
 
                 <div className="details-name email-name">
@@ -71,15 +74,26 @@ const Footer = () => {
                   <div className="name-txt">
                     info@zahnspange-charlottenburg.de
                   </div>
-                  <div className="open-times last-open-times">
+                  {/* <div className="open-times last-open-times">
                     <div className="btn-footer-descktop">
                       <Button bgColor="#fff" color="#424a53" />
                     </div>
+                  </div> */}
+                  <div className="open-times">
+                    <div className="day">Fr :</div>
+                    <div className="time"> Nach vereinbarung</div>
                   </div>
                 </div>
               </div>
+              <div className="last-open-times">
+                <div className="btn-footer-descktop">
+                  <Button bgColor="#fff" color="#424a53" />
+                </div>
+              </div>
             </div>
+             
           </div>
+          
           <div className="btn-footer-mobile">
             <Button bgColor="#fff" color="#424a53" />
           </div>
