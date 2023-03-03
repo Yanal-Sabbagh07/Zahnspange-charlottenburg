@@ -18,7 +18,7 @@ const index = () => {
           hero3="hero1" 
           hero3Cn="image3"  
           hero4="hero2" 
-          hero4Cn="chairs" 
+          hero4Cn="image3" 
           hero5="hero2"
           hero5Cn="rooms"
           hero6="hero2"

@@ -6,6 +6,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const Slider = (props) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [delay, setDelay] = useState(7000);
+  const [arrowClicked, setArrowClicked] = useState(false);
 
   function useInterval(callback, delay) {
     const savedCallback = useRef();
@@ -25,6 +26,7 @@ const Slider = (props) => {
   }
 
   const handleClick = (direction) => {
+    setArrowClicked(true);
     if (direction === "left") {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 0);
       setDelay(50000);
@@ -63,6 +65,7 @@ const Slider = (props) => {
               : slideIndex === 6
               ? "translateX(-600vw)"
               : "translateX(0)",
+              transition: arrowClicked && "all .5s ease"
         }}
       >
         <div className="image-container">
@@ -87,12 +90,12 @@ const Slider = (props) => {
 
         <div className="image-container">
           <div className="hero-image">
-            <div className={props.hero3Cn}/>
+            <div className={props.hero4Cn}/>
           </div>
         </div>
         <div className="image-container">
           <div className="hero-image">
-          <div className={props.hero4Cn}/>
+          <div className={props.hero3Cn}/>
           </div>
         </div>
         <div className="image-container">

@@ -9,14 +9,15 @@ const TreatmentSection = (props) => {
         backgroundColor: props.color,
       }}
     >
-      <div
-        className="treatment-left"
-        style={{ backgroundImage: props.image }}
-      ></div>
+      
       <div className="treatment-right">
         <h1 className="tratment-right-title">{props.header}</h1>
         <p className="tratment-right-txt">{props.text}</p>
       </div>
+      <div
+        className="treatment-left"
+        style={{ backgroundImage: props.image }}
+      ></div>
     </div>
   );
 };

@@ -18,7 +18,7 @@ const Adults = () => {
       </section>
       <section className="adults-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/aligner.jpg)"
+          image="url(../../imgs/AlignerTherapie.jpeg)"
           color="#1f5ca2"
           header="Aligner Therapie:"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
@@ -32,7 +32,7 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           reverse="true"
-          image="url(../../imgs/arti2.jpg)"
+          image="url(../../imgs/Ästhetische.png)"
           color="#20ade4"
           header="Ästhetische Keramik Brackets (AVL)"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
@@ -43,36 +43,11 @@ const Adults = () => {
           gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
         />
       </section>
+      
+      
       <section className="adults-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/fixed.jpg)"
-          color="#1f5ca2"
-          header="Lingualtechnik"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
-          in der Regel der Anfang der Retentionsphase ist. 
-          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
-          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
-          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
-          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
-        />
-      </section>
-      <section className="adults-treatment-container">
-        <TreatmentSection
-          image="url(../../imgs/arti.jpg)"
-          reverse="true"
-          color="#20ade4"
-          header="Kombinierte kieferchirurgische Kieferorthopädische Therapie"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
-          in der Regel der Anfang der Retentionsphase ist. 
-          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
-          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
-          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
-          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
-        />
-      </section>
-      <section className="adults-treatment-container">
-        <TreatmentSection
-          image="url(../../imgs/arti2.jpg)"
+          image="url(../../imgs/präprothetische.jpeg)"
           reverse="flase"
           color="#1f5ca2"
           header="Präprothetische Kieferorthopädie"
@@ -86,10 +61,10 @@ const Adults = () => {
       </section>
       <section className="adults-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/fixed.jpg)"
+          image="url(../../imgs/kombinierte1.png)"
           reverse="true"
           color="#20ade4"
-          header="CMD-Therapie:"
+          header="Kombinierte kieferchirurgische Kieferorthopädische Therapie"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
           in der Regel der Anfang der Retentionsphase ist. 
           Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
@@ -100,7 +75,7 @@ const Adults = () => {
       </section>
       <section className="adults-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/arti2.jpg)"
+          image="url(../../imgs/digitale.png)"
           reverse="flase"
           color="#1f5ca2"
           header="Digitale Planung"
@@ -114,7 +89,7 @@ const Adults = () => {
       </section>
       <section className="adults-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/fixed.jpg)"
+          image="url(../../imgs/Redzidiv-Behandlung.png)"
           reverse="true"
           color="#20ade4"
           header="Rezidiv-Behandlung"
