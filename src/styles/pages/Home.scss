@@ -118,10 +118,12 @@
   }
 }
 .hero-section3 {
-  height: calc(100vh - 94px);
+  height: calc(100vh - 90px);
   background-color: #fff;
   scroll-snap-align: end;
   margin-top: 94px;
+  background-color: $dark-blue;
+  display: flex;
 
   .last-section-container {
     width: 100%;
@@ -141,6 +143,7 @@
     width: 100vh;
     height: 100%;
     // background-color: $gray-0;
+    margin-bottom: 60px;
   }
   .hero-section {
     width: 100%;
@@ -251,13 +254,6 @@
     }
   }
   .hero-section3 {
-    height: calc(120vh);
-    // margin-top: 0px;
-    .last-section-container {
-      // margin-top: 90px;
-      // background-color: red;
-      height: calc(100% - 60px);
-      display: flex;
-    }
+    height: calc(120vh - 60px);
   }
 }
