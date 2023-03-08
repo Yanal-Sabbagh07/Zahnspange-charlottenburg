@@ -273,21 +273,27 @@
                 justify-content: flex-start;
                 height: 20%;
                 .name-icon {
-                  padding-right: 8px;
+                  padding-right: 2px;
                   flex: 0.1;
                   .footer-icon {
                     font-size: $xx-large;
                   }
                 }
                 .rose {
-                  width: 36px;
+                  width: 26px;
                   height: 26px;
-                  color: white;
+                  // color: white;
+                  font-weight: bolder;
                 }
 
                 .name-txt {
                   flex: 0.8;
                   font-size: $small;
+                  font-weight: 400;
+                }
+                .name {
+                  font-size: 15px;
+                  font-weight: 900;
                 }
                 .open-times {
                   display: none;
@@ -338,6 +344,10 @@
                   margin-left: 16px;
                   font-size: $small;
                 }
+              }
+              .open-times-header {
+                font-weight: 900;
+                font-size: 15px;
               }
             }
           }

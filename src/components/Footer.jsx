@@ -23,7 +23,7 @@ const Footer = () => {
                 <div className="details-name">
                   <div className="name-icon logo-icon">
                     <img
-                      src={require("../imgs/logo-rose.png")}
+                      src={require("../imgs/logo-trans.png")}
                       alt="rose"
                       className="rose"
                     />
@@ -91,7 +91,9 @@ const Footer = () => {
                 </div>
               </div>
               <div className="opening-times-mobile">
-                <div className="open-times">Öffnungszeiten</div>
+                <div className="open-times open-times-header">
+                  Öffnungszeiten
+                </div>
                 <div className="open-times">
                   <div className="day">Mo :</div>
                   <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
@@ -110,9 +112,8 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-             
           </div>
-          
+
           <div className="btn-footer-mobile">
             <Button bgColor="#fff" color="#424a53" />
           </div>
