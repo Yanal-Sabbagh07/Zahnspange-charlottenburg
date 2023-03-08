@@ -3,40 +3,47 @@
 .ContactContainer {
   height: calc(100vh - 90px);
   width: 100vw;
-
   margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Merri";
+  font-weight: 700;
   background-color: $gray-0;
   .contact-form-container {
-    width: 100%;
+    width: 93%;
     height: 100%;
+    // background-color: red;
     .contact-form {
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       font-size: $large;
       .row-container {
-        width: 75%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         .first {
-          width: 15%;
+          width: 10%;
           font-size: $xx-large;
           color: $gray-7;
           text-align: left;
+          // background-color: green;
+          label {
+            cursor: pointer;
+          }
           .contact-header {
-            font-size: 50px;
+            font-size: 40px;
             color: $dark-blue;
             text-transform: capitalize;
             letter-spacing: 1px;
-            font-weight: 500;
-            height: 30px;
           }
         }
         .secound {
-          width: 80%;
+          width: 85%;
           height: 100%;
           input[type="text"],
           input[type="email"],
@@ -45,7 +52,10 @@
           textarea {
             padding: 14px 24px;
             border-radius: 4px;
-            border: 1px solid #ccc;
+            border: 1px solid $gray-2;
+            font-family: "Merri-sans";
+            font-weight: 400;
+            transition: all 0.2s ease-out;
             &:focus {
               border: 2px solid $light-blue;
             }
@@ -57,23 +67,34 @@
             margin: 0;
           }
           .input-name-opt {
-            width: calc(100% + 50px);
+            width: calc(90% + 50px);
             font-size: $large;
           }
           .input-name {
-            width: 100%;
+            width: 90%;
             font-size: $large;
           }
           textarea {
-            height: 150px;
+            height: 175px;
+            min-width: 90%;
+            max-width: 90%;
+            max-height: 300px;
           }
-          input[type="submit"] {
-            padding: 14px 0;
+          .input-name-last {
+            width: calc(90% + 54px);
+            height: 60px;
+            border-radius: 8px;
+            font-size: $large;
+            background-color: $dark-blue;
+            color: $gray-0;
             cursor: pointer;
-            width: calc(100% + 48px);
+            transition: all 0.2s ease-out;
+            &:hover {
+              background-color: $light-blue;
+            }
           }
           .message-submit {
-            width: calc(100% + 50px);
+            width: calc(90% + 50px);
             color: $gray-0;
             font-size: $x-small;
             text-align: center;
@@ -91,12 +112,18 @@
 }
 
 .input-name-last {
-  // min-width: 100%;
+  width: 95%;
+  height: 60px;
   border-radius: 8px;
   font-size: $large;
   background-color: $dark-blue;
   color: $gray-0;
-  border-color: $white;
+  cursor: pointer;
+  border: 1px solid $dark-blue;
+  &:hover {
+    background-color: $light-blue;
+    border: 1px solid $light-blue;
+  }
 }
 
 // --------------------------------- Big -------------------------
@@ -191,7 +218,7 @@
     font-size: $large;
 
     color: $gray-0;
-    border-color: $white;
+
     float: left;
   }
   .message-submit {

@@ -1,20 +1,39 @@
 import React from "react";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 import "../../styles/pages/contact/Contact.scss";
 const Index = () => {
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
+  const serviceId = process.env.REACT_APP_API_KEY2;
+  console.log(serviceId);
+  let navigate = useNavigate();
+  const ref = useRef();
+  const [success, setSucces] = useState(null);
   const handleSubmit = (event) => {
-    // event.preventDefault();
-
-    setMessage(`Thanks ${name}!`);
-    setName("");
+    event.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        ref.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSucces(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setSucces(false);
+        }
+      );
   };
 
   return (
     <section className="ContactContainer">
       <div className="contact-form-container">
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form ref={ref} onSubmit={handleSubmit} className="contact-form">
           <div className="row-container">
             <div className="first">
               <h1 className="contact-header">Kontaktformular:</h1>
@@ -31,14 +50,14 @@ const Index = () => {
                 className="input-name-opt"
                 type="text"
               >
-                <option value="friends" defaultValue="friends">
+                <option value="Herr" defaultValue="Herr">
                   Herr
                 </option>
-                <option value="search">Frau</option>
-                <option value="ad">Herr Dr.</option>
-                <option value="other">Frau Dr.</option>
-                <option value="ad">Herr Dr. Dr.</option>
-                <option value="other">Frau Dr. Dr.</option>
+                <option value="Frau">Frau</option>
+                <option value="Herr Dr.">Herr Dr.</option>
+                <option value="Frau Dr.">Frau Dr.</option>
+                <option value="Herr Dr. Dr.">Herr Dr. Dr.</option>
+                <option value="Frau Dr. Dr.">Frau Dr. Dr.</option>
               </select>
             </div>
           </div>
@@ -52,9 +71,9 @@ const Index = () => {
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Your Name"
+                placeholder="Ihr Name"
                 required
-                onChange={(event) => setName(event.target.value)}
+                // onChange={(event) => setName(event.target.value)}
               ></input>
             </div>
           </div>
@@ -68,7 +87,7 @@ const Index = () => {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Your Email"
+                placeholder="Ihr Email addresse"
                 required
               ></input>
             </div>
@@ -83,19 +102,20 @@ const Index = () => {
                 type="number"
                 name="phone"
                 id="phone"
-                placeholder="Your phone number"
+                placeholder="Ihr Telefonnummer"
                 required
               ></input>
             </div>
           </div>
           <div className="row-container">
             <div className="first">
-              <label>Nachricht</label>
+              <label htmlFor="request">Nachricht</label>
             </div>
             <div className="secound">
               <textarea
                 className="input-name"
-                name="message"
+                name="request"
+                id="request"
                 placeholder="Ihr Nachricht"
               ></textarea>
             </div>
@@ -105,29 +125,26 @@ const Index = () => {
               <label>&nbsp;</label>
             </div>
             <div className="secound">
-              <input
-                className="input-name-last"
-                type="submit"
-                value="Send it!"
-              ></input>
+              <button className="input-name-last" type="submit">
+                Senden
+              </button>
             </div>
           </div>
-          {message.length > 0 && (
-            <div className="row-container">
-              <div className="first">
-                <label>&nbsp;</label>
-              </div>
-              <div className="secound">
-                <div className="message-submit">
-                  <h2>
-                    {message} <br />
-                    Wir haben Ihre Nachricht erhalten und werden uns so schnell
-                    wie möglich bei Ihnen melden!
-                  </h2>
-                </div>
-              </div>
-            </div>
-          )}
+          {success &&
+            // <div className="row-container">
+            //   <div className="first">
+            //     <label>&nbsp;</label>
+            //   </div>
+            //   <div className="secound">
+            //     <div className="message-submit">
+            //       <h2>
+            //         Wir haben Ihre Nachricht erhalten und werden uns so schnell
+            //         wie möglich bei Ihnen melden!
+            //       </h2>
+            //     </div>
+            //   </div>
+            // </div>
+            navigate("/")}
         </form>
       </div>
     </section>
