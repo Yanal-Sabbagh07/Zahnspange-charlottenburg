@@ -204,8 +204,8 @@
     }
   }
   .hero-section2 {
-    justify-content: flex-start;
-    // background-color: red;
+    justify-content: space-evenly;
+
     margin-top: 0;
     .welcome-title-container {
       display: none;
@@ -249,11 +249,15 @@
       }
       .welcome-btn {
         height: 75px;
-        // background-color: black;
+        .appointment-button {
+          border-radius: 8px;
+        }
       }
     }
   }
   .hero-section3 {
     height: calc(120vh - 60px);
+    // display: flex;
+    margin-top: 0px;
   }
 }
