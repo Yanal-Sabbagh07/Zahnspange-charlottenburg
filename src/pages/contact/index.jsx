@@ -4,8 +4,6 @@ import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
 import "../../styles/pages/contact/Contact.scss";
 const Index = () => {
-  const serviceId = process.env.REACT_APP_API_KEY2;
-  console.log(serviceId);
   let navigate = useNavigate();
   const ref = useRef();
   const [success, setSucces] = useState(null);
@@ -13,10 +11,10 @@ const Index = () => {
     event.preventDefault();
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.REACT_APP_API_SERVICE_ID,
+        process.env.REACT_APP_API_TEMPLATE_ID,
         ref.current,
-        process.env.REACT_APP_PUBLIC_KEY
+        process.env.REACT_APP_API_PUBLIC_KEY
       )
       .then(
         (result) => {
