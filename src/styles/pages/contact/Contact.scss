@@ -3,7 +3,7 @@
 .ContactContainer {
   height: calc(100vh - 90px);
   width: 100vw;
-  color: $gray-2;
+
   margin-top: 90px;
   background-color: $gray-0;
   .contact-form-container {
@@ -42,8 +42,7 @@
           input[type="email"],
           input[type="number"],
           select,
-          textarea,
-          .input-name-opt {
+          textarea {
             padding: 14px 24px;
             border-radius: 4px;
             border: 1px solid #ccc;
@@ -51,6 +50,7 @@
               border: 2px solid $light-blue;
             }
           }
+
           #phone::-webkit-inner-spin-button,
           #phone::-webkit-outer-spin-button {
             -webkit-appearance: none;

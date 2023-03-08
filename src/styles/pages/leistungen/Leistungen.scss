@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
   overflow: overlay;
   scroll-snap-type: y mandatory;
-  
+
   .first-container {
     margin-top: 90px;
     width: 100%;
@@ -26,21 +26,19 @@
     .secound-left-container {
       width: 50%;
       height: 100%;
-      .adult-img{
+      .adult-img {
         width: 100%;
-      height: 100%;
+        height: 100%;
         background-image: url(../../../../public/imgs/hero2.webp);
-      background-size: 160%;
-      
-      background-position: top;
-      transition: all 0.5s ease;
-      &:hover  {
-       background-size: 165%;
-        transition: all 0.7s ease;
+        background-size: 160%;
+
+        background-position: top;
+        transition: all 0.5s ease;
+        &:hover {
+          background-size: 165%;
+          transition: all 0.7s ease;
+        }
       }
-      }
-    
-     
     }
     .secound-right-container {
       width: 50%;
@@ -138,11 +136,9 @@
     }
   }
   .leistungen-footer-container {
-    
     width: 100%;
     height: calc(100vh - 90px);
     background-color: $dark-blue;
-    
   }
 }
 
@@ -164,17 +160,17 @@
       flex-direction: column;
 
       .secound-left-container {
-          width: 100%;
-          height: 50%;
-          .adult-img{
+        width: 100%;
+        height: 50%;
+        .adult-img {
           background-size: cover;
           background-position: center;
           transition: all 0.5s ease;
-        &:hover {
-        background-position: center;
-        background-size: cover;
+          &:hover {
+            background-position: center;
+            background-size: cover;
+          }
         }
-      }
       }
       .secound-right-container {
         width: 100%;
@@ -248,7 +244,7 @@
       .third-right-container {
         width: 100%;
         height: 50%;
-        
+
         background-size: cover;
         background-position: center;
         transition: all 0.5s ease;
@@ -260,7 +256,7 @@
     }
     .leistungen-footer-container {
       width: 100%;
-      height: calc(100lvh - 160px);
+      height: calc(120vh - 60px);
     }
   }
 }

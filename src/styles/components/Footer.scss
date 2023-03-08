@@ -52,7 +52,7 @@
           // background-color: blue;
           .footer-left-details {
             // border: 1px solid white;
-            width:100%;
+            width: 100%;
             height: 52%;
             text-align: left;
             display: flex;
@@ -93,7 +93,7 @@
               .open-times {
                 flex: 0.5;
                 display: flex;
-                .time{
+                .time {
                   padding-left: 24px;
                 }
               }
@@ -106,19 +106,17 @@
             display: flex;
             align-items: flex-end;
             justify-content: center;
-            .btn-footer-descktop{
+            .btn-footer-descktop {
               width: 90%;
-              .termin-button{
+              .termin-button {
                 width: 100%;
               }
             }
-           }
-           .opening-times-mobile{
+          }
+          .opening-times-mobile {
             display: none;
-           }
+          }
         }
-        
-       
       }
 
       .btn-footer-mobile {
@@ -235,25 +233,26 @@
 @media screen and (max-width: 480px) {
   .footer-container {
     justify-content: space-between;
-    // background-color: red;
+    width: 100%;
+    height: 100%;
     .footer-content-container {
-      height : 85%;
+      height: 88%;
       flex-direction: column;
       justify-content: space-evenly;
-      // background-color: black;
+      // background-color: red;
+
       .google-map-container {
-        // background-color: red;
-        flex: 0.6;
-        align-items: flex-end;
+        align-items: center;
+        flex: 0.33;
         .google-map {
-          width: 92.5%;
-          height: 95%;
+          width: 95%;
+          height: 80%;
           border: 4px solid $light-blue;
           border-radius: 8px;
         }
       }
       .footer-content-top-container {
-        flex: 1.5;
+        flex: 0.66;
         display: flex;
         flex-direction: column;
         // background-color: black;
@@ -268,7 +267,7 @@
             justify-content: space-between;
             .footer-left-details {
               // background-color: black;
-              font-size: $small;
+              font-size: $medium;
               height: 50%;
               .details-name {
                 justify-content: flex-start;
@@ -277,17 +276,15 @@
                   padding-right: 8px;
                   flex: 0.1;
                   .footer-icon {
-                    font-size: $medium;
+                    font-size: $xx-large;
                   }
                 }
                 .rose {
-                  width: 26px;
-                  height: 16px;
+                  width: 36px;
+                  height: 26px;
                   color: white;
                 }
-                .name {
-                  font-size: $small;
-                }
+
                 .name-txt {
                   flex: 0.8;
                   font-size: $small;
@@ -298,7 +295,7 @@
                   flex-direction: column;
                   justify-content: flex-start;
                   align-items: flex-start;
-                  .time{
+                  .time {
                     padding-left: 0px;
                   }
 
@@ -306,8 +303,6 @@
                     display: none;
                   }
                 }
-
-               
               }
               .email-name {
                 // background-color: red;
@@ -324,94 +319,107 @@
             .last-open-times {
               display: none;
             }
-            .opening-times-mobile{
+            .opening-times-mobile {
               // background-color: blue;
               // padding-left: 24px;
-              font-size: $small;
+
               width: 100%;
               // text-align: left;
               height: 50%;
-              display: flex;  
+              display: flex;
               flex-direction: column;
               align-items: flex-start;
               justify-content: space-evenly;
-              .open-times{
+              .open-times {
                 display: flex;
-                margin-left: 12px;
-                .time{
+                margin-left: 8px;
+                font-size: $small;
+                .time {
                   margin-left: 16px;
+                  font-size: $small;
                 }
-                
               }
-             }
+            }
           }
-          
         }
         .btn-footer-mobile {
           // background-color: #fff;
           width: 100%;
-          height: 13%;
+          height: 15%;
           display: block;
-          // background-color: yellow;
           display: flex;
           align-items: center;
           justify-content: center;
-          
-          .termin-button{
+          border-radius: 8px;
+
+          .termin-button {
             width: 95%;
-            height: 80%;
-            // margin-left: 8px;
+            height: 75%;
+            .appointment-button {
+              border-radius: 8px;
+            }
           }
         }
       }
     }
     .footer-content-bottom {
-      height: 12%;
+      height: 10%;
+      width: 100%;
       flex-direction: column-reverse;
-      justify-content: space-evenly;
       // background-color: #fff;
-      // background-color: red;
+      align-items: center;
+      justify-content: center;
       .footer-copy-right {
         width: 100%;
-        // flex: 1;
+        height: 50%;
+        // background-color: green;
         font-size: $small;
         color: $gray-3;
+        justify-content: flex-start;
+        font-size: $small;
+        .copy-sign {
+          margin-left: 4px;
+        }
+
         span {
           color: $gray-3;
+          font-size: $small;
         }
       }
       .footer-social-media {
         width: 100%;
-        // flex: 1;
+
+        display: flex;
+        align-items: center;
         justify-content: center;
         .social-icon-container {
-          // background-color: blue;
-          width: 18%;
+          // padding-left: 8px;
+          width: 25%;
           font-size: $small;
           color: $gray-2;
+          align-items: center;
+          justify-content: center;
+          // background-color: #fff;
         }
         .footer-impressum-mobile {
+          // background-color: blue;
           display: block;
-          width: 72%;
+          width: 100%;
           height: 100%;
-          // background-color: #fff;
+          // background-color: yellow;
           font-size: small;
           display: flex;
           align-items: center;
-          justify-content: space-evenly;
+          justify-content: space-between;
 
           a {
             color: $gray-2;
+            padding-left: 8px;
           }
         }
       }
       .footer-impressum {
         display: none;
-        width: 100%;
-        justify-content: center;
-        a {
-          width: 37.5%;
-        }
       }
     }
   }

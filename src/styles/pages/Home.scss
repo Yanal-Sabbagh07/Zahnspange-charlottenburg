@@ -80,7 +80,6 @@
         line-height: 34px;
         font-family: "Merri-sans";
         color: $gray-7;
-        
       }
     }
     .welcome-last-2 {
@@ -112,7 +111,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      .termin-button{
+      .termin-button {
         width: 450px;
       }
     }
@@ -146,7 +145,7 @@
   .hero-section {
     width: 100%;
     height: calc(100vh - 160px);
-    
+
     // background-color: #fff;
 
     margin-top: 90px;
@@ -169,7 +168,7 @@
         line-height: 42px;
         letter-spacing: 2px;
         // margin-bottom: 0px;
-        span{
+        span {
           font-size: $medium;
           font-weight: 900;
           // color: $dark-blue;
@@ -224,7 +223,7 @@
         // background-color: #fff;
         .welcome-content {
           font-size: $small;
-          letter-spacing: .5px;
+          letter-spacing: 0.5px;
           line-height: 24px;
         }
       }
@@ -252,8 +251,8 @@
     }
   }
   .hero-section3 {
-    height: calc(100vh);
-    margin-top: 0px;
+    height: calc(120vh);
+    // margin-top: 0px;
     .last-section-container {
       // margin-top: 90px;
       // background-color: red;
