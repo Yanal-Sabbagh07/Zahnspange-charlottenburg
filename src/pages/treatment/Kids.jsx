@@ -18,18 +18,35 @@ const Kids = () => {
       </section>
       <section className="kids-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/Frühbehandlung.jpeg)"
-          color="#1f5ca2"
-          header="Frühbehandlung:"
-          text="Es gibt keinen zu frühen Besuch in der Kieferorthopädie. Auch im Milchgebiss alter ist ratsam, 
-          die Gebissentwicklung kontrollieren zu lassen, somit kann frühzeitige fehl Stellung festgestellt werden. 
-          Zu kontrollieren sind Störfaktoren die z.B den Gebissentwicklung beeinträchtigen können. 
-          Eine Frühbehandlung kann dies rechtzeitig beseitig und Spätfolgen vermeiden."
+          image="url(../../imgs/AlignerfürTeenager.png)"
+          reverse="false"
+          color="#20ade4"
+          header="Alginer für Teenager:"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
         />
       </section>
       <section className="kids-treatment-container">
         <TreatmentSection
+          image="url(../../imgs/feste.png)"
           reverse="true"
+          color="#1f5ca2"
+          header="Feste Zahnspange:"
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
+          in der Regel der Anfang der Retentionsphase ist. 
+          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
+          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
+          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
+          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+        />
+      </section>
+      <section className="kids-treatment-container">
+        <TreatmentSection
+          reverse="false"
           image="url(../../imgs/Herausnehmbare.jpeg)"
           color="#20ade4"
           header="Herausnehmbare Zahnspange:"
@@ -43,29 +60,14 @@ const Kids = () => {
       </section>
       <section className="kids-treatment-container">
         <TreatmentSection
-          image="url(../../imgs/feste.png)"
-          color="#1f5ca2"
-          header="Feste Zahnspange:"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
-          in der Regel der Anfang der Retentionsphase ist. 
-          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
-          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
-          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
-          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
-        />
-      </section>
-      <section className="kids-treatment-container">
-        <TreatmentSection
-          image="url(../../imgs/AlignerfürTeenager.png)"
+          image="url(../../imgs/Frühbehandlung.jpeg)"
           reverse="true"
-          color="#20ade4"
-          header="Alginer für Teen:"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
-          in der Regel der Anfang der Retentionsphase ist. 
-          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
-          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
-          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
-          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+          color="#1f5ca2"
+          header="Frühbehandlung:"
+          text="Es gibt keinen zu frühen Besuch in der Kieferorthopädie. Auch im Milchgebiss alter ist ratsam, 
+          die Gebissentwicklung kontrollieren zu lassen, somit kann frühzeitige fehl Stellung festgestellt werden. 
+          Zu kontrollieren sind Störfaktoren die z.B den Gebissentwicklung beeinträchtigen können. 
+          Eine Frühbehandlung kann dies rechtzeitig beseitig und Spätfolgen vermeiden."
         />
       </section>
       <section className="kids-treatment-container">
