@@ -2,6 +2,7 @@ import React from "react";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../components/Footer";
 import "../../styles/pages/contact/Contact.scss";
 const Index = () => {
   let navigate = useNavigate();
@@ -144,6 +145,9 @@ const Index = () => {
             // </div>
             navigate("/")}
         </form>
+      </div>
+      <div className="contact-footer">
+        <Footer />
       </div>
     </section>
   );
