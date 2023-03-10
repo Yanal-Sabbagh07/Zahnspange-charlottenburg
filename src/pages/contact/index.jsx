@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer";
@@ -7,6 +7,8 @@ import "../../styles/pages/contact/Contact.scss";
 const Index = () => {
   let navigate = useNavigate();
   const ref = useRef();
+  const [name, setName] = useState("");
+  const [title, setTitle] = useState("Herr");
   const [success, setSucces] = useState(null);
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -19,7 +21,7 @@ const Index = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(ref.current);
           setSucces(true);
         },
         (error) => {
@@ -48,6 +50,7 @@ const Index = () => {
                 id="titel"
                 className="input-name-opt"
                 type="text"
+                onChange={(event) => setTitle(event.target.value)}
               >
                 <option value="Herr" defaultValue="Herr">
                   Herr
@@ -72,7 +75,7 @@ const Index = () => {
                 id="name"
                 placeholder="Ihr Name"
                 required
-                // onChange={(event) => setName(event.target.value)}
+                onChange={(event) => setName(event.target.value)}
               ></input>
             </div>
           </div>
@@ -129,21 +132,14 @@ const Index = () => {
               </button>
             </div>
           </div>
-          {success &&
-            // <div className="row-container">
-            //   <div className="first">
-            //     <label>&nbsp;</label>
-            //   </div>
-            //   <div className="secound">
-            //     <div className="message-submit">
-            //       <h2>
-            //         Wir haben Ihre Nachricht erhalten und werden uns so schnell
-            //         wie möglich bei Ihnen melden!
-            //       </h2>
-            //     </div>
-            //   </div>
-            // </div>
-            navigate("/")}
+
+          {useEffect(() => {
+            if (success) {
+              navigate("/Message", {
+                state: { title: { title }, name: { name } },
+              });
+            }
+          }, [success, navigate, title, name])}
         </form>
       </div>
       <div className="contact-footer">

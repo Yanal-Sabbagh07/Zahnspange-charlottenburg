@@ -7,6 +7,7 @@ import Contact from "./pages/contact/index";
 import Services from "./pages/services/index";
 import Adults from "./pages/treatment/Adults";
 import Kids from "./pages/treatment/Kids";
+import Message from "./pages/message/Message";
 
 export const routes = [
   {
@@ -44,5 +45,10 @@ export const routes = [
     title: "Services",
     path: "/services",
     element: <Services />,
+  },
+  {
+    title: "Request",
+    path: "/message",
+    element: <Message />,
   },
 ];

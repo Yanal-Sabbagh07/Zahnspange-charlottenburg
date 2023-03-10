@@ -1,0 +1,48 @@
+@import "../../variables.scss";
+
+.message-page-container {
+  max-width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .message-container {
+    width: 100%;
+    height: calc(100vh - 90px);
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .message-content {
+      text-align: left;
+      font-size: 24px;
+      color: $dark-blue;
+      line-height: 48px;
+      span {
+        color: $light-blue;
+      }
+    }
+  }
+  .message-footer {
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-color: $dark-blue;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .message-page-container {
+    padding-bottom: 60px;
+    .message-container {
+      .message-content {
+        font-size: $small;
+        padding-left: 8px;
+        line-height: 24px;
+      }
+    }
+    .message-footer {
+      height: calc(120vh - 90px);
+    }
+  }
+}
