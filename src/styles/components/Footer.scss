@@ -138,7 +138,7 @@
             // background-color: blue;
             .details-name {
               width: 90%;
-              height: 15%;
+              height: 25%;
               display: flex;
               // background-color: green;
               align-items: center;
@@ -479,11 +479,12 @@
         // background-color: green;
         color: $gray-7;
         justify-content: center;
+        width: 100vw;
         font-size: 8px;
 
         .copy-sign {
           padding-right: 8px;
-          font-size: $xxx-large;
+          font-size: $x-small;
         }
 
         span {
@@ -499,7 +500,7 @@
         justify-content: center;
         .social-icon-container {
           width: 25%;
-          font-size: 8px;
+          font-size: 10px;
           color: $gray-2;
           align-items: center;
           justify-content: center;
