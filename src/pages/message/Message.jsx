@@ -12,7 +12,7 @@ const Message = () => {
     <div className="message-page-container">
       <section className="message-container">
         <p className="message-content">
-          Liebe(r){" "}
+          Liebe(r)
           <span>
             {title.title} {name.name}
           </span>

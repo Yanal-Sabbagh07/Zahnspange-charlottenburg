@@ -9,6 +9,7 @@ import LocalPrintshopIcon from "@mui/icons-material/LocalPrintshop";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import Button from "./Button";
 import GoogleMap from "./GoogleMap";
+
 const Footer = () => {
   return (
     <div className="footer-container">
@@ -20,7 +21,7 @@ const Footer = () => {
           <div className="footer-content-top">
             <div className="footer-content-left">
               <div className="footer-left-details">
-                <div className="details-name">
+                <div className="details-name email-name">
                   <div className="name-icon logo-icon">
                     <img
                       src={require("../imgs/logo-trans.png")}
@@ -29,23 +30,24 @@ const Footer = () => {
                     />
                   </div>
                   <div className="name-txt name">Zahnspange Charlottenburg</div>
-                  <div className="open-times">Öffnungszeiten :</div>
+                  <div className="open-times ot">Öffnungszeiten :</div>
                 </div>
 
-                <div className="details-name">
+                <div className="details-name email-name">
                   <div className="name-icon">
-                    <PlaceIcon className="footer-icon" />{" "}
+                    <PlaceIcon className="footer-icon" />
                   </div>
                   <div className="name-txt">
                     Richard-Wagner-Platz 3 <br /> 10585 Berlin
                   </div>
+
                   <div className="open-times">
                     <div className="day">Mo :</div>
                     <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
                   </div>
                 </div>
 
-                <div className="details-name">
+                <div className="details-name email-name">
                   <div className="name-icon">
                     <PhoneIcon className="footer-icon" />{" "}
                   </div>
@@ -56,7 +58,7 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <div className="details-name">
+                <div className="details-name email-name">
                   <div className="name-icon">
                     <LocalPrintshopIcon className="footer-icon" />{" "}
                   </div>
@@ -122,34 +124,54 @@ const Footer = () => {
       <div className="footer-content-bottom">
         <div className="footer-copy-right">
           <strong className="copy-sign">
-            <CopyrightIcon className="c-icon" />{" "}
-          </strong>{" "}
-          &nbsp;2022 made by &nbsp;<span> Yanal Al Sabbagh</span>
+            <CopyrightIcon className="c-icon" />
+          </strong>
+          2022 Zahnspange-Charlottenburg | <span>Dr.Nawras Darkazanly </span>
+          &nbsp; bei &nbsp;
+          <span> Yanal Sabbagh</span>
         </div>
         <div className="footer-social-media">
           <div className="footer-impressum-mobile">
             <a href="/">Impressum</a>
+            <a
+              href="https://www.facebook.com/Zahnspangeberlin"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="social-icon-container fb"
+            >
+              <FacebookIcon className="social-icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/zahnspangeberlin"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="social-icon-container ig"
+            >
+              <InstagramIcon className="social-icon" />
+            </a>
             <a href="/">Datenschutzerklärung</a>
           </div>
-          <a
-            href="https://www.facebook.com/Zahnspangeberlin"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="social-icon-container fb"
-          >
-            <FacebookIcon className="social-icon" />
-          </a>
-          <a
-            href="https://www.instagram.com/zahnspangeberlin"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="social-icon-container ig"
-          >
-            <InstagramIcon className="social-icon" />
-          </a>
         </div>
         <div className="footer-impressum">
           <a href="/">Impressum</a>
+          <div className="footer-social-media-descktop">
+            <a
+              href="https://www.facebook.com/Zahnspangeberlin"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="social-icon-container fb"
+            >
+              <FacebookIcon className="social-icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/zahnspangeberlin"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="social-icon-container ig"
+            >
+              <InstagramIcon className="social-icon" />
+            </a>
+          </div>
           <a href="/">Datenschutzerklärung</a>
         </div>
       </div>
