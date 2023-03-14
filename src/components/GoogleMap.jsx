@@ -5,11 +5,22 @@ import StarIcon from "@mui/icons-material/Star";
 import StarHalfIcon from "@mui/icons-material/StarHalf";
 import AltRouteIcon from "@mui/icons-material/AltRoute";
 const Hole = () => {
+  const [userPermession, setUserPermession] = useState(false);
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_API_KEY,
   });
   if (!isLoaded) return <div>loading screen</div>;
-
+  if (!userPermession)
+    return (
+      <div className="map-before-loading">
+        <button
+          className="map-before-btn"
+          onClick={() => setUserPermession(true)}
+        >
+          Aktuelle Karte anzeigen
+        </button>
+      </div>
+    );
   return <Map />;
 };
 
@@ -20,7 +31,7 @@ function Map() {
   };
   return (
     <GoogleMap
-      zoom={11.65}
+      zoom={11.55}
       center={{ lat: 52.50979, lng: 13.31442 }}
       mapContainerClassName="google-map"
       options={{

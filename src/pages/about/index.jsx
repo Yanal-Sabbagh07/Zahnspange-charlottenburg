@@ -10,28 +10,29 @@ const About = () => {
   return (
     <div className="aboutus-page-container">
       <section className="slider-contianer">
-        <Slider 
+        <Slider
           hero2="25"
           hero2Cn="waiting1"
-          hero1="27" 
-          hero1Cn="waiting2" 
-          hero3="26" 
-          hero3Cn="zahnputz" 
+          hero1="27"
+          hero1Cn="waiting2"
+          hero3="26"
+          hero3Cn="zahnputz"
           hero4="24"
           hero4Cn="waiting3"
-          hero5="23" 
+          hero5="23"
           hero5Cn="rooms"
           hero6="21"
           hero6Cn="chairs"
-          hero7="29" 
-          hero7Cn="image-chair" 
-          count={6} 
-          type=".png" />
+          hero7="29"
+          hero7Cn="image-chair"
+          count={6}
+          type=".png"
+        />
         {/* <div className="about-hero-img"></div> */}
       </section>
       <section className="team-section-container">
         <div className="title-container">
-          <h1 className="title">Unsere Praxisteam</h1>
+          <h1 className="title">Unser Praxisteam</h1>
         </div>
         <div className="Dr-N-container" id="/about">
           <div className="Dr-N-img-container">
@@ -108,15 +109,12 @@ const About = () => {
         {/* <div className="title-container">
           <h1 className="title">Unsere Praxis</h1>
         </div> */}
-        
-
-        
       </section>
-      
+
       <div className="about-footer">
         <Footer />
-        </div>
-      
+      </div>
+
       {/* <section className="slider-contianer">
         <Slider hero2="25" hero1="29" hero3="26" count={2} type=".png" />
       </section> */}

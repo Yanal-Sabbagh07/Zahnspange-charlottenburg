@@ -18,7 +18,6 @@ const nurses = [
     img: "nurse3",
   },
   {
-    
     id: 4,
     name: "Y. Amrai",
     job: "Zahnmedizinische Fachangestellte",
@@ -32,14 +31,14 @@ const nurses = [
   },
   {
     id: 6,
-    name: "M. Amer",
+    name: "K. Soumah",
     job: "Zahnmedizinische Fachangestellte Qualitatsmaanagement",
     img: "nurse6",
   },
-  
+
   {
     id: 7,
-    name: "K. Soumah",
+    name: "M. Amer",
     job: "Auszubildende",
     img: "nurse7",
   },
@@ -49,7 +48,6 @@ const nurses = [
     job: "Zahntechniker",
     img: "nurse8",
   },
- 
 ];
 
 export default nurses;

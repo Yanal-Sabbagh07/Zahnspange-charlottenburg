@@ -28,25 +28,24 @@
 
   &__nav {
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
     top: 0;
     left: -100vw;
     z-index: 1500;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    // background-color: red;
   }
 
   &__list {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-25%, -50%);
     list-style: none;
     // border: 1px solid black;
-    // text-align: left;
-    height: 50vh;
+    // text-align: left
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -54,18 +53,26 @@
   }
 
   &__item {
-    margin: 2rem;
+    margin-left: 2rem;
+    // height: 70px;
+    width: 325px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
   }
 
   &__link {
     &:link,
     &:visited {
       display: inline-block;
-      font-size: 28px;
+      font-size: 26px;
       font-family: "Merri";
       font-weight: 600;
       letter-spacing: 1px;
-      padding: 1.6rem 4.2rem;
+      padding: 1.2rem 2.4rem;
       color: $white;
       text-decoration: none;
       // text-transform: uppercase;
@@ -84,10 +91,13 @@
     &:active {
       background-position: 100%;
       color: $dark-blue;
-      transform: translateX(1rem);
+      // transform: translateX(1rem);
     }
   }
-
+  &__special {
+    font-size: 22px !important;
+    color: red;
+  }
   // ICON
 
   &__icon {
@@ -164,45 +174,42 @@
       height: 50px;
     }
     &__background {
-      // z-index: 5000;
       top: 28px;
       right: 16px;
     }
 
     &__list {
-      text-align: center;
-      width: 100vw;
-      transform: translate(-55%, -50%);
-
-      height: 100px;
+      transform: translate(-45%, -50%);
     }
     &__item {
-      margin: 0;
-      width: 100%;
-      display: flex;
-      height: 10vh;
+      // height: 75px;
+      width: 200px;
+      margin-left: 2rem;
     }
     &__link {
       &:link,
       &:visited {
         font-family: "Merri";
-        font-weight: 300;
-        letter-spacing: 1px;
+        font-weight: 700;
+        letter-spacing: 0px;
         font-size: $large;
         color: $gray-1;
-        width: 100%;
-        height: 12vh;
+
         background-image: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         background-size: none;
         transition: all 0.5s;
       }
+
       &:hover,
       &:active {
         transform: translateX(100vw);
       }
+    }
+    &__special {
+      font-size: $medium !important;
     }
     &__icon {
       position: relative;

@@ -18,11 +18,11 @@ const Message = () => {
           </span>
           , <br />
           <br />
-          Vielen Dank für Ihre Anfrage. Wir werden uns schnellst möglich bei
+          Vielen Dank für Ihre Anfrage. Wir werden uns schnellstmöglich bei
           Ihnen melden.
           <br />
           <br /> Herzliche Grüße,
-          <br /> das Team der ZahnSpange-Charlottenburg|Dr.Nawras Darkazanly
+          <br /> Ihr praxis Team der ZahnSpange-Charlottenburg
         </p>
       </section>
       <section className="message-footer">

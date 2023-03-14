@@ -20,7 +20,7 @@ const Kids = () => {
         <TreatmentSection
           image="url(../../imgs/AlignerfürTeenager.png)"
           reverse="false"
-          color="#20ade4"
+          color="#1f5ca2"
           header="Alginer für Teenager:"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
           in der Regel der Anfang der Retentionsphase ist. 
@@ -34,7 +34,7 @@ const Kids = () => {
         <TreatmentSection
           image="url(../../imgs/feste.png)"
           reverse="true"
-          color="#1f5ca2"
+          color="#20ade4"
           header="Feste Zahnspange:"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
           in der Regel der Anfang der Retentionsphase ist. 
@@ -48,7 +48,7 @@ const Kids = () => {
         <TreatmentSection
           reverse="false"
           image="url(../../imgs/Herausnehmbare.jpeg)"
-          color="#20ade4"
+          color="#1f5ca2"
           header="Herausnehmbare Zahnspange:"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
           in der Regel der Anfang der Retentionsphase ist. 
@@ -62,7 +62,7 @@ const Kids = () => {
         <TreatmentSection
           image="url(../../imgs/Frühbehandlung.jpeg)"
           reverse="true"
-          color="#1f5ca2"
+          color="#20ade4"
           header="Frühbehandlung:"
           text="Es gibt keinen zu frühen Besuch in der Kieferorthopädie. Auch im Milchgebiss alter ist ratsam, 
           die Gebissentwicklung kontrollieren zu lassen, somit kann frühzeitige fehl Stellung festgestellt werden. 
