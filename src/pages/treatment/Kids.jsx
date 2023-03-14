@@ -20,7 +20,7 @@ const Kids = () => {
           image="url(../../imgs/AlignerfürTeenager.png)"
           reverse="false"
           color="#1f5ca2"
-          header="Aligner für Teen:"
+          header="Aligner für Teenager:"
           text="Aligner, auch als durchsichtige Zahnschienen bekannt, können auch bei jugendlichen
           Patienten zur Korrektur von Zahnfehlstellungen verwendet werden. Im Gegensatz zu
           traditionellen festen Zahnspangen haben Aligner einige Vorteile, die für Teenager attraktiv
