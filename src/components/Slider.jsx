@@ -29,17 +29,15 @@ const Slider = (props) => {
     setArrowClicked(true);
     if (direction === "left") {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 0);
-      setDelay(50000);
+      setDelay(500000);
     } else {
       setSlideIndex(slideIndex < props.count ? slideIndex + 1 : props.count);
-      setDelay(50000);
+      setDelay(500000);
     }
   };
   useInterval(() => {
     if (slideIndex < props.count) {
       setSlideIndex(slideIndex + 1);
-    } else {
-      setSlideIndex(0);
     }
   }, delay);
   // console.log(props);
@@ -65,7 +63,7 @@ const Slider = (props) => {
               : slideIndex === 6
               ? "translateX(-600vw)"
               : "translateX(0)",
-              transition: arrowClicked && "all .5s ease"
+          transition: arrowClicked && "all .5s ease",
         }}
       >
         <div className="image-container">
@@ -90,30 +88,29 @@ const Slider = (props) => {
 
         <div className="image-container">
           <div className="hero-image">
-            <div className={props.hero4Cn}/>
+            <div className={props.hero4Cn} />
           </div>
         </div>
         <div className="image-container">
           <div className="hero-image">
-          <div className={props.hero3Cn}/>
+            <div className={props.hero3Cn} />
           </div>
         </div>
         <div className="image-container">
           <div className="hero-image">
-          <div className={props.hero5Cn}/>
+            <div className={props.hero5Cn} />
           </div>
         </div>
         <div className="image-container">
           <div className="hero-image">
-          <div className={props.hero6Cn}/>
+            <div className={props.hero6Cn} />
           </div>
         </div>
         <div className="image-container">
           <div className="hero-image">
-          <div className={props.hero7Cn}/>
+            <div className={props.hero7Cn} />
           </div>
         </div>
-        
       </div>
       <div className="arrow arrow-right" onClick={() => handleClick("right")}>
         <ArrowForwardIosIcon className="arrow-icon" />
