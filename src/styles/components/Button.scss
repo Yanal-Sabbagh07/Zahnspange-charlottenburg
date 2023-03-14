@@ -1,7 +1,7 @@
 @import "../variables.scss";
 .termin-button {
-  width: 258px;
-  height: 58px;
+  width: 250px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
     color: #fff;
     text-decoration: none;
 
-    font-size: $x-large;
+    font-size: $medium;
     font-weight: 700;
     transition: 0.2s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,

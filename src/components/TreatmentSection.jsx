@@ -14,11 +14,9 @@ const TreatmentSection = (props) => {
         <p className="tratment-right-txt">{props.text}</p>
       </div>
       <div
-        className="treatment-left"
+        className={props.cn}
         style={{
           backgroundImage: props.image,
-          backgroundPosition: props.position,
-          backgroundSize: props.size,
         }}
       ></div>
     </div>

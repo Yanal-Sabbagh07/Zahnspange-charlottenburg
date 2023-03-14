@@ -19,6 +19,7 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/AlignerTherapie.jpeg)"
+          cn="aligner"
           size="155%"
           position="75%"
           color="#1f5ca2"
@@ -41,6 +42,7 @@ const Adults = () => {
         <TreatmentSection
           reverse="true"
           image="url(../../imgs/Ästhetische.png)"
+          cn="ästhetische"
           size="155%"
           position="50% 100%"
           color="#20ade4"
@@ -73,6 +75,7 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/kombinierte1.png)"
+          cn="Kombinierte"
           size="125%"
           reverse="true"
           color="#20ade4"
@@ -91,6 +94,7 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/digitale.png)"
+          cn="Digitale"
           size="135%"
           position="left"
           reverse="flase"
@@ -109,7 +113,7 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/Redzidiv-Behandlung.png)"
-          size="135%"
+          cn="Rezidiv"
           position="50% 70%"
           reverse="true"
           color="#20ade4"
