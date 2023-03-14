@@ -28,13 +28,14 @@
   width: 100%;
   height: 43%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   .WaveSection-content {
     font-weight: 400;
     font-family: "Merri-sans";
     width: 80%;
-    font-size: $xx-large;
+    font-size: $large;
     // background-color: #fff;
     line-height: 42px;
     // letter-spacing: 0.8px;
