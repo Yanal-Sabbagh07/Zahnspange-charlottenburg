@@ -45,12 +45,12 @@ const index = () => {
           <div className="welcome-last-1">
             <p className="welcome-content">
               Mit hochmodernen diagnostischen und therapeutischen Technologien,
-              in freundlicher und professioneller Umgebung, möchten wir Ihnen
-              bzw. ihrem Kind zu einem gesunden, schönen Lächeln verhelfen. Hier
+              in freundlicher und professioneller Umgebung möchten wir Ihnen
+              bzw. Ihrem Kind zu einem gesunden, schönen Lächeln verhelfen. Hier
               können Sie sich einen Überblick über unsere Praxis, unser Team und
-              unser Behandlungsspektrum verschafften. Vereinbaren Sie gerne
-              einen Termin bei uns und wir freuen uns darauf, Sie in unserer
-              Praxis begrüßen zu dürfen.
+              unser Behandlungsspektrum verschaffen. Vereinbaren Sie gerne einen
+              Termin bei uns und wir freuen uns darauf, Sie in unserer Praxis
+              begrüßen zu dürfen.
             </p>
           </div>
           <div className="welcome-last-2">

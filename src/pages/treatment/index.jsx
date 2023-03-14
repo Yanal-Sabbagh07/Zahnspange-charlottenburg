@@ -11,11 +11,12 @@ const index = () => {
       <section className="first-container">
         <WaveSection
           header="Unsere Leistungen für Sie"
-          content="Unsere Fachpraxis in Charlottenburg bietet Kindern, Jugendlichen und
-          Erwachsenen professionelle Leistungen auf dem neusten Stand der
-          Technik. Alle Behandler haben jahrzehntelange kieferorthopädische
-          Erfahrung. Schöne und gerade Zähne sind in jedem Alter möglich, man
-          ist nie zu alt für eine kieferorthopädische Behandlung"
+          content="Unsere Fachpraxis in Charlottenburg bietet Kindern, Jugendlichen und Erwachsenen
+          professionelle Behandlungen auf dem neuesten Stand der Zahnmedizin und mit modernster
+          Technik.
+          Alle Behandler haben jahrzehntelange kieferorthopädische Erfahrung.
+          Schöne und gerade Zähne sind in jedem Alter möglich, man ist nie zu alt für eine
+          kieferorthopädische Behandlung."
         />
       </section>
       <section className="secound-container">

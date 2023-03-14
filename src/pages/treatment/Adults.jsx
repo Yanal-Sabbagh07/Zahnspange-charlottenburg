@@ -9,11 +9,11 @@ const Adults = () => {
       <section className="adults-first-container">
         <WaveSection
           header="Erwachsenenbehandlung"
-          content="Vielen Patienten ist nicht bewusst welche Möglichkeiten auch im Erwachsenenalter besteht um 
-          Zahnfehstellungen zu korrigieren. 
-          Dank moderner Verfahren lassen sich Zähne und Kieferfehlstellungen heutzutage in jedem Alter korrigieren. 
-          Für unsere Patienten, die durch soziale oder berufliche Situation nicht gehandikapt werden dürfen,  
-          bieten wir zahlreiche unsichtbare Zahnkorrekturen an, die diesen Anspruch gerecht werden."
+          content="Vielen Patienten ist nicht bewusst welche Möglichkeiten auch im Erwachsenenalter
+          bestehten um Zahnfehstellungen zu korrigieren. Dank moderner Verfahren lassen sich Zähne
+          und Kieferfehlstellungen heutzutage in jedem Alter korrigieren. Für unsere Patienten, die
+          durch soziale oder berufliche Situation nicht gehandicapt werden dürfen, bieten wir
+          zahlreiche unsichtbare Zahnkorrekturen an, die diesen Anspruch gerecht werden."
         />
       </section>
       <section className="adults-treatment-container">
@@ -22,12 +22,18 @@ const Adults = () => {
           position="75%"
           color="#1f5ca2"
           header="Aligner Therapie:"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
-          in der Regel der Anfang der Retentionsphase ist. 
-          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
-          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
-          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
-          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+          text="Bei der Aligner-Therapie werden durchsichtige Kunststoffschienen, die als Aligner bezeichnet
+          werden, verwendet.
+          Aligner-Therapie beginnt mit einem digitalen Scan der Zähne, der verwendet wird, um einen
+          3D-Plan der Behandlung zu erstellen. Basierend auf diesem Plan werden individuelle Aligner-
+          Schienen hergestellt, die den Zähnen des Patienten entsprechen und schrittweise angepasst
+          werden, um die Zähne in die gewünschte Position zu bewegen.
+          Aligner-Therapie ist eine alternative zu traditionellen festen Zahnspangen und bietet
+          mehrere Vorteile. Im Gegensatz zu herkömmlichen festen Zahnspangen sind Aligner fast
+          unsichtbar und können leicht herausgenommen werden, was es dem Patienten ermöglicht,
+          normal zu essen und zu trinken und eine gute Mundhygiene aufrechtzuerhalten. Die
+          Behandlungsdauer variiert je nach Schweregrad der Zahnfehlstellung, kann aber zwischen 6
+          Monaten bis zu 2 Jahren liegen."
         />
       </section>
       <section className="adults-treatment-container">
@@ -35,13 +41,12 @@ const Adults = () => {
           reverse="true"
           image="url(../../imgs/Ästhetische.png)"
           color="#20ade4"
-          header="Ästhetische Keramik Brackets (AVL)"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
-          in der Regel der Anfang der Retentionsphase ist. 
-          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
-          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
-          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
-          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+          header="Ästhetische Keramik Brackets (AVL):"
+          text="Anstelle der normalerweise aus Metall gefertigten Brackets können auf besonderen Wunsch
+          zahnnfarbene Keramikbrackets verwendet werden, die auch hohen ästhetischen
+          Anforderungen während der Behandlungszeit gerecht werden. Die Oberfläche der Brackets
+          sind so versiegelt, dass eine Verfärbung durch Nahrungsmittel, während der gesamten
+          Behandlungszeitraum ausgeschlossen ist. Deswegen fallen diese Brackets weniger auf."
         />
       </section>
 
@@ -51,12 +56,13 @@ const Adults = () => {
           reverse="flase"
           color="#1f5ca2"
           header="Präprothetische Kieferorthopädie"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
-          in der Regel der Anfang der Retentionsphase ist. 
-          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
-          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
-          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
-          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+          text="In der präprothetischen Kieferorthopädie verändern wir die Zahnstellung, um die
+          Versorgung mit Zahnimplantaten, einer Brücke oder Prothese zu ermöglichen. Denn nur,
+          wenn die sogenannten Pfeilerzähne (an denen der Zahnersatz befestigt wird) gerade sind,
+          können sie vor Fehlbelastungen geschützt werden. Dabei werden häufig
+          kieferorthopädische Apparaturen wie Brackets oder Aligner eingesetzt, um die Zähne so zu
+          bewegen, dass die prothetische Versorgung perfekt angefertigt werden kann, um eine
+          optimale Funktion und Ästhetik zu gewährleisten."
         />
       </section>
       <section className="adults-treatment-container">
@@ -65,12 +71,15 @@ const Adults = () => {
           reverse="true"
           color="#20ade4"
           header="Kombinierte kieferchirurgische Kieferorthopädische Therapie"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
-          in der Regel der Anfang der Retentionsphase ist. 
-          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
-          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
-          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
-          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+          text="Die kombinierte kieferchirurgische kieferorthopädische Therapie, auch bekannt als
+          orthognathe Chirurgie, ist eine Behandlungsoption für Patienten mit schweren
+          Kieferanomalien, die nicht allein mit kieferorthopädischen Maßnahmen korrigiert werden
+          können.
+          
+          Die Behandlung kann umfangreich sein und erfordert möglicherweise eine längere
+          Genesungszeit, aber sie kann dazu beitragen, schwerwiegende Kieferprobleme zu
+          korrigieren und eine verbesserte Lebensqualität zu bieten.
+          Hierzu arbeiten wir eng mit erfahrenen Mund-Kiefer-Gesichtschirurgen"
         />
       </section>
       <section className="adults-treatment-container">
@@ -79,13 +88,15 @@ const Adults = () => {
           position="left"
           reverse="flase"
           color="#1f5ca2"
-          header="Digitale Planung"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
-          in der Regel der Anfang der Retentionsphase ist. 
-          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
-          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
-          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
-          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+          header="Digitale Kieferorthopädie"
+          text="Durch den Einsatz digitaler Technologien in der Kieferorthopädie kann die Behandlung
+          schneller, effektiver und präziser durchgeführt werden. Dies kann dazu beitragen, die
+          Behandlungsergebnisse zu verbessern und den Patienten mehr Komfort zu bieten.
+          In unsere Praxis bieten wir modernste digitale Kieferorthopädie an. Auch die
+          Behandlungsplanung wird mit genausten digitalen Methoden durchgeführt.
+          Die konventionellen, unangenehmen Alginatabdrücke werden durch den digitalen
+          Intraoralscan ersetzt. Nicht nur Aligner werden bei und im digitalen Verfahren angefertigt,
+          sonderen auch CAD/CAM-Retainer und das indirekte Platzierung von Brackets."
         />
       </section>
       <section className="adults-treatment-container">
@@ -94,12 +105,12 @@ const Adults = () => {
           reverse="true"
           color="#20ade4"
           header="Rezidiv-Behandlung"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
-          in der Regel der Anfang der Retentionsphase ist. 
-          Wird in dieser Phase die Haltespange nicht regelmäßig getragen, 
-          verschieben sich die Zähne zurück und es entsteht wieder Engstande, die die Ästhetik und Funktion stören können. 
-          Dieser Engstande kann mit der Rezidiv Behandlung wieder  
-          gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
+          text="Vielen Patienten ist nicht bewusst, dass am Ende einer kieferorthopädischen Behandlung in
+          der Regel der Anfang der Retentionsphase ist. Wird in dieser Phase die Haltespange nicht
+          regelmäßig getragen, verschieben sich die Zähne zurück in die Ausgangsituation und es
+          entsteht wieder eine Fehlstellung, die die Ästhetik und Funktion stören könnte. Dieser
+          Fehlstand kann mit der Rezidivbehandlung wieder korrigiert werden und mit einem festen
+          Retainer stabilisiert werden."
         />
       </section>
       <section className="adults-eight-container">
