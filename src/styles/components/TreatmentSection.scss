@@ -100,6 +100,8 @@
 
 @media screen and (max-width: 480px) {
   .treatment-container {
+    display: flex;
+    align-items: center;
     flex-direction: column-reverse !important;
     .treatment-left {
       width: 100%;
@@ -107,23 +109,22 @@
       background-size: cover !important;
     }
     .treatment-right {
-      width: 100%;
+      width: 95%;
       height: 70%;
       align-items: center;
       justify-content: center;
+      // background: red;
 
       .tratment-right-title {
         font-size: $medium;
         line-height: 18px;
-        width: 95%;
-        // background-color: red;
+        width: 100%;
+        // background-color: green;
         margin-bottom: 0px;
         display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
       }
       .tratment-right-txt {
-        width: 95%;
+        width: 100%;
         font-size: $x-small;
         line-height: 18px;
         // background-color: black;

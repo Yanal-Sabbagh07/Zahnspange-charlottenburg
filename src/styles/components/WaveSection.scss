@@ -71,15 +71,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: left;
+    width: 90%;
     // background-color: red;
     .WaveSection-content {
       font-weight: 400;
       font-family: "Merri-sans";
-      width: 95%;
+      width: 100%;
       font-size: $small;
       line-height: 22px;
-
       color: $gray-6;
+    }
+    .termin-button {
+      width: 100%;
     }
   }
 }
