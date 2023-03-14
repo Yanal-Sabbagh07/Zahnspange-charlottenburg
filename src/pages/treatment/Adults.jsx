@@ -41,7 +41,7 @@ const Adults = () => {
           reverse="true"
           image="url(../../imgs/Ästhetische.png)"
           color="#20ade4"
-          header="Ästhetische Keramik Brackets (AVL):"
+          header="Ästhetische Keramik Brackets:"
           text="Anstelle der normalerweise aus Metall gefertigten Brackets können auf besonderen Wunsch
           zahnnfarbene Keramikbrackets verwendet werden, die auch hohen ästhetischen
           Anforderungen während der Behandlungszeit gerecht werden. Die Oberfläche der Brackets
@@ -55,7 +55,7 @@ const Adults = () => {
           image="url(../../imgs/präprothetische.jpeg)"
           reverse="flase"
           color="#1f5ca2"
-          header="Präprothetische Kieferorthopädie"
+          header="Präprothetische Kieferorthopädie:"
           text="In der präprothetischen Kieferorthopädie verändern wir die Zahnstellung, um die
           Versorgung mit Zahnimplantaten, einer Brücke oder Prothese zu ermöglichen. Denn nur,
           wenn die sogenannten Pfeilerzähne (an denen der Zahnersatz befestigt wird) gerade sind,
@@ -70,7 +70,7 @@ const Adults = () => {
           image="url(../../imgs/kombinierte1.png)"
           reverse="true"
           color="#20ade4"
-          header="Kombinierte kieferchirurgische Kieferorthopädische Therapie"
+          header="Kombinierte kieferchirurgische Kieferorthopädische Therapie:"
           text="Die kombinierte kieferchirurgische kieferorthopädische Therapie, auch bekannt als
           orthognathe Chirurgie, ist eine Behandlungsoption für Patienten mit schweren
           Kieferanomalien, die nicht allein mit kieferorthopädischen Maßnahmen korrigiert werden
@@ -88,7 +88,7 @@ const Adults = () => {
           position="left"
           reverse="flase"
           color="#1f5ca2"
-          header="Digitale Kieferorthopädie"
+          header="Digitale Kieferorthopädie:"
           text="Durch den Einsatz digitaler Technologien in der Kieferorthopädie kann die Behandlung
           schneller, effektiver und präziser durchgeführt werden. Dies kann dazu beitragen, die
           Behandlungsergebnisse zu verbessern und den Patienten mehr Komfort zu bieten.
@@ -104,7 +104,7 @@ const Adults = () => {
           image="url(../../imgs/Redzidiv-Behandlung.png)"
           reverse="true"
           color="#20ade4"
-          header="Rezidiv-Behandlung"
+          header="Rezidiv-Behandlung:"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer kieferorthopädischen Behandlung in
           der Regel der Anfang der Retentionsphase ist. Wird in dieser Phase die Haltespange nicht
           regelmäßig getragen, verschieben sich die Zähne zurück in die Ausgangsituation und es
