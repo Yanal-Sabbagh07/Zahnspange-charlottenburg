@@ -19,6 +19,7 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/AlignerTherapie.jpeg)"
+          position="75%"
           color="#1f5ca2"
           header="Aligner Therapie:"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 
@@ -43,8 +44,7 @@ const Adults = () => {
           gerade gestellt werden und mit einem festen Retainer stabilisiert werden."
         />
       </section>
-      
-      
+
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/präprothetische.jpeg)"
@@ -76,6 +76,7 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/digitale.png)"
+          position="left"
           reverse="flase"
           color="#1f5ca2"
           header="Digitale Planung"

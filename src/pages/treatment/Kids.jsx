@@ -33,6 +33,7 @@ const Kids = () => {
       <section className="kids-treatment-container">
         <TreatmentSection
           image="url(../../imgs/feste.png)"
+          position="30%"
           reverse="true"
           color="#20ade4"
           header="Feste Zahnspange:"
@@ -48,6 +49,7 @@ const Kids = () => {
         <TreatmentSection
           reverse="false"
           image="url(../../imgs/Herausnehmbare.jpeg)"
+          position="70%"
           color="#1f5ca2"
           header="Herausnehmbare Zahnspange:"
           text="Vielen Patienten ist nicht bewusst, dass am Ende einer Kieferorthopädischen Behandlung, 

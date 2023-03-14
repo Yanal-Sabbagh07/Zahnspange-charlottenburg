@@ -24,6 +24,7 @@
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     top: 28px;
     right: 56px;
+    opacity: 0.93;
   }
 
   &__nav {
@@ -55,7 +56,7 @@
   &__item {
     margin-left: 2rem;
     // height: 70px;
-    width: 325px;
+    width: 250px;
 
     display: flex;
     align-items: center;
@@ -70,7 +71,7 @@
       display: inline-block;
       font-size: 26px;
       font-family: "Merri";
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 1px;
       padding: 1.2rem 2.4rem;
       color: $white;
