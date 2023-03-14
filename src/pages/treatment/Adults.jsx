@@ -19,6 +19,7 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/AlignerTherapie.jpeg)"
+          size="155%"
           position="75%"
           color="#1f5ca2"
           header="Aligner Therapie:"
@@ -40,6 +41,8 @@ const Adults = () => {
         <TreatmentSection
           reverse="true"
           image="url(../../imgs/Ästhetische.png)"
+          size="155%"
+          position="50% 100%"
           color="#20ade4"
           header="Ästhetische Keramik Brackets:"
           text="Anstelle der normalerweise aus Metall gefertigten Brackets können auf besonderen Wunsch
@@ -53,6 +56,8 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/präprothetische.jpeg)"
+          size="126%"
+          cn="Präprothetische"
           reverse="flase"
           color="#1f5ca2"
           header="Präprothetische Kieferorthopädie:"
@@ -68,6 +73,7 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/kombinierte1.png)"
+          size="125%"
           reverse="true"
           color="#20ade4"
           header="Kombinierte kieferchirurgische Kieferorthopädische Therapie:"
@@ -85,6 +91,7 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/digitale.png)"
+          size="135%"
           position="left"
           reverse="flase"
           color="#1f5ca2"
@@ -102,6 +109,8 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/Redzidiv-Behandlung.png)"
+          size="135%"
+          position="50% 70%"
           reverse="true"
           color="#20ade4"
           header="Rezidiv-Behandlung:"

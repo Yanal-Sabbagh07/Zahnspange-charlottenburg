@@ -18,6 +18,8 @@ const Kids = () => {
       <section className="kids-treatment-container">
         <TreatmentSection
           image="url(../../imgs/AlignerfürTeenager.png)"
+          size="150%"
+          position="20%"
           reverse="false"
           color="#1f5ca2"
           header="Aligner für Teenager:"
@@ -33,7 +35,8 @@ const Kids = () => {
       <section className="kids-treatment-container">
         <TreatmentSection
           image="url(../../imgs/feste.png)"
-          position="30%"
+          size="150%"
+          position="30% 60%"
           reverse="true"
           color="#20ade4"
           header="Feste Zahnspange:"
@@ -52,6 +55,7 @@ const Kids = () => {
         <TreatmentSection
           reverse="false"
           image="url(../../imgs/Herausnehmbare.jpeg)"
+          size="155%"
           position="70%"
           color="#1f5ca2"
           header="Herausnehmbare Zahnspangen:"
@@ -65,6 +69,7 @@ const Kids = () => {
       <section className="kids-treatment-container">
         <TreatmentSection
           image="url(../../imgs/Frühbehandlung.jpeg)"
+          size="155%"
           reverse="true"
           color="#20ade4"
           header="Frühbehandlung:"
@@ -79,6 +84,8 @@ const Kids = () => {
       <section className="kids-treatment-container">
         <TreatmentSection
           image="url(../../imgs/skelettale.png)"
+          size="135%"
+          position="50% 65%"
           reverse="flase"
           color="#1f5ca2"
           header="Skelettale Verankerung:"
@@ -97,6 +104,7 @@ const Kids = () => {
       <section className="kids-treatment-container">
         <TreatmentSection
           image="url(../../imgs/festenRetainer.png)"
+          size="135%"
           reverse="true"
           color="#20ade4"
           header="Feste Retainer:"

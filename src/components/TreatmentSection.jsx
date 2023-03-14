@@ -18,6 +18,7 @@ const TreatmentSection = (props) => {
         style={{
           backgroundImage: props.image,
           backgroundPosition: props.position,
+          backgroundSize: props.size,
         }}
       ></div>
     </div>
