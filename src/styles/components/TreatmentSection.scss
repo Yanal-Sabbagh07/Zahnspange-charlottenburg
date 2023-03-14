@@ -108,13 +108,13 @@
     }
     .treatment-right {
       width: 100%;
-      height: 68%;
+      height: 70%;
       align-items: center;
       justify-content: center;
 
       .tratment-right-title {
         font-size: $medium;
-        line-height: 24px;
+        line-height: 18px;
         width: 95%;
         // background-color: red;
         margin-bottom: 0px;
@@ -125,7 +125,7 @@
       .tratment-right-txt {
         width: 95%;
         font-size: $x-small;
-        line-height: 20px;
+        line-height: 18px;
         // background-color: black;
         display: flex;
         align-items: flex-start;
@@ -134,7 +134,7 @@
     }
     .aligner {
       width: 100%;
-      height: 35%;
+      height: 30%;
       background-position: 50% 30%;
       background-size: cover;
 
@@ -144,7 +144,7 @@
     }
     .ästhetische {
       width: 100%;
-      height: 35%;
+      height: 50%;
       background-position: 50% 80%;
       background-size: cover;
       transition: all 0.5s ease;
