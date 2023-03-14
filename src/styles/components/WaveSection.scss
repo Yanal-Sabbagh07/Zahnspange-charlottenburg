@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 12%;
+    height: 10%;
     // background-color: red;
     .welcome-title {
       // background-color: #fff;
@@ -67,7 +67,7 @@
     background-repeat: no-repeat;
   }
   .WaveSection-content-container {
-    height: 58%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,9 +77,8 @@
       font-family: "Merri-sans";
       width: 95%;
       font-size: $small;
-      line-height: 22px;
-      // letter-spacing: 0.8px;
-      // word-spacing: 3px;
+      line-height: 20px;
+
       color: $gray-6;
     }
   }
