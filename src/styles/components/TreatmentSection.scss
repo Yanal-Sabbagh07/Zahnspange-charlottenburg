@@ -69,6 +69,71 @@
       background-size: 142%;
     }
   }
+  .aligner-teen {
+    width: 50%;
+    height: 100%;
+    background-size: 155%;
+    background-position: 25% 50%;
+    transition: all 0.5s ease;
+    &:hover {
+      background-size: 160%;
+    }
+  }
+  .feste {
+    width: 50%;
+    height: 100%;
+    background-position: 35% 100%;
+    background-size: 152%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 157%;
+    }
+  }
+  .herausnehmbare {
+    width: 50%;
+    height: 100%;
+    background-position: 70% 50%;
+    background-size: 160%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 165%;
+    }
+  }
+  .frühbehandlung {
+    width: 50%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: 158%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 163%;
+    }
+  }
+  .skelettale {
+    width: 50%;
+    height: 100%;
+    background-position: 50% 70%;
+    background-size: 158%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 163%;
+    }
+  }
+  .retainer {
+    width: 50%;
+    height: 100%;
+    background-position: 50% 70%;
+    background-size: 141%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-size: 146%;
+    }
+  }
 
   .treatment-right {
     width: 50%;
@@ -144,7 +209,7 @@
     .ästhetische {
       width: 100%;
       height: 45%;
-      background-position: 50% 100%;
+      background-position: 50% 90%;
       background-size: cover;
       transition: all 0.5s ease;
 
@@ -193,6 +258,71 @@
       transition: all 0.5s ease;
       &:hover {
         background-size: cover;
+      }
+    }
+    .aligner-teen {
+      width: 100%;
+      height: 50%;
+      background-size: cover;
+      background-position: 0% 50%;
+      transition: all 0.5s ease;
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .feste {
+      width: 100%;
+      height: 45%;
+      background-position: 50% 90%;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: cover;
+      }
+    }
+    .herausnehmbare {
+      width: 100%;
+      height: 50%;
+      background-position: 100% 50%;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: center;
+      }
+    }
+    .frühbehandlung {
+      width: 100%;
+      height: 50%;
+      background-position: center;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: 163%;
+      }
+    }
+    .skelettale {
+      width: 100%;
+      height: 50%;
+      background-position: bottom;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: 163%;
+      }
+    }
+    .retainer {
+      width: 100%;
+      height: 50%;
+      background-position: center;
+      background-size: cover;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-size: 163%;
       }
     }
   }

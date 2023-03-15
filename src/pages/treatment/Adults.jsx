@@ -20,8 +20,6 @@ const Adults = () => {
         <TreatmentSection
           image="url(../../imgs/AlignerTherapie.jpeg)"
           cn="aligner"
-          size="155%"
-          position="75%"
           color="#1f5ca2"
           header="Aligner Therapie:"
           text="Bei der Aligner-Therapie werden durchsichtige Kunststoffschienen, die als Aligner bezeichnet
@@ -43,8 +41,6 @@ const Adults = () => {
           reverse="true"
           image="url(../../imgs/Ästhetische.png)"
           cn="ästhetische"
-          size="155%"
-          position="50% 100%"
           color="#20ade4"
           header="Ästhetische Keramik Brackets:"
           text="Anstelle der normalerweise aus Metall gefertigten Brackets können auf besonderen Wunsch
@@ -58,7 +54,6 @@ const Adults = () => {
       <section className="adults-treatment-container">
         <TreatmentSection
           image="url(../../imgs/präprothetische.jpeg)"
-          size="126%"
           cn="Präprothetische"
           reverse="flase"
           color="#1f5ca2"
@@ -76,7 +71,6 @@ const Adults = () => {
         <TreatmentSection
           image="url(../../imgs/kombinierte1.png)"
           cn="Kombinierte"
-          size="125%"
           reverse="true"
           color="#20ade4"
           header="Kombinierte kieferchirurgische Kieferorthopädische Therapie:"
@@ -84,7 +78,6 @@ const Adults = () => {
           orthognathe Chirurgie, ist eine Behandlungsoption für Patienten mit schweren
           Kieferanomalien, die nicht allein mit kieferorthopädischen Maßnahmen korrigiert werden
           können.
-          
           Die Behandlung kann umfangreich sein und erfordert möglicherweise eine längere
           Genesungszeit, aber sie kann dazu beitragen, schwerwiegende Kieferprobleme zu
           korrigieren und eine verbesserte Lebensqualität zu bieten.
@@ -95,8 +88,6 @@ const Adults = () => {
         <TreatmentSection
           image="url(../../imgs/digitale.png)"
           cn="Digitale"
-          size="135%"
-          position="left"
           reverse="flase"
           color="#1f5ca2"
           header="Digitale Kieferorthopädie:"
@@ -114,7 +105,6 @@ const Adults = () => {
         <TreatmentSection
           image="url(../../imgs/Redzidiv-Behandlung.png)"
           cn="Rezidiv"
-          position="50% 70%"
           reverse="true"
           color="#20ade4"
           header="Rezidiv-Behandlung:"
