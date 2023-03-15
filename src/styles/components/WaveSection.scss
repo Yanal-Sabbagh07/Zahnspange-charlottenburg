@@ -64,13 +64,13 @@
     background-image: url("../../imgs/waves.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
   }
   .WaveSection-content-container {
     height: 60%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: left;
     width: 90%;
     // background-color: red;
@@ -84,6 +84,8 @@
     }
     .termin-button {
       width: 100%;
+      .appointment-button {
+      }
     }
   }
 }
