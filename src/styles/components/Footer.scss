@@ -28,7 +28,8 @@
         align-items: flex-end;
         justify-content: center;
         background-image: url("../../../public/imgs/google-map.png");
-        background-size: cover;
+        background-size: 100% 100%;
+        background-position: center;
         border: 8px solid $light-blue;
         border-radius: 16px;
         .gmap-div-container {
@@ -104,23 +105,25 @@
         }
 
         .map-before-btn {
-          margin-bottom: 8px;
-          width: 175px;
-          height: 45px;
+          margin-bottom: 16px;
+          width: 180px;
+          height: 50px;
           font-size: $small;
           font-weight: 700;
           border-radius: 8px;
-          border: 2px solid $light-blue;
+          border: 4px solid $light-blue;
           cursor: pointer;
           background-color: $white;
-          color: $light-blue;
+          color: $dark-blue;
           opacity: 1;
+          transition: all 0.5s ease;
 
           &:hover {
             opacity: 1;
             background-color: $light-blue;
-            border: 1px solid $light-blue;
+            border: 4px solid $light-blue;
             color: $white;
+            font-weight: 700;
           }
         }
       }
