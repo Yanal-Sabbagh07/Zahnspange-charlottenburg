@@ -13,6 +13,38 @@ const Hole = () => {
   if (!userPermession)
     return (
       <div className="map-before-loading">
+        <div className="gmap-div-container">
+          <div className="gmap-content">
+            <div className="gmap-name">
+              Zahnspange Charlottenburg / <br />
+              Dr.Nawras Darkazanli
+            </div>
+            <div className="name-txt">
+              Richard-Wagner-Platz 3 <br /> 10585 Berlin
+            </div>
+            <div className="bewertung">
+              <span>4,3</span>
+              <StarIcon className="full-star" />
+              <StarIcon className="full-star" />
+              <StarIcon className="full-star" />
+              <StarIcon className="full-star" />
+              <StarHalfIcon className="half-star" />
+              <span>(45)</span>
+            </div>
+          </div>
+          <div className="gmap-direction">
+            <div className="route-icon-container">
+              <AltRouteIcon className="route-icon" />
+            </div>
+            <a
+              href="https://goo.gl/maps/DHKyNRQ9tzcoiURw8"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Routenplaner
+            </a>
+          </div>
+        </div>
         <button
           className="map-before-btn"
           onClick={() => setUserPermession(true)}
@@ -53,11 +85,6 @@ function Map() {
         <div className="gmap-div-container">
           <div className="gmap-content">
             <div className="gmap-name">
-              {/* <img
-                src={require("../imgs/logo-trans.png")}
-                alt="rose"
-                className="rose"
-              /> */}
               Zahnspange Charlottenburg / <br />
               Dr.Nawras Darkazanli
             </div>
