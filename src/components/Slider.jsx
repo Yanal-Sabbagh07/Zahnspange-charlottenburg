@@ -7,6 +7,36 @@ const Slider = (props) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [delay, setDelay] = useState(7000);
   const [arrowClicked, setArrowClicked] = useState(false);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  // the required distance between touchStart and touchEnd to be detected as a swipe
+  const minSwipeDistance = 50;
+  const onTouchStart = (e) => {
+    setTouchEnd(null); // otherwise the swipe is fired even with usual touch events
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    if (isLeftSwipe) {
+      setSlideIndex(slideIndex < props.count ? slideIndex + 1 : props.count);
+      setDelay(500000);
+      console.log("swipe", isLeftSwipe ? "left" : "right");
+    }
+    //   console.log("swipe", isLeftSwipe ? "left" : "right");
+    // // add your conditional logic here
+    // setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 0);
+    else if (isRightSwipe) {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 0);
+      setDelay(500000);
+      console.log("swipe", isLeftSwipe ? "left" : "right");
+    }
+  };
 
   function useInterval(callback, delay) {
     const savedCallback = useRef();
@@ -42,7 +72,12 @@ const Slider = (props) => {
   }, delay);
   // console.log(props);
   return (
-    <div className="slider-container">
+    <div
+      className="slider-container"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
       <div className="arrow arrow-left" onClick={() => handleClick("left")}>
         <ArrowBackIosNewIcon className="arrow-icon" />
       </div>
@@ -63,7 +98,7 @@ const Slider = (props) => {
               : slideIndex === 6
               ? "translateX(-600vw)"
               : "translateX(0)",
-          transition: arrowClicked && "all .5s ease",
+          transition: (arrowClicked || touchEnd) && "all .5s ease",
         }}
       >
         <div className="image-container">
