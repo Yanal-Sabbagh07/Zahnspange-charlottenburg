@@ -157,16 +157,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
             font-family: "Merri-sans";
             font-weight: 300;
             font-size: $medium;
-            // background-color: blue;
+            // background-color: green;
             .details-name {
               width: 90%;
-              height: 25%;
+              height: 15%;
               display: flex;
-              // background-color: green;
+              // background-color: yellow;
               align-items: center;
               justify-content: center;
               .name-icon {
@@ -209,14 +209,14 @@
             }
           }
           .last-open-times {
-            width: 100%;
+            width: 90%;
             height: 15%;
             // background-color: red;
             display: flex;
             align-items: flex-end;
             justify-content: center;
             .btn-footer-descktop {
-              width: 85%;
+              width: 96%;
 
               .termin-button {
                 width: 100%;

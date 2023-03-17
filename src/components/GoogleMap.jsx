@@ -79,15 +79,7 @@ function Map() {
         fullscreenControl: true,
       }}
     >
-      <Marker
-        position={center}
-        onClick={onMarkerClick}
-        // label={{
-        //   text: "zahnspange charlottenburg",
-        //   fontSize: "14px",
-        //   labelColor: "red",
-        // }}
-      >
+      <Marker position={center} onClick={onMarkerClick} animation={2}>
         {markerOpen && (
           <InfoWindow
             position={{ lat: 52.51712, lng: 13.30591 }}
