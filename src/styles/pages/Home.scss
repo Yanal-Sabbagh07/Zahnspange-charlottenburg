@@ -308,6 +308,24 @@
         }
       }
     }
+    .treatment-process-section {
+      // background-color: red;
+      margin-bottom: 60px;
+      .treatment-process-title-container {
+        height: 70px;
+        // background-color: green;
+        h1 {
+          font-size: 28px;
+        }
+      }
+      .treatment-process-container {
+        flex-direction: column;
+        .treatment-proccess-card-conainer {
+          width: 100% !important;
+          height: 375px;
+        }
+      }
+    }
     .hero-section3 {
       height: calc(125vh - 60px);
       // display: flex;
