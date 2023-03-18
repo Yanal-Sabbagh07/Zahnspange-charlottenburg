@@ -6,28 +6,12 @@ import Footer from "../../components/Footer";
 import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import TreatmentProcess from "../../components/TreatmentProcess";
+import homeSlider from "../../helpers/homeSlider";
 const index = () => {
   return (
     <div className="home-page">
       <section className="hero-section" id="/">
-        <Slider
-          hero2="6"
-          hero2Cn="image1"
-          hero1="hero2"
-          hero1Cn="image2"
-          hero3="hero1"
-          hero3Cn="image3"
-          hero4="hero2"
-          hero4Cn="image3"
-          hero5="hero2"
-          hero5Cn="rooms"
-          hero6="hero2"
-          hero6Cn="rooms"
-          hero7="hero2"
-          hero7Cn="rooms"
-          count={2}
-          type=".jpg"
-        />
+        <Slider sliderData={homeSlider} count={2} type=".jpg" />
         <div className="welcome-title-mobile-container">
           <h1 className="welcome-title-mobile">
             Willkommen in unserer kieferorthopädischen Facharztpraxis in <br />

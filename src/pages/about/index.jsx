@@ -6,28 +6,12 @@ import Collapsable from "../../components/Collapsable";
 import NurseCard from "../../components/NurseCard";
 import nurses from "../../helpers/nurses";
 import Footer from "../../components/Footer";
+import { aboutSlider } from "../../helpers/aboutSlider";
 const About = () => {
   return (
     <div className="aboutus-page-container">
       <section className="slider-contianer">
-        <Slider
-          hero2="25"
-          hero2Cn="waiting1"
-          hero1="27"
-          hero1Cn="waiting2"
-          hero3="26"
-          hero3Cn="zahnputz"
-          hero4="24"
-          hero4Cn="waiting3"
-          hero5="23"
-          hero5Cn="rooms"
-          hero6="21"
-          hero6Cn="chairs"
-          hero7="29"
-          hero7Cn="image-chair"
-          count={6}
-          type=".png"
-        />
+        <Slider sliderData={aboutSlider} count={6} />
         {/* <div className="about-hero-img"></div> */}
       </section>
       <section className="team-section-container">

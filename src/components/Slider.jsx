@@ -3,6 +3,7 @@ import "../styles/components/Slider.scss";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 // import Image from "react-image-webp";
+import Slide from "./Slide";
 const Slider = (props) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [delay, setDelay] = useState(7000);
@@ -71,6 +72,7 @@ const Slider = (props) => {
     }
   }, delay);
   // console.log(props);
+  console.log(props.sliderData[0].id);
   return (
     <div
       className="slider-container"
@@ -101,51 +103,16 @@ const Slider = (props) => {
           transition: (arrowClicked || touchEnd) && "all .5s ease",
         }}
       >
-        <div className="image-container">
-          <div className="hero-image">
-            <div
-              // src={require(`../imgs/${props.hero2}${props.type}`)}
-              // webp={require(`../imgs/${props.hero2}.webp`)}
-              className={props.hero2Cn}
-            />
-          </div>
-        </div>
-
-        <div className="image-container">
-          <div className="hero-image">
-            <div
-              // src={require(`../imgs/${props.hero1}${props.type}`)}
-              // webp={require(`../imgs/${props.hero1}.webp`)}
-              className={props.hero1Cn}
-            />
-          </div>
-        </div>
-
-        <div className="image-container">
-          <div className="hero-image">
-            <div className={props.hero4Cn} />
-          </div>
-        </div>
-        <div className="image-container">
-          <div className="hero-image">
-            <div className={props.hero3Cn} />
-          </div>
-        </div>
-        <div className="image-container">
-          <div className="hero-image">
-            <div className={props.hero5Cn} />
-          </div>
-        </div>
-        <div className="image-container">
-          <div className="hero-image">
-            <div className={props.hero6Cn} />
-          </div>
-        </div>
-        <div className="image-container">
-          <div className="hero-image">
-            <div className={props.hero7Cn} />
-          </div>
-        </div>
+        {props.sliderData.map(function (element) {
+          return <Slide class={element.slideClassName} />;
+        })}
+        {/* <Slide class={props.slide1ClassName} />
+        <Slide class={props.slide2ClassName} />
+        <Slide class={props.slide3ClassName} />
+        <Slide class={props.slide4ClassName} />
+        <Slide class={props.slide5ClassName} />
+        <Slide class={props.slide6ClassName} />
+        <Slide class={props.slide7ClassName} /> */}
       </div>
       <div className="arrow arrow-right" onClick={() => handleClick("right")}>
         <ArrowForwardIosIcon className="arrow-icon" />
