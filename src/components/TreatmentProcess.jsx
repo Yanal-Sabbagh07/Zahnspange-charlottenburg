@@ -10,7 +10,7 @@ const TreatmentProcess = (props) => {
           className="img"
         />
       </div>
-      <div cn="txt-container">
+      <div className="txt-container">
         <div className="txt-header-container">
           <h4>{props.title}</h4>
         </div>
