@@ -5,142 +5,190 @@
   scroll-behavior: smooth;
   overflow: overlay;
   scroll-snap-type: y mandatory;
-}
-.hero-section {
-  max-width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  scroll-snap-align: end;
-  .welcome-title-mobile-container {
-    display: none;
-  }
-}
 
-.hero-section2 {
-  width: 100%;
-  height: calc(100vh - 90px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  scroll-snap-align: end; // control where to stop after scrolling
-  margin-top: 90px;
-
-  .welcome-title-container {
-    width: 100%;
-    height: 21%;
-    // border: 1px solid black;
+  .hero-section {
+    max-width: 100vw;
+    height: 100vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    // margin-bottom: 0px;
-    // border: 1px solid black;
-
-    .welcome-title {
-      width: 80%;
-      height: 100%;
-      font-size: 42px;
-      letter-spacing: 1px;
-      color: $dark-blue;
-      font-weight: 900;
-      line-height: 58px;
-      font-family: "Merri";
-      // background-color: red;
+    scroll-snap-align: end;
+    .welcome-title-mobile-container {
+      display: none;
     }
   }
 
-  .welcome-waves {
+  .hero-section2 {
     width: 100%;
-    height: 40%;
-    background-image: url("../../../public/imgs/waves.jpg");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .welcome-content-container {
-    width: 80%;
-    height: 40%;
+    height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    .welcome-last-1 {
+    scroll-snap-align: end; // control where to stop after scrolling
+    margin-top: 90px;
+    // background-color: $gray-2;
+
+    .welcome-title-container {
       width: 100%;
-      height: 50%;
+      height: 21%;
+      // border: 1px solid black;
       display: flex;
-      align-items: flex-end;
+      align-items: flex-start;
       justify-content: center;
-      // background-color: red;
-      .welcome-content {
-        font-size: $large;
-        margin-top: 0px;
-        font-weight: 400;
+      // margin-bottom: 0px;
+      // border: 1px solid black;
+
+      .welcome-title {
+        width: 80%;
+        height: 100%;
+        font-size: 42px;
         letter-spacing: 1px;
-        line-height: 34px;
-        font-family: "Merri-sans";
-        color: $gray-7;
+        color: $dark-blue;
+        font-weight: 900;
+        line-height: 58px;
+        font-family: "Merri";
+        // background-color: red;
       }
     }
-    .welcome-last-2 {
+
+    .welcome-waves {
       width: 100%;
-      height: 60px;
+      height: 40%;
+      background-image: url("../../../public/imgs/waves.jpg");
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .welcome-content-container {
+      width: 80%;
+      height: 40%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      // background-color: red;
-      .welcome-owner-txt {
-        margin-top: 14px;
-        height: 100%;
-        font-size: $large;
-        font-weight: 700;
-        letter-spacing: 0.75px;
-        line-height: 32px;
-        font-family: "Merri";
-        cursor: pointer;
-        color: $dark-blue;
-        text-decoration: none;
+      justify-content: space-evenly;
+      .welcome-last-1 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        // background-color: red;
+        .welcome-content {
+          font-size: $large;
+          margin-top: 0px;
+          font-weight: 400;
+          letter-spacing: 1px;
+          line-height: 34px;
+          font-family: "Merri-sans";
+          color: $gray-7;
+        }
       }
-      .welcome-owner-txt:hover {
-        color: $light-blue;
+      .welcome-last-2 {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // background-color: red;
+        .welcome-owner-txt {
+          margin-top: 14px;
+          height: 100%;
+          font-size: $large;
+          font-weight: 700;
+          letter-spacing: 0.75px;
+          line-height: 32px;
+          font-family: "Merri";
+          cursor: pointer;
+          color: $dark-blue;
+          text-decoration: none;
+        }
+        .welcome-owner-txt:hover {
+          color: $light-blue;
+        }
       }
-    }
-    .welcome-btn {
-      width: 100%;
-      height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .termin-button {
-        // width: 33.3%;
-        .appointment-button {
-          border-radius: 8px;
+      .welcome-btn {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .termin-button {
+          // width: 33.3%;
+          .appointment-button {
+            border-radius: 8px;
+          }
         }
       }
     }
   }
-}
-.hero-section3 {
-  height: calc(100vh - 90px);
-  background-color: #fff;
-  scroll-snap-align: end;
-  margin-top: 94px;
-  background-color: $dark-blue;
-  display: flex;
-
-  .last-section-container {
+  .treatment-process-section {
     width: 100%;
-    height: 100%;
+    height: calc(100%);
+    margin-top: 90px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+
+    .treatment-process-title-container {
+      width: 94%;
+      height: 120px;
+      // background-color: green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 50px;
+        color: $dark-blue;
+        font-family: "Merri";
+        font-weight: 900;
+      }
+    }
+    .treatment-process-container {
+      width: 94%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      // margin-bottom: 40px;
+      // background-color: red;
+      .treatment-proccess-card-conainer {
+        width: 30%;
+        height: 350px;
+        background-color: $gray-0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin: 40px 0px;
+        border-radius: 10px;
+        margin: 40px 0 20px 0;
+      }
+    }
+  }
+  .hero-section3 {
+    height: calc(100vh - 90px);
+    background-color: #fff;
+    scroll-snap-align: end;
+    // margin-top: 90px;
     background-color: $dark-blue;
     display: flex;
-  }
-  .la {
-    color: red !important;
+
+    .last-section-container {
+      width: 100%;
+      height: 100%;
+      background-color: $dark-blue;
+      display: flex;
+    }
+    .la {
+      color: red !important;
+    }
   }
 }
-
 // ------------------------------------------------- MOBILE DESIGN --------------------------------------
 
 @media screen and (max-width: 480px) {
@@ -149,120 +197,121 @@
     height: 100%;
     // background-color: $gray-0;
     margin-bottom: 60px;
-  }
-  .hero-section {
-    width: 100%;
-    height: calc(100vh - 160px);
 
-    // background-color: #fff;
-
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    .welcome-title-mobile-container {
-      // background-color: black;
-      height: 40%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      // margin-bottom: 0px;
-
-      .welcome-title-mobile {
-        color: $gray-5;
-        font-family: "Merri";
-        font-size: $xxx-large;
-        line-height: 42px;
-        letter-spacing: 2px;
-        // margin-bottom: 0px;
-        span {
-          font-size: $medium;
-          font-weight: 900;
-          // color: $dark-blue;
-          // color: $gray-6;
-        }
-      }
-    }
-    .social-container {
-      // margin-top: 0px;
-      height: 90px;
+    .hero-section {
       width: 100%;
+      height: calc(100vh - 160px);
+
+      // background-color: #fff;
+
+      margin-top: 90px;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      background-color: $gray-2;
-      border-radius: 4px;
-      .social-wrapper {
-        width: 100%;
-        height: 100%;
+      justify-content: flex-start;
+      .welcome-title-mobile-container {
+        // background-color: black;
+        height: 40%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        .icons-container {
-          .icon {
-            font-size: $huge-mobile;
-            color: $dark-blue;
+        justify-content: flex-end;
+        // margin-bottom: 0px;
+
+        .welcome-title-mobile {
+          color: $gray-5;
+          font-family: "Merri";
+          font-size: $xxx-large;
+          line-height: 42px;
+          letter-spacing: 2px;
+          // margin-bottom: 0px;
+          span {
+            font-size: $medium;
+            font-weight: 900;
+            // color: $dark-blue;
+            // color: $gray-6;
+          }
+        }
+      }
+      .social-container {
+        // margin-top: 0px;
+        height: 90px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $gray-2;
+        border-radius: 4px;
+        .social-wrapper {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          .icons-container {
+            .icon {
+              font-size: $huge-mobile;
+              color: $dark-blue;
+            }
           }
         }
       }
     }
-  }
-  .hero-section2 {
-    justify-content: space-evenly;
-    margin-top: -90px;
-    .welcome-title-container {
-      display: none;
-    }
-    .welcome-waves {
-      width: 100%;
-      height: 25%;
-    }
-    .welcome-content-container {
-      width: 95%;
-      height: 65%;
+    .hero-section2 {
       justify-content: space-evenly;
-
-      .welcome-last-1 {
-        width: 100%;
-        height: 250px;
-        .welcome-content {
-          font-size: $small;
-          letter-spacing: 0.5px;
-          line-height: 24px;
-        }
+      margin-top: -90px;
+      .welcome-title-container {
+        display: none;
       }
-      .welcome-last-2 {
+      .welcome-waves {
         width: 100%;
-        height: 75px;
-
-        .welcome-owner-txt {
-          margin-top: 8px;
-          height: 100%;
-          font-size: $x-small;
-          font-weight: 600;
-          letter-spacing: 0.75px;
-          line-height: 32px;
-          font-family: "Merri";
-          cursor: pointer;
-          color: $gray-7;
-        }
+        height: 25%;
       }
-      .welcome-btn {
-        height: 75px;
-        .termin-button {
+      .welcome-content-container {
+        width: 95%;
+        height: 65%;
+        justify-content: space-evenly;
+
+        .welcome-last-1 {
           width: 100%;
+          height: 250px;
+          .welcome-content {
+            font-size: $small;
+            letter-spacing: 0.5px;
+            line-height: 24px;
+          }
         }
-        .appointment-button {
-          border-radius: 8px;
-          font-size: $medium;
+        .welcome-last-2 {
+          width: 100%;
+          height: 75px;
+
+          .welcome-owner-txt {
+            margin-top: 8px;
+            height: 100%;
+            font-size: $x-small;
+            font-weight: 600;
+            letter-spacing: 0.75px;
+            line-height: 32px;
+            font-family: "Merri";
+            cursor: pointer;
+            color: $gray-7;
+          }
+        }
+        .welcome-btn {
+          height: 75px;
+          .termin-button {
+            width: 100%;
+          }
+          .appointment-button {
+            border-radius: 8px;
+            font-size: $medium;
+          }
         }
       }
     }
-  }
-  .hero-section3 {
-    height: calc(125vh - 60px);
-    // display: flex;
-    margin-top: 0px;
+    .hero-section3 {
+      height: calc(125vh - 60px);
+      // display: flex;
+      margin-top: 0px;
+    }
   }
 }

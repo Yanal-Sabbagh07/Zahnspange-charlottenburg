@@ -10,12 +10,14 @@ import StarIcon from "@mui/icons-material/Star";
 import StarHalfIcon from "@mui/icons-material/StarHalf";
 import AltRouteIcon from "@mui/icons-material/AltRoute";
 
+import CircularProgress from "@mui/material/CircularProgress";
+
 const Hole = () => {
   const [userPermession, setUserPermession] = useState(false);
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_API_KEY,
   });
-  if (!isLoaded) return <div>loading screen</div>;
+
   if (!userPermession)
     return (
       <div className="map-before-loading">
@@ -59,7 +61,27 @@ const Hole = () => {
         </button>
       </div>
     );
-  return <Map />;
+  else if (userPermession && !isLoaded)
+    return (
+      <div
+        className="Loading-screen"
+        style={{
+          width: "100%",
+          height: "200px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "space-evenly",
+          alignSelf: "center",
+        }}
+      >
+        <CircularProgress
+          style={{ width: "75px", height: "75px", color: "white" }}
+        />
+        Google Map
+      </div>
+    );
+  else return <Map />;
 };
 
 function Map() {
