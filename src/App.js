@@ -1,5 +1,5 @@
 import "./App.css";
-import { Header } from "./components/Header";
+// import { Header } from "./components/Header";
 import MobileFooter from "./components/MobileFooter";
 import Navigation from "./components/Navigation";
 import { routes } from "./routes";
@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <Header />
       <RoutesRenderer routes={routes} />
       <MobileFooter className="mobile-footer-container" />
     </div>

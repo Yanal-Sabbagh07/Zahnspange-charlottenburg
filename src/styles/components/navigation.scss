@@ -1,5 +1,9 @@
 @import "../variables.scss";
 .navigation {
+  &__header {
+    width: 100%;
+    height: 100%;
+  }
   &__button {
     background-color: $white;
     height: 70px;
@@ -11,7 +15,7 @@
     box-shadow: 0 1rem 3rem rgba($light-blue, 0.3);
     cursor: pointer;
     top: 10px;
-    right: 39px;
+    right: 40px;
   }
 
   &__background {
@@ -24,14 +28,14 @@
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     top: 28px;
     right: 56px;
-    opacity: 0.93;
+    opacity: 0.97;
   }
 
   &__nav {
-    height: 100%;
+    height: calc(100% - 90px);
     width: 0%;
     position: fixed;
-    top: 0;
+    top: 45px;
     left: -100vw;
     z-index: 1500;
     opacity: 0;
@@ -71,9 +75,9 @@
       display: inline-block;
       font-size: 26px;
       font-family: "Merri";
-      font-weight: 700;
+      font-weight: 900;
       letter-spacing: 1px;
-      padding: 1.2rem 2.4rem;
+      padding: 1.4rem 2.4rem;
       color: $white;
       text-decoration: none;
       // text-transform: uppercase;
@@ -136,7 +140,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: $red-5;
+    background-color: $dark-blue;
     border-radius: 5px;
     transform: rotate(135deg);
     top: 35px;
@@ -147,7 +151,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: $red-5;
+    background-color: $dark-blue;
     border-radius: 5px;
     transform: rotate(-135deg);
     top: 35px;

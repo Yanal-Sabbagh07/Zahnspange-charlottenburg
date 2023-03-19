@@ -5,6 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "../styles/components/navigation.scss";
+import Header from "./Header";
 const Navigation = () => {
   const [navOpen, setnavOpen] = useState(false);
   const [expanded, setExpanded] = React.useState(false);
@@ -14,6 +15,7 @@ const Navigation = () => {
   };
   return (
     <div className="navigation">
+      <Header open={navOpen} setOpen={setnavOpen} />
       <div
         className="navigation__button"
         onClick={() => setnavOpen(!navOpen)}

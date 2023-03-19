@@ -71,8 +71,7 @@ const Slider = (props) => {
       setSlideIndex(slideIndex + 1);
     }
   }, delay);
-  // console.log(props);
-  console.log(props.sliderData[0].id);
+
   return (
     <div
       className="slider-container"
@@ -104,15 +103,8 @@ const Slider = (props) => {
         }}
       >
         {props.sliderData.map(function (element) {
-          return <Slide class={element.slideClassName} />;
+          return <Slide class={element.slideClassName} key={element.id} />;
         })}
-        {/* <Slide class={props.slide1ClassName} />
-        <Slide class={props.slide2ClassName} />
-        <Slide class={props.slide3ClassName} />
-        <Slide class={props.slide4ClassName} />
-        <Slide class={props.slide5ClassName} />
-        <Slide class={props.slide6ClassName} />
-        <Slide class={props.slide7ClassName} /> */}
       </div>
       <div className="arrow arrow-right" onClick={() => handleClick("right")}>
         <ArrowForwardIosIcon className="arrow-icon" />

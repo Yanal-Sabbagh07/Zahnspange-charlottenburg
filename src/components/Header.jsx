@@ -6,18 +6,30 @@ import PlaceIcon from "@mui/icons-material/Place";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-export const Header = () => {
+export const Header = (props) => {
   const [phoneSelected, setPhoneSelected] = useState(false);
   let location = useLocation();
   return (
     <div
       className="header-container"
-      style={{ opacity: location.pathname === "/" ? ".88" : "1" }}
+      style={{
+        opacity: location.pathname === "/" ? ".88" : "1",
+        backgroundColor: !props.open ? "white" : "transparent",
+        transition: "all 1.8s ease",
+        boxShadow: !props.open
+          ? "rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          : "rgba(255, 255, 255, 1) 1px 1px 1px 1px, rgb(0, 0, 0) 0px 0px 0px 1px",
+      }}
     >
       <div className="logo-container">
         <div className="logo-wrapper">
           <Link to="/">
-            <img src="../imgs/logo.webp" alt="logo" className="logo" />
+            <img
+              src={!props.open ? "../imgs/logo.webp" : "../imgs/logo-white.png"}
+              alt="logo"
+              className="logo"
+              onClick={() => props.setOpen(false)}
+            />
           </Link>
         </div>
       </div>
@@ -25,7 +37,13 @@ export const Header = () => {
         <div className="social-wrapper">
           <div className="icons-container">
             <a href="mailto:info@zahnspange-charlottenburg.de">
-              <EmailIcon className="icon" />
+              <EmailIcon
+                className="icon"
+                style={{
+                  color: !props.open ? "1f5ca2" : "white",
+                  transition: "all .3s ease",
+                }}
+              />
             </a>
           </div>
           <div className="icons-container">
@@ -34,7 +52,13 @@ export const Header = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <PlaceIcon className="icon" />
+              <PlaceIcon
+                className="icon"
+                style={{
+                  color: !props.open ? "1f5ca2" : "white",
+                  transition: "all .3s ease",
+                }}
+              />
             </a>
           </div>
           <div className="icons-container">
@@ -44,15 +68,22 @@ export const Header = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <CalendarMonthIcon className="icon" />
+              <CalendarMonthIcon
+                className="icon"
+                style={{
+                  color: !props.open ? "1f5ca2" : "white",
+                  transition: "all .3s ease",
+                }}
+              />
             </a>
           </div>
-          <div className="phone-icon-container">
+          <div className="icons-container phone-icon-container">
             <PhoneIcon
               className="icon"
               onClick={() => setPhoneSelected(!phoneSelected)}
               style={{
-                color: phoneSelected && "#20ade4",
+                color: !props.open ? "1f5ca2" : "white",
+                transition: "all .3s ease",
               }}
             />
 
