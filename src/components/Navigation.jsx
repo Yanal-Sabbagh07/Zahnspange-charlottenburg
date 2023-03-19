@@ -145,7 +145,7 @@ const Navigation = () => {
           </li>
         </ul>
       </nav>
-      <MobileFooter className="mobile-footer-container" />
+      <MobileFooter className="mobile-footer-container" open={navOpen} />
     </div>
   );
 };

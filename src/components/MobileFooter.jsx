@@ -4,9 +4,16 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import PlaceIcon from "@mui/icons-material/Place";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import "../styles/components/Mobile-Footer.scss";
-const MobileFooter = () => {
+const MobileFooter = (props) => {
+  const open = props.open;
   return (
-    <div className={"social-container"}>
+    <div
+      className={"social-container"}
+      style={{
+        backgroundColor: !open ? "" : "white",
+        transition: "all .8s ease",
+      }}
+    >
       <div className="social-wrapper">
         <div className="icons-container">
           <a href="mailto:info@zahnspange-charlottenburg.de">

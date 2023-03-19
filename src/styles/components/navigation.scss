@@ -182,7 +182,9 @@
       top: 28px;
       right: 16px;
     }
-
+    &__nav {
+      height: calc(100svh - 90px);
+    }
     &__list {
       transform: translate(-45%, -50%);
     }
