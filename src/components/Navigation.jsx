@@ -6,6 +6,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "../styles/components/navigation.scss";
 import Header from "./Header";
+import MobileFooter from "./MobileFooter";
 const Navigation = () => {
   const [navOpen, setnavOpen] = useState(false);
   const [expanded, setExpanded] = React.useState(false);
@@ -144,6 +145,7 @@ const Navigation = () => {
           </li>
         </ul>
       </nav>
+      <MobileFooter className="mobile-footer-container" />
     </div>
   );
 };

@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Navigation />
       <RoutesRenderer routes={routes} />
-      <MobileFooter className="mobile-footer-container" />
+      {/* <MobileFooter className="mobile-footer-container" /> */}
     </div>
   );
 }

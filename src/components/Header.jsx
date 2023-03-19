@@ -15,7 +15,7 @@ export const Header = (props) => {
       style={{
         opacity: location.pathname === "/" ? ".88" : "1",
         backgroundColor: !props.open ? "white" : "transparent",
-        transition: "all 1.8s ease",
+        transition: "all 1.5s ease",
         boxShadow: !props.open
           ? "rgba(0, 0, 0, 0.24) 0px 3px 8px"
           : "rgba(255, 255, 255, 1) 1px 1px 1px 1px, rgb(0, 0, 0) 0px 0px 0px 1px",
@@ -25,9 +25,13 @@ export const Header = (props) => {
         <div className="logo-wrapper">
           <Link to="/">
             <img
-              src={!props.open ? "../imgs/logo.webp" : "../imgs/logo-white.png"}
+              src={"../imgs/logo.webp"}
               alt="logo"
               className="logo"
+              style={{
+                filter: !props.open ? "" : "brightness(0) invert(1)",
+                transition: "all .8s ease",
+              }}
               onClick={() => props.setOpen(false)}
             />
           </Link>
