@@ -185,7 +185,7 @@
     &__nav {
       height: calc(100svh - 90px);
       top: 90px;
-      left: 0;
+      left: -100vw;
     }
     &__list {
       transform: translate(-50%, -60%);
