@@ -102,8 +102,8 @@ const Navigation = () => {
                     style={{
                       fontSize: "xx-large",
                       color: "white",
-                      border: "1px solid white",
-                      borderRadius: "50%",
+                      // border: "1px solid white",
+                      // borderRadius: "50%",
                       // border: "1px solid white",
                       // borderRadius: "8px",
                     }}
@@ -126,7 +126,7 @@ const Navigation = () => {
                   className="navigation__link navigation__special"
                   onClick={() => setnavOpen(false)}
                 >
-                  kinder/Jugendliche
+                  Kinder/Jugendliche
                 </Link>
               </li>
             </AccordionDetails>
