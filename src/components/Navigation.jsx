@@ -103,7 +103,7 @@ const Navigation = () => {
                       fontSize: "xx-large",
                       color: "white",
                       border: "1px solid white",
-                      borderRadius: "4px",
+                      borderRadius: "50%",
                       // border: "1px solid white",
                       // borderRadius: "8px",
                     }}
@@ -130,7 +130,7 @@ const Navigation = () => {
                 </Link>
               </li>
             </AccordionDetails>
-            <AccordionDetails style={{ marginBottom: "-32px" }}>
+            <AccordionDetails style={{ marginBottom: "-24px" }}>
               <li className="navigation__item">
                 <Link
                   to="/treatment/adults"

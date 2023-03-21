@@ -26,6 +26,7 @@
     background-image: radial-gradient($dark-blue, $light-blue);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    --webkit-transform-style: preserve-3d(0, 0, 0);
     top: 28px;
     right: 56px;
     opacity: 0.97;
