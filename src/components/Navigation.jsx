@@ -61,18 +61,11 @@ const Navigation = () => {
               Über uns
             </Link>
           </li>
-          {/* <li className="navigation__item">
-            <Link
-              to="/treatment"
-              className="navigation__link"
-              onClick={() => setnavOpen(false)}
-            >
-              Leistungen
-            </Link>
-          </li> */}
+
           <Accordion
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
+            className="navigation__according"
             style={{
               backgroundColor: "transparent",
               boxShadow: "none",
@@ -81,32 +74,45 @@ const Navigation = () => {
               width: "100%",
               alignItems: "flex-start",
               justifyContent: "flex-start",
-              // backgroundColor: "red",
-              marginLeft: "-16px",
               marginTop: "-16px",
               marginBottom: "-16px",
+              // border: "1px solid white",
             }}
           >
-            <AccordionSummary
-              expandIcon={
-                <ExpandMoreIcon
-                  className="ex-icon"
-                  style={{ fontSize: "xx-large", color: "white" }}
-                />
-              }
-              aria-controls="panel1bh-content"
-              id="panel1bh-header"
+            <li
+              className="navigation__item"
+              style={{
+                width: "65%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
             >
-              <li className="navigation__item">
-                <Link
-                  to="/treatment"
-                  className="navigation__link "
-                  onClick={() => setnavOpen(false)}
-                >
-                  Leistungen
-                </Link>
-              </li>
-            </AccordionSummary>
+              <Link
+                to="/treatment"
+                className="navigation__link "
+                onClick={() => setnavOpen(false)}
+              >
+                Leistungen
+              </Link>
+              <AccordionSummary
+                expandIcon={
+                  <ExpandMoreIcon
+                    className="ex-icon"
+                    style={{
+                      fontSize: "xx-large",
+                      color: "white",
+                      border: "1px solid white",
+                      borderRadius: "4px",
+                      // border: "1px solid white",
+                      // borderRadius: "8px",
+                    }}
+                  />
+                }
+                aria-controls="panel1bh-content"
+                id="panel1bh-header"
+              ></AccordionSummary>
+            </li>
             <AccordionDetails
               style={{
                 marginLeft: "16px",
@@ -134,6 +140,7 @@ const Navigation = () => {
               </li>
             </AccordionDetails>
           </Accordion>
+
           <li className="navigation__item">
             <Link
               to="/contact"
