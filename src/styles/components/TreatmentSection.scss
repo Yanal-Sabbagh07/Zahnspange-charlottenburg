@@ -290,7 +290,7 @@
       transition: all 0.5s ease;
 
       &:hover {
-        background-size: center;
+        background-size: cover;
       }
     }
     .frühbehandlung {
@@ -301,7 +301,7 @@
       transition: all 0.5s ease;
 
       &:hover {
-        background-size: 163%;
+        background-size: cover;
       }
     }
     .skelettale {
@@ -312,7 +312,7 @@
       transition: all 0.5s ease;
 
       &:hover {
-        background-size: 163%;
+        background-size: cover;
       }
     }
     .retainer {
@@ -323,7 +323,7 @@
       transition: all 0.5s ease;
 
       &:hover {
-        background-size: 163%;
+        background-size: cover;
       }
     }
   }

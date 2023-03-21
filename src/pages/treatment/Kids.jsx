@@ -8,7 +8,7 @@ const Kids = () => {
     <div className="kids-page-container">
       <section className="kids-first-container">
         <WaveSection
-          header="Kinder und Jugendliche"
+          header="Kinder und Jugendliche Behandlungen"
           content="Fällt ihnen etwas an der Zahnstellung ihres Kindes auf, oder hat sie Ihr Hauszahnarzt darauf
           hingewiesen, dann zögern sie nicht ein Beratungstermin zur vereinbaren. Gerade bei Kindern
           und Jugendlichen kann eine rechtzeitige Diagnose die Behandlungsdauer verkürzen und die

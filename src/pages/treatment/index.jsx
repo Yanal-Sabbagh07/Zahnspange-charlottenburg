@@ -25,11 +25,11 @@ const index = () => {
         </div>
         <div className="secound-right-container">
           <div className="adults-title-container">
-            <h1 className="adults-title">Erwachsenenbehandlung</h1>
+            <h1 className="adults-title">Kinder / Jugendliche</h1>
           </div>
           <div className="adults-btn-container">
-            <Link to="/treatment/adults" className="adults-btn">
-              Unsere behandlung für Erwachsene
+            <Link to="/treatment/kids" className="adults-btn">
+              Unsere Behandlungen für Kinder & Jugendliche
             </Link>
           </div>
         </div>
@@ -37,11 +37,11 @@ const index = () => {
       <section className="third-container">
         <div className="third-left-container">
           <div className="kids-title-container">
-            <h2 className="kids-title">Kinder / Jugendliche </h2>
+            <h2 className="kids-title">Erwachsene</h2>
           </div>
           <div className="kids-btn-container">
-            <Link to="/treatment/kids" className="kids-btn">
-              Unsere behandlung für Kinder & Jugendliche
+            <Link to="/treatment/adults" className="kids-btn">
+              Unsere Behandlungen für Erwachsene
             </Link>
           </div>
         </div>

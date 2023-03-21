@@ -8,11 +8,11 @@ const Adults = () => {
     <div className="adults-page-container">
       <section className="adults-first-container">
         <WaveSection
-          header="Erwachsenenbehandlung"
+          header="Erwachsene Behandlungen"
           content="Vielen Patienten ist nicht bewusst welche Möglichkeiten auch im Erwachsenenalter
           bestehten um Zahnfehstellungen zu korrigieren. Dank moderner Verfahren lassen sich Zähne
           und Kieferfehlstellungen heutzutage in jedem Alter korrigieren. Für unsere Patienten, die
-          durch soziale oder berufliche Situation nicht gehandicapt werden dürfen, bieten wir
+          besonderen Wert auf die Ästhetik während des  Behandlungzeitraumes legen, bieten wir
           zahlreiche unsichtbare Zahnkorrekturen an, die diesen Anspruch gerecht werden."
         />
       </section>
@@ -28,7 +28,7 @@ const Adults = () => {
           3D-Plan der Behandlung zu erstellen. Basierend auf diesem Plan werden individuelle Aligner-
           Schienen hergestellt, die den Zähnen des Patienten entsprechen und schrittweise angepasst
           werden, um die Zähne in die gewünschte Position zu bewegen.
-          Aligner-Therapie ist eine alternative zu traditionellen festen Zahnspangen und bietet
+          Aligner-Therapie ist eine Alternative zu traditionellen festen Zahnspangen und bietet
           mehrere Vorteile. Im Gegensatz zu herkömmlichen festen Zahnspangen sind Aligner fast
           unsichtbar und können leicht herausgenommen werden, was es dem Patienten ermöglicht,
           normal zu essen und zu trinken und eine gute Mundhygiene aufrechtzuerhalten. Die

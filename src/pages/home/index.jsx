@@ -49,7 +49,7 @@ const index = () => {
       </section>
       <section className="treatment-process-section">
         <div className="treatment-process-title-container">
-          <h1>Ablauf einer behandlung</h1>
+          <h1>Ablauf einer Behandlung</h1>
         </div>
         <div className="treatment-process-container">
           <div className="treatment-proccess-card-conainer">
@@ -76,7 +76,7 @@ const index = () => {
             <TreatmentProcess
               img="docpat"
               title="Therapiebesprechung"
-              txt="Bei diesem Termin stellen wir Ihnen die Behandlungsoptionen vor und erläutern mögliche
+              txt="In der Therapiebesprechung stellen wir Ihnen die Behandlungsoptionen vor und erläutern mögliche
               kieferorthopädische Geräte, welche wir zu einem großen Teil in unserem eigenen Praxislabor
               in unserem Hause herstellen."
             />
@@ -95,11 +95,11 @@ const index = () => {
           >
             <TreatmentProcess
               img="retainer"
-              title="Erstellung der notwendigen diagnostischen Unterlagen"
+              title="Retention"
               txt="Nach der Phase der aktiven Behandlung erfolgt die Retentionsphase. In dieser Phase wird
               das Ergebnis der Behandlung gesichert, damit die Zähne sich nicht wieder in ihrer
               Ausgangsposition zurückbewegen. Dies kann mit herausnehmbaren Retentionsspangen oder
-              durch eine festen Retainer gewährleistet werden."
+              durch einen festen Retainer gewährleistet werden."
             />
           </div>
         </div>

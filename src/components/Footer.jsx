@@ -43,7 +43,10 @@ const Footer = () => {
 
                   <div className="open-times">
                     <div className="day">Mo :</div>
-                    <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
+                    <div className="time">
+                      {" "}
+                      09:00 - 12:00 <span> & </span> 13:00 - 18:00
+                    </div>
                   </div>
                 </div>
 
@@ -54,7 +57,10 @@ const Footer = () => {
                   <div className="name-txt">030 - 3414 060</div>
                   <div className="open-times">
                     <div className="day">Di :</div>
-                    <div className="time"> 09:00 - 12:00 & 14:00 - 18:00</div>
+                    <div className="time">
+                      {" "}
+                      09:00 - 12:00 <span> & </span> 14:00 - 18:00
+                    </div>
                   </div>
                 </div>
 
@@ -65,7 +71,10 @@ const Footer = () => {
                   <div className="name-txt">030 - 3419 787</div>
                   <div className="open-times">
                     <div className="day">Mi - Do :</div>
-                    <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
+                    <div className="time">
+                      {" "}
+                      09:00 - 12:00 <span> & </span> 13:00 - 18:00
+                    </div>
                   </div>
                 </div>
 
@@ -98,15 +107,23 @@ const Footer = () => {
                 </div>
                 <div className="open-times">
                   <div className="day">Mo :</div>
-                  <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
+                  <div className="time">
+                    09:00 - 12:00 <span> & </span>
+                    13:00 - 18:00
+                  </div>
                 </div>
                 <div className="open-times">
                   <div className="day">Di :</div>
-                  <div className="time"> 09:00 - 12:00 & 14:00 - 18:00</div>
+                  <div className="time">
+                    09:00 - 12:00 <span> & </span>
+                    14:00 - 18:00
+                  </div>
                 </div>
                 <div className="open-times">
                   <div className="day">Mi - Do :</div>
-                  <div className="time"> 09:00 - 12:00 & 13:00 - 18:00</div>
+                  <div className="time">
+                    09:00 - 12:00 <span> & </span> 13:00 - 18:00
+                  </div>
                 </div>
                 <div className="open-times">
                   <div className="day">Fr :</div>

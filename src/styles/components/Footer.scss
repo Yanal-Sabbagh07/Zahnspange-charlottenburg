@@ -195,11 +195,15 @@
                 font-weight: 700;
               }
               .open-times {
-                flex: 0.45;
+                flex: 0.5;
                 display: flex;
                 font-size: $medium;
                 .time {
                   padding-left: 24px;
+                  span {
+                    margin-left: 12px;
+                    margin-right: 12px;
+                  }
                 }
               }
               .ot {
