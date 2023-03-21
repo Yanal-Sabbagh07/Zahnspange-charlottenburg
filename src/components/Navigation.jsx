@@ -72,10 +72,10 @@ const Navigation = () => {
               display: "flex",
               flexDirection: "column",
               width: "100%",
-              alignItems: "flex-start",
+              alignItems: "space-between",
               justifyContent: "flex-start",
-              marginTop: "-16px",
-              marginBottom: "-16px",
+              // marginTop: "-16px",
+              // marginBottom: "-16px",
               // border: "1px solid white",
             }}
           >
@@ -115,7 +115,9 @@ const Navigation = () => {
             </li>
             <AccordionDetails
               style={{
-                marginLeft: "16px",
+                // marginLeft: "16px",
+                // marginTop: "-16px",
+                marginBottom: "-16px",
               }}
             >
               <li className="navigation__item">
@@ -128,7 +130,7 @@ const Navigation = () => {
                 </Link>
               </li>
             </AccordionDetails>
-            <AccordionDetails style={{ marginLeft: "16px" }}>
+            <AccordionDetails style={{ marginBottom: "-32px" }}>
               <li className="navigation__item">
                 <Link
                   to="/treatment/adults"
