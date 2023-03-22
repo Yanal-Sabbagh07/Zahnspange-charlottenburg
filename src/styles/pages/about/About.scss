@@ -6,7 +6,7 @@
   overflow: overlay;
   scroll-snap-type: y mandatory;
   background-color: $gray-0;
-  .slider-contianer {
+  .about-slider-contianer {
     width: 100%;
     height: calc(100vh - 90px);
     margin-top: 90px;
@@ -210,9 +210,11 @@
 
 @media screen and (max-width: 480px) {
   .aboutus-page-container {
-    margin-bottom: 70px;
-    .slider-contianer {
-      margin-bottom: -50vh;
+    margin-bottom: 65px;
+    .about-slider-contianer {
+      margin-top: 90px;
+      height: calc(50vh - 90px);
+      // background-color: red;
     }
     .team-section-container {
       .title-container {

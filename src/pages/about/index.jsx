@@ -10,7 +10,7 @@ import { aboutSlider } from "../../helpers/aboutSlider";
 const About = () => {
   return (
     <div className="aboutus-page-container">
-      <section className="slider-contianer">
+      <section className="about-slider-contianer">
         <Slider sliderData={aboutSlider} count={6} />
         {/* <div className="about-hero-img"></div> */}
       </section>
