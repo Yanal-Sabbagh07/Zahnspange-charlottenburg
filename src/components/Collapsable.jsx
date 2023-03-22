@@ -30,7 +30,7 @@ function Collapsable() {
         <AccordionDetails className="row">
           <li className="col">2003-2009 </li>
           <li className="col2">
-            Studium und Approbation als Zahnarzt, Universität Mainz 
+            Studium und Approbation als Zahnarzt, Universität Mainz
           </li>
         </AccordionDetails>
         <AccordionDetails className="row">
@@ -40,7 +40,7 @@ function Collapsable() {
           </li>
         </AccordionDetails>
         <AccordionDetails className="row">
-          <li className="col">2012-2013:</li>
+          <li className="col">2012-2013</li>
           <li className="col2">
             Weiterbildungsassistent für Kieferorthopädie, Praxis Dr. F. Kirsch,
             Bergheim
