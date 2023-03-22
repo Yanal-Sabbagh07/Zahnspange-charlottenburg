@@ -10,11 +10,7 @@ const NurseCard = (props) => {
         style={{ backgroundImage: `url(/imgs/${props.img}.jpg)` }}
       ></div> */}
       <div className="image-container">
-        <img
-          src={require(`../imgs/${props.img}.jpg`)}
-          alt="nurse"
-          className="nurse-img"
-        />
+        <div className="nurse-img" style={{ backgroundImage: props.img }} />
       </div>
 
       <div className="details-container">
