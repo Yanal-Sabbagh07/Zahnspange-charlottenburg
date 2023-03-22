@@ -8,15 +8,14 @@
 
   .hero-section {
     max-width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     .home-slider-container {
       width: 100%;
-      height: 100%;
+      height: 100vh;
     }
-
     .welcome-title-mobile-container {
       display: none;
     }
@@ -46,28 +45,30 @@
       .welcome-title {
         width: 80%;
         height: 100%;
-        font-size: 42px;
+        font-size: 40px;
         letter-spacing: 1px;
         color: $dark-blue;
         font-weight: 900;
         line-height: 58px;
         font-family: "Merri";
+        // border: 1px solid black;
         // background-color: red;
       }
     }
 
     .welcome-waves {
       width: 100%;
-      height: 40%;
+      height: 35%;
       background-image: url("../../../public/imgs/waves.jpg");
       background-size: 100% 100%;
       background-position: center;
       background-repeat: no-repeat;
-      background-color: red;
+      // border: 1px solid black;
+      // background-color: red;
     }
     .welcome-content-container {
       width: 80%;
-      height: 40%;
+      height: 45%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -203,7 +204,7 @@
     margin-bottom: 60px;
     .hero-section {
       width: 100vw;
-      height: calc(100%);
+      height: 100%;
       margin-top: 90px;
       display: flex;
       flex-direction: column;
@@ -236,58 +237,36 @@
           }
         }
       }
-      // .social-container {
-      //   // margin-top: 0px;
-      //   height: 90px;
-      //   width: 100%;
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-      //   background-color: $gray-2;
-      //   border-radius: 4px;
-      //   .social-wrapper {
-      //     width: 100%;
-      //     height: 100%;
-      //     display: flex;
-      //     align-items: center;
-      //     justify-content: space-evenly;
-      //     .icons-container {
-      //       .icon {
-      //         font-size: $huge-mobile;
-      //         color: $dark-blue;
-      //       }
-      //     }
-      //   }
-      // }
     }
     .hero-section2 {
-      justify-content: space-evenly;
+      height: 100%;
       margin-top: 0px;
-
       .welcome-title-container {
         display: none;
       }
       .welcome-waves {
         width: 100%;
-        height: 20vh;
+        height: 160px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
       }
       .welcome-content-container {
         width: 95%;
-        height: 65%;
-        justify-content: space-evenly;
-
+        height: 100%;
+        // background-color: red;
         .welcome-last-1 {
           width: 100%;
-          height: 250px;
+          height: 100%;
           .welcome-content {
-            font-size: $small;
-            letter-spacing: 0.5px;
+            font-size: $medium;
+            letter-spacing: 0.8px;
             line-height: 24px;
           }
         }
         .welcome-last-2 {
           width: 100%;
-          height: 75px;
+          height: 100%;
 
           .welcome-owner-txt {
             margin-top: 8px;
