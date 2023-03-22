@@ -246,8 +246,8 @@
       }
       .welcome-waves {
         width: 100%;
-        height: 160px;
-        background-size: cover;
+        height: 125px;
+        background-size: 100% 100%;
         background-position: center;
         margin-bottom: 30px;
       }
@@ -259,7 +259,7 @@
           width: 100%;
           height: 100%;
           .welcome-content {
-            font-size: $small;
+            font-size: $medium;
             letter-spacing: 0.8px;
             line-height: 24px;
             text-align: left;
@@ -282,6 +282,7 @@
             cursor: pointer;
             color: $gray-7;
             text-align: left;
+            margin-bottom: 20px;
           }
         }
         .welcome-btn {
@@ -296,7 +297,7 @@
           }
         }
       }
-      margin-bottom: 65px;
+      margin-bottom: 30px;
     }
     .treatment-process-section {
       margin-top: 0px;
