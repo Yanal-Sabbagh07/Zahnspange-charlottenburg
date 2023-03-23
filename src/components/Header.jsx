@@ -44,7 +44,7 @@ export const Header = (props) => {
               <EmailIcon
                 className="icon"
                 style={{
-                  color: !props.open ? "1f5ca2" : "white",
+                  color: !props.open ? "#1f5ca2" : "white",
                   transition: "all .3s ease",
                 }}
               />
@@ -59,7 +59,7 @@ export const Header = (props) => {
               <PlaceIcon
                 className="icon"
                 style={{
-                  color: !props.open ? "1f5ca2" : "white",
+                  color: !props.open ? "#1f5ca2" : "white",
                   transition: "all .3s ease",
                 }}
               />
@@ -75,7 +75,7 @@ export const Header = (props) => {
               <CalendarMonthIcon
                 className="icon"
                 style={{
-                  color: !props.open ? "1f5ca2" : "white",
+                  color: !props.open ? "#1f5ca2" : "white",
                   transition: "all .3s ease",
                 }}
               />
@@ -86,7 +86,7 @@ export const Header = (props) => {
               className="icon"
               onClick={() => setPhoneSelected(!phoneSelected)}
               style={{
-                color: !props.open ? "1f5ca2" : "white",
+                color: !props.open ? "#1f5ca2" : "white",
                 transition: "all .3s ease",
               }}
             />
