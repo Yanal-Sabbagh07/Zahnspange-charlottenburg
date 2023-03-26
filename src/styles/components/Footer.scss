@@ -445,19 +445,15 @@
                 .name-icon {
                   padding-right: 2px;
                   flex: 0;
-                  // margin-right: 10px;
-                  // background-color: red;
                   .footer-icon {
                     font-size: $xx-large;
                     margin-left: 16px;
                     margin-right: 8px;
-                    // margin-right: 8px;
                   }
                 }
                 .rose {
                   width: 22px;
                   height: 22px;
-                  // color: white;
                   font-weight: bolder;
                   margin-left: 16px;
                   margin-right: 8px;
@@ -467,12 +463,10 @@
                   flex: 0;
                   font-size: $x-small;
                   font-weight: 400;
-                  // background: #000;
                 }
                 .name {
                   font-size: $small;
                   font-weight: 900;
-                  // background-color: #fff;
                 }
                 .open-times {
                   display: none;
@@ -491,7 +485,6 @@
                 }
               }
               .email-name {
-                // background-color: red;
                 display: flex;
                 width: 100%;
                 align-items: center;
@@ -506,11 +499,7 @@
               display: none;
             }
             .opening-times-mobile {
-              // background-color: blue;
-              // padding-left: 24px;
-
               width: 100%;
-              // text-align: left;
               height: 50%;
               display: flex;
               flex-direction: column;
@@ -523,6 +512,10 @@
                 .time {
                   margin-left: 16px;
                   font-size: $x-small;
+                  span {
+                    margin-left: 12px;
+                    margin-right: 12px;
+                  }
                 }
               }
               .open-times-header {
@@ -559,12 +552,10 @@
 
       align-items: flex-end;
       justify-content: center;
-      // border-top: 1px solid white;
       background-color: $white;
       .footer-copy-right {
         width: 100%;
         height: 50%;
-        // background-color: green;
         color: $gray-7;
         justify-content: center;
         width: 100vw;
@@ -592,10 +583,8 @@
           color: $gray-2;
           align-items: center;
           justify-content: center;
-          // background-color: #fff;
         }
         .footer-impressum-mobile {
-          // background-color: red;
           display: block;
           width: 100%;
           height: 100%;
