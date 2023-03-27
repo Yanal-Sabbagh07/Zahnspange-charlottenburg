@@ -12,33 +12,23 @@ const Index = () => {
   const [success, setSucces] = useState(null);
   const handleSubmit = (event) => {
     event.preventDefault();
-    // emailjs
-    //   .sendForm(
-    //     process.env.REACT_APP_API_SERVICE_ID,
-    //     process.env.REACT_APP_API_TEMPLATE_ID,
-    //     ref.current,
-    //     process.env.REACT_APP_API_PUBLIC_KEY
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(ref.current);
-    //       setSucces(true);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //       setSucces(false);
-    //     }
-    //   );
-    const res = await axios.post("http://localhost:5000/login", {
-      ref
-    });
-    if (res.data === "success") {
-      setError(false);
-      window.location.replace("/home");
-    } else {
-      setError(true);
-    }
-  };
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_API_SERVICE_ID,
+        process.env.REACT_APP_API_TEMPLATE_ID,
+        ref.current,
+        process.env.REACT_APP_API_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(ref.current);
+          setSucces(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setSucces(false);
+        }
+      );
   };
 
   return (
@@ -63,13 +53,11 @@ const Index = () => {
                 onChange={(event) => setTitle(event.target.value)}
               >
                 <option value="Herr" defaultValue="Herr">
-                  Herr
+                  Frau
                 </option>
-                <option value="Frau">Frau</option>
-                <option value="Herr Dr.">Herr Dr.</option>
-                <option value="Frau Dr.">Frau Dr.</option>
-                <option value="Herr Dr. Dr.">Herr Dr. Dr.</option>
-                <option value="Frau Dr. Dr.">Frau Dr. Dr.</option>
+                <option value="Frau">Herr</option>
+                <option value="Herr Dr.">Frau Dr.</option>
+                <option value="Frau Dr.">Herr Dr.</option>
               </select>
             </div>
           </div>
