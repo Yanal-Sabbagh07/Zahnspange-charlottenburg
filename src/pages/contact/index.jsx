@@ -12,23 +12,33 @@ const Index = () => {
   const [success, setSucces] = useState(null);
   const handleSubmit = (event) => {
     event.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_API_SERVICE_ID,
-        process.env.REACT_APP_API_TEMPLATE_ID,
-        ref.current,
-        process.env.REACT_APP_API_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(ref.current);
-          setSucces(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setSucces(false);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     process.env.REACT_APP_API_SERVICE_ID,
+    //     process.env.REACT_APP_API_TEMPLATE_ID,
+    //     ref.current,
+    //     process.env.REACT_APP_API_PUBLIC_KEY
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(ref.current);
+    //       setSucces(true);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //       setSucces(false);
+    //     }
+    //   );
+    const res = await axios.post("http://localhost:5000/login", {
+      ref
+    });
+    if (res.data === "success") {
+      setError(false);
+      window.location.replace("/home");
+    } else {
+      setError(true);
+    }
+  };
   };
 
   return (
