@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/components/NurseCard.scss";
+import { useState } from "react";
 
 const NurseCard = (props) => {
-  //   nurse1 = props.img;
+  const nurseRef = useRef();
+  const [nurseIsVisible, setNurseIsVisible] = useState(false);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setNurseIsVisible(entry.isIntersecting);
+      console.log(nurseIsVisible);
+    });
+    observer.observe(nurseRef.current);
+  }, [nurseIsVisible]);
   return (
-    <div className="card-container">
+    <div
+      className="card-container"
+      ref={nurseRef}
+      style={{
+        scale: !nurseIsVisible ? "0.1" : "1",
+        transition: "all 1.5s ease-out",
+      }}
+    >
       {/* <div
         className="image-contianer"
         style={{ backgroundImage: `url(/imgs/${props.img}.jpg)` }}
