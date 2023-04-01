@@ -18,8 +18,8 @@ const NurseCard = (props) => {
       className="card-container"
       ref={nurseRef}
       style={{
-        scale: !nurseIsVisible ? "0.1" : "1",
-        transition: "all 1.5s ease-out",
+        scale: !nurseIsVisible ? "0.5" : "1",
+        transition: "all 1s ease-out",
       }}
     >
       {/* <div
