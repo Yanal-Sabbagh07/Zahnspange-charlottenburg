@@ -8,6 +8,8 @@ import Services from "./pages/services/index";
 import Adults from "./pages/treatment/Adults";
 import Kids from "./pages/treatment/Kids";
 import Message from "./pages/message/Message";
+import Impressium from "./pages/impressium/index";
+import Datenschutz from "./pages/datenschutz/index";
 
 export const routes = [
   {
@@ -50,5 +52,15 @@ export const routes = [
     title: "Request",
     path: "/message",
     element: <Message />,
+  },
+  {
+    title: "Impressium",
+    path: "/Impressium",
+    element: <Impressium />,
+  },
+  {
+    title: "Datenschutz",
+    path: "/Datenschutz",
+    element: <Datenschutz />,
   },
 ];

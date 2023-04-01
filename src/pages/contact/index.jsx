@@ -1,40 +1,54 @@
 import React from "react";
-import { useRef, useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import Footer from "../../components/Footer";
 import "../../styles/pages/contact/Contact.scss";
 const Index = () => {
   let navigate = useNavigate();
-  const ref = useRef();
-  const [name, setName] = useState("");
-  const [title, setTitle] = useState("Herr");
-  const [success, setSucces] = useState(null);
+  const initState = {
+    title: "",
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  };
+  const [state, setState] = useState(initState);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setState({ ...state, [name]: value });
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_API_SERVICE_ID,
-        process.env.REACT_APP_API_TEMPLATE_ID,
-        ref.current,
-        process.env.REACT_APP_API_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(ref.current);
-          setSucces(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setSucces(false);
+    axios
+      .post("http://localhost:9000/contact", {
+        data: state,
+      })
+      .then((response) => {
+        const title = response.data.title;
+        const name = response.data.name;
+
+        navigate("/Message", {
+          state: { title: { title }, name: { name } },
+        });
+      })
+      .catch((error) => {
+        if (error.response) {
+          console.log(error.response);
+          console.log("server responded");
+        } else if (error.request) {
+          console.log("network error");
+        } else {
+          console.log(error);
         }
-      );
+      });
   };
 
   return (
     <section className="ContactContainer">
       <div className="contact-form-container">
-        <form ref={ref} onSubmit={handleSubmit} className="contact-form">
+        <form onSubmit={handleSubmit} className="contact-form">
           <div className="row-container">
             <div className="first">
               <h1 className="contact-header">Kontaktformular:</h1>
@@ -46,18 +60,17 @@ const Index = () => {
             </div>
             <div className="secound">
               <select
-                name="titel"
-                id="titel"
+                name="title"
+                id="title"
                 className="input-name-opt"
                 type="text"
-                onChange={(event) => setTitle(event.target.value)}
+                onChange={handleChange}
+                defaultValue="Frau"
               >
-                <option value="Herr" defaultValue="Herr">
-                  Frau
-                </option>
-                <option value="Frau">Herr</option>
-                <option value="Herr Dr.">Frau Dr.</option>
-                <option value="Frau Dr.">Herr Dr.</option>
+                <option value="Frau">Frau</option>
+                <option value="Herr">Herr</option>
+                <option value="Frau.Dr.">Frau Dr.</option>
+                <option value="Herr.Dr.">Herr Dr.</option>
               </select>
             </div>
           </div>
@@ -73,7 +86,7 @@ const Index = () => {
                 id="name"
                 placeholder="Ihr Name"
                 required
-                onChange={(event) => setName(event.target.value)}
+                onChange={handleChange}
               ></input>
             </div>
           </div>
@@ -89,6 +102,7 @@ const Index = () => {
                 id="email"
                 placeholder="Ihr Email addresse"
                 required
+                onChange={handleChange}
               ></input>
             </div>
           </div>
@@ -103,7 +117,7 @@ const Index = () => {
                 name="phone"
                 id="phone"
                 placeholder="Ihr Telefonnummer"
-                required
+                onChange={handleChange}
               ></input>
             </div>
           </div>
@@ -114,9 +128,10 @@ const Index = () => {
             <div className="secound">
               <textarea
                 className="input-name"
-                name="request"
-                id="request"
+                name="message"
+                id="message"
                 placeholder="Ihr Nachricht"
+                onChange={handleChange}
               ></textarea>
             </div>
           </div>
@@ -130,14 +145,6 @@ const Index = () => {
               </button>
             </div>
           </div>
-
-          {useEffect(() => {
-            if (success) {
-              navigate("/Message", {
-                state: { title: { title }, name: { name } },
-              });
-            }
-          }, [success, navigate, title, name])}
         </form>
       </div>
       <div className="contact-footer">
