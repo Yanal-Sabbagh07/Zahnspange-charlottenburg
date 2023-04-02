@@ -13,8 +13,8 @@
   // position: relative;
   // border: 2px solid $gray-5;
   .image-container {
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 425px;
     // background-color: red;
     // border: 2px solid $gray-5;
     display: flex;
@@ -32,12 +32,12 @@
   }
   .details-container {
     width: 100%;
-    height: 17%;
+    height: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    background-color: transparent;
+    justify-content: center;
+    // background-color: red;
     // opacity: 1;
     // position: absolute;
     // bottom: 0;

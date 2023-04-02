@@ -7,7 +7,10 @@ import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import TreatmentProcess from "../../components/TreatmentProcess";
 import homeSlider from "../../helpers/homeSlider";
-const index = () => {
+import { useInView } from "react-intersection-observer";
+
+const Home = () => {
+  const { ref, inView } = useInView();
   return (
     <div className="home-page">
       <section className="hero-section" id="/">
@@ -54,7 +57,18 @@ const index = () => {
           <h1>Ablauf einer Behandlung</h1>
         </div>
         <div className="treatment-process-container">
-          <div className="treatment-proccess-card-conainer">
+          <div
+            className="treatment-proccess-card-conainer"
+            ref={ref}
+            style={{
+              // transform: !inView ? "translateX(-110%)" : "translateX(0)",
+              // scale: !inView ? "0" : "1",
+              position: "relative",
+              left: !inView ? "-33%" : "0",
+              zIndex: "10",
+              transition: "all 1s ",
+            }}
+          >
             <TreatmentProcess
               img="dental-checkup"
               title="Erstkontakt und Erstberatung"
@@ -64,7 +78,16 @@ const index = () => {
                     besprochen."
             />
           </div>
-          <div className="treatment-proccess-card-conainer">
+          <div
+            className="treatment-proccess-card-conainer"
+            ref={ref}
+            style={{
+              position: "relative",
+              left: !inView ? "-75%" : "0",
+              zIndex: "9",
+              transition: "all 1.5s ",
+            }}
+          >
             <TreatmentProcess
               img="x-ray"
               title="Erstellung der notwendigen diagnostischen Unterlagen"
@@ -74,7 +97,16 @@ const index = () => {
               der Zähne und Fotos)"
             />
           </div>
-          <div className="treatment-proccess-card-conainer">
+          <div
+            className="treatment-proccess-card-conainer"
+            ref={ref}
+            style={{
+              position: "relative",
+              left: !inView ? "-105%" : "0",
+              zIndex: "8",
+              transition: "all 2s ",
+            }}
+          >
             <TreatmentProcess
               img="docpat"
               title="Therapiebesprechung"
@@ -83,7 +115,16 @@ const index = () => {
               in unserem Hause herstellen."
             />
           </div>
-          <div className="treatment-proccess-card-conainer">
+          <div
+            className="treatment-proccess-card-conainer"
+            ref={ref}
+            style={{
+              position: "relative",
+              left: !inView ? "-33%" : "0",
+              zIndex: "7",
+              transition: "all 2.5s ",
+            }}
+          >
             <TreatmentProcess
               img="control"
               title="Kontolltermin:"
@@ -93,7 +134,14 @@ const index = () => {
           </div>
           <div
             className="treatment-proccess-card-conainer"
-            style={{ width: "65%" }}
+            ref={ref}
+            style={{
+              width: "65%",
+              position: "relative",
+              left: !inView ? "-100%" : "0",
+              zIndex: "6",
+              transition: "all 3s ",
+            }}
           >
             <TreatmentProcess
               img="retainer"
@@ -113,4 +161,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Home;
