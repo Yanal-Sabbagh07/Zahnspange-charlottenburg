@@ -8,9 +8,9 @@ const Kids = () => {
     <div className="kids-page-container">
       <section className="kids-first-container">
         <WaveSection
-          header="Kinder und Jugendliche Behandlungen"
-          content="Fällt ihnen etwas an der Zahnstellung ihres Kindes auf, oder hat sie Ihr Hauszahnarzt darauf
-          hingewiesen, dann zögern sie nicht ein Beratungstermin zur vereinbaren. Gerade bei Kindern
+          header="Kieferorthopädie für Kinder und Jugendliche"
+          content="Fällt ihnen etwas an der Zahnstellung ihres Kindes auf, oder hat Sie Ihr Hauszahnarzt darauf
+          hingewiesen, dann zögern Sie nicht einen Beratungstermin zur vereinbaren. Gerade bei Kindern
           und Jugendlichen kann eine rechtzeitige Diagnose die Behandlungsdauer verkürzen und die
           Prognose verbessern."
         />
@@ -27,7 +27,7 @@ const Kids = () => {
           text="Aligner, auch als durchsichtige Zahnschienen bekannt, können auch bei jugendlichen
           Patienten zur Korrektur von Zahnfehlstellungen verwendet werden. Im Gegensatz zu
           traditionellen festen Zahnspangen haben Aligner einige Vorteile, die für Teenager attraktiv
-          sein können. Zum einen sind Aligner fast unsichtbar, und somit bleiben in Schule und Alltag
+          sein können. Zum einen sind Aligner fast unsichtbar, und somit bleiben sie in der Schule und Alltag
           nahezu unbemerkt, was für viele Teenager von Vorteil ist. Zum anderen können Aligner
           leicht herausgenommen werden, was beim Essen und Zähneputzen hilfreich sein kann.
           Dadurch wird es auch einfacher, eine gute Mundhygiene aufrechtzuerhalten."
@@ -45,10 +45,10 @@ const Kids = () => {
           festsitzenden Zahnspange fast jede Zahnbewegung durchführbar.
           Eine feste Zahnspange besteht aus Brackets, die auf die Zahnoberfläche geklebt werden,
           sowie einem Bogen, der die Brackets miteinander verbindet und Druck auf die Zähne ausübt.
-          Die Drähte und Bögen der Zahnspange werden in regelmäßigen Abständen gewechselt bzw.
+          Die Bögen der Zahnspange werden in regelmäßigen Abständen gewechselt bzw.
           angepasst, um den gewünschten Effekt zu erzielen. Wir haben in unserer Praxis die
           Möglichkeit, durch modernste Technik die kieferorthopädische Behandlung bestmöglich
-          vorauszuplanen."
+          durchzuführen."
         />
       </section>
       <section className="kids-treatment-container">
@@ -61,7 +61,7 @@ const Kids = () => {
           color="#1f5ca2"
           header="Herausnehmbare Zahnspangen:"
           text="Sie werden individuell aus Kunststoff für den Ober- bzw. Unterkiefer hergestellt und durch
-          Drahtklammern gehalten. Mit eingearbeiteten Federn und Schrauben werden dann die
+          Drahtklammern gehalten. Mit eingearbeiteten Federn und Schrauben werden die
           notwendigen Zahnbewegungen durchgeführt. Insbesondere bei einer falschen Lage des
           Unterkiefers kommen für beide Kiefer aus einem Stück hergestellte Geräte wie Bionatoren
           oder Funktionsregler zum Einsatz."
@@ -77,9 +77,9 @@ const Kids = () => {
           text="Es gibt keinen zu frühen Besuch in der Kieferorthopädie. Bereits im Vorschulalter können
           Fehlentwicklungen erkannt und gezielt behandelt werden.
           Typische Gründe für eine Frühbehandlung, d.h. bereits im Milchgebiß oder im frühen
-          Wechselgebiß sind: Kreuzbiß (einseitig oder beidseitig), Umgekehrter Schneidezahnüberbiß,
-          Frontal offener Biß, Daumenlutschen, Fingernägelbeißen und behinderte Nasenatmung.
-          Durch rechtzeitiges Erkennen und Reagieren lassen sich Schäden verhindern"
+          Wechselgebiß sind: Kreuzbiß (einseitig oder beidseitig), umgekehrter Schneidezahnüberbiß,
+          frontal offener Biß, Daumenlutschen, Fingernägelbeißen und behinderte Nasenatmung.
+          Durch rechtzeitiges Erkennen und Reagieren lassen sich Schäden verhindern."
         />
       </section>
       <section className="kids-treatment-container">
@@ -92,7 +92,7 @@ const Kids = () => {
           color="#1f5ca2"
           header="Skelettale Verankerung:"
           text="Skelettale Verankerung bezieht sich auf eine Technik, bei der Miniimplantate
-          (Minischrauben) in das Knochengewebe eingesetzt werden, um eine stabile
+          (Minischrauben) in das Knochengewebe eingesetzt werden, um stabile
           Verankerungspunkte für die Bewegung von Zähnen und Kiefer zu schaffen. Sie bietet eine
           Reihe von Vorteilen, insbesondere bei der Korrektur von komplexen Zahn- und
           Kieferfehlstellungen, die mit herkömmlichen Methoden schwer zu behandeln sind. Es

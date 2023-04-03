@@ -8,12 +8,12 @@ const Adults = () => {
     <div className="adults-page-container">
       <section className="adults-first-container">
         <WaveSection
-          header="Erwachsene Behandlungen"
+          header="Kieferorthopädie für Erwachsene"
           content="Vielen Patienten ist nicht bewusst welche Möglichkeiten auch im Erwachsenenalter
-          bestehten um Zahnfehstellungen zu korrigieren. Dank moderner Verfahren lassen sich Zähne
+          bestehen um Zahnfehstellungen zu korrigieren. Dank moderner Verfahren lassen sich Zähne
           und Kieferfehlstellungen heutzutage in jedem Alter korrigieren. Für unsere Patienten, die
-          besonderen Wert auf die Ästhetik während des  Behandlungzeitraumes legen, bieten wir
-          zahlreiche unsichtbare Zahnkorrekturen an, die diesen Anspruch gerecht werden."
+          besonderen Wert auf die Ästhetik während des  Behandlungzeitraums legen, bieten wir
+          zahlreiche unsichtbare Zahnkorrekturen an, die diesem Anspruch gerecht werden."
         />
       </section>
       <section className="adults-treatment-container">
@@ -31,9 +31,7 @@ const Adults = () => {
           Aligner-Therapie ist eine Alternative zu traditionellen festen Zahnspangen und bietet
           mehrere Vorteile. Im Gegensatz zu herkömmlichen festen Zahnspangen sind Aligner fast
           unsichtbar und können leicht herausgenommen werden, was es dem Patienten ermöglicht,
-          normal zu essen und zu trinken und eine gute Mundhygiene aufrechtzuerhalten. Die
-          Behandlungsdauer variiert je nach Schweregrad der Zahnfehlstellung, kann aber zwischen 6
-          Monaten bis zu 2 Jahren liegen."
+          normal zu essen und zu trinken und eine gute Mundhygiene aufrechtzuerhalten."
         />
       </section>
       <section className="adults-treatment-container">
@@ -46,8 +44,8 @@ const Adults = () => {
           text="Anstelle der normalerweise aus Metall gefertigten Brackets können auf besonderen Wunsch
           zahnnfarbene Keramikbrackets verwendet werden, die auch hohen ästhetischen
           Anforderungen während der Behandlungszeit gerecht werden. Die Oberfläche der Brackets
-          sind so versiegelt, dass eine Verfärbung durch Nahrungsmittel, während der gesamten
-          Behandlungszeitraum ausgeschlossen ist. Deswegen fallen diese Brackets weniger auf."
+          sind so versiegelt, dass eine Verfärbung durch Nahrungsmittel während des gesamten
+          Behandlungszeitraumes ausgeschlossen ist. Deswegen fallen diese Brackets weniger auf."
         />
       </section>
 
@@ -73,15 +71,15 @@ const Adults = () => {
           cn="Kombinierte"
           reverse="true"
           color="#20ade4"
-          header="Kombinierte kieferchirurgische Kieferorthopädische Therapie:"
-          text="Die kombinierte kieferchirurgische kieferorthopädische Therapie, auch bekannt als
+          header="Kombinierte Kieferorthopädisch-kieferchirurgische Therapie:"
+          text="Die kombinierte Kieferorthopädisch-kieferchirurgische Therapie, auch bekannt als
           orthognathe Chirurgie, ist eine Behandlungsoption für Patienten mit schweren
           Kieferanomalien, die nicht allein mit kieferorthopädischen Maßnahmen korrigiert werden
           können.
           Die Behandlung kann umfangreich sein und erfordert möglicherweise eine längere
-          Genesungszeit, aber sie kann dazu beitragen, schwerwiegende Kieferprobleme zu
+          Genesungszeit. Sie kann dazu beitragen, schwerwiegende Kieferprobleme zu
           korrigieren und eine verbesserte Lebensqualität zu bieten.
-          Hierzu arbeiten wir eng mit erfahrenen Mund-Kiefer-Gesichtschirurgen"
+          Wir arbeiten eng mit erfahrenen Mund-Kiefer-Gesichtschirurgen"
         />
       </section>
       <section className="adults-treatment-container">
@@ -94,11 +92,11 @@ const Adults = () => {
           text="Durch den Einsatz digitaler Technologien in der Kieferorthopädie kann die Behandlung
           schneller, effektiver und präziser durchgeführt werden. Dies kann dazu beitragen, die
           Behandlungsergebnisse zu verbessern und den Patienten mehr Komfort zu bieten.
-          In unsere Praxis bieten wir modernste digitale Kieferorthopädie an. Auch die
+          In unserer Praxis bieten wir modernste digitale Kieferorthopädie an. Auch die
           Behandlungsplanung wird mit genausten digitalen Methoden durchgeführt.
           Die konventionellen, unangenehmen Alginatabdrücke werden durch den digitalen
           Intraoralscan ersetzt. Nicht nur Aligner werden bei und im digitalen Verfahren angefertigt,
-          sonderen auch CAD/CAM-Retainer und das indirekte Platzierung von Brackets."
+          sonderen auch CAD/CAM-Retainer und die indirekte Platzierung von Brackets."
         />
       </section>
       <section className="adults-treatment-container">
@@ -108,7 +106,7 @@ const Adults = () => {
           reverse="true"
           color="#20ade4"
           header="Rezidiv-Behandlung:"
-          text="Vielen Patienten ist nicht bewusst, dass am Ende einer kieferorthopädischen Behandlung in
+          text="Vielen Patienten ist nicht bewusst, dass das Ende einer kieferorthopädischen Behandlung in
           der Regel der Anfang der Retentionsphase ist. Wird in dieser Phase die Haltespange nicht
           regelmäßig getragen, verschieben sich die Zähne zurück in die Ausgangsituation und es
           entsteht wieder eine Fehlstellung, die die Ästhetik und Funktion stören könnte. Dieser

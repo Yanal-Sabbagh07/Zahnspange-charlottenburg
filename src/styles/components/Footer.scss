@@ -198,8 +198,14 @@
                 flex: 0.5;
                 display: flex;
                 font-size: $medium;
+                // background-color: red;
+                .day {
+                  // background-color: yellow;
+                  width: 70px;
+                }
                 .time {
-                  padding-left: 24px;
+                  padding-left: 16px;
+                  // background-color: green;
                   span {
                     margin-left: 12px;
                     margin-right: 12px;
@@ -209,6 +215,7 @@
               .ot {
                 font-size: $large;
                 font-weight: 700;
+                // color: red;
               }
             }
           }
@@ -470,10 +477,6 @@
                 }
                 .open-times {
                   display: none;
-                  flex: 0.52;
-                  flex-direction: column;
-                  justify-content: flex-start;
-                  align-items: flex-start;
 
                   .time {
                     padding-left: 0px;
@@ -509,8 +512,12 @@
                 display: flex;
                 margin-left: 18px;
                 font-size: $x-small;
+                .day {
+                  width: 50px;
+                  text-align: left;
+                }
                 .time {
-                  margin-left: 16px;
+                  margin-left: 8px;
                   font-size: $x-small;
                   span {
                     margin-left: 12px;

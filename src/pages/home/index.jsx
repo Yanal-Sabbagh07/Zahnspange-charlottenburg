@@ -10,7 +10,7 @@ import homeSlider from "../../helpers/homeSlider";
 import { useInView } from "react-intersection-observer";
 
 const Home = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({ threshold: 0.25, triggerOnce: true });
   return (
     <div className="home-page">
       <section className="hero-section" id="/">
@@ -56,37 +56,31 @@ const Home = () => {
         <div className="treatment-process-title-container">
           <h1>Ablauf einer Behandlung</h1>
         </div>
-        <div className="treatment-process-container">
+        <div className="treatment-process-container" ref={ref}>
           <div
-            className="treatment-proccess-card-conainer"
-            ref={ref}
-            style={{
-              // transform: !inView ? "translateX(-110%)" : "translateX(0)",
-              // scale: !inView ? "0" : "1",
-              position: "relative",
-              left: !inView ? "-33%" : "0",
-              zIndex: "10",
-              transition: "all 1s ",
-            }}
+            className={
+              !inView
+                ? "treatment-proccess-card-conainer card-1"
+                : "treatment-proccess-card-conainer animate-1"
+            }
+            // ref={ref}
           >
             <TreatmentProcess
               img="dental-checkup"
               title="Erstkontakt und Erstberatung"
-              txt="In einem ersten Gespräch und einer ersten Untersuchung werden
+              txt="In einem ersten Gespräch werden
                     eventuelle Fehlstellungen der Zähne und Kiefer diagnostiziert,
                     mögliche Behandlungsoptionen vorgestellt und die eventuellen Kosten
                     besprochen."
             />
           </div>
           <div
-            className="treatment-proccess-card-conainer"
-            ref={ref}
-            style={{
-              position: "relative",
-              left: !inView ? "-75%" : "0",
-              zIndex: "9",
-              transition: "all 1.5s ",
-            }}
+            className={
+              !inView
+                ? "treatment-proccess-card-conainer card-2"
+                : "treatment-proccess-card-conainer animate-2"
+            }
+            // ref={ref}
           >
             <TreatmentProcess
               img="x-ray"
@@ -98,32 +92,28 @@ const Home = () => {
             />
           </div>
           <div
-            className="treatment-proccess-card-conainer"
-            ref={ref}
-            style={{
-              position: "relative",
-              left: !inView ? "-105%" : "0",
-              zIndex: "8",
-              transition: "all 2s ",
-            }}
+            className={
+              !inView
+                ? "treatment-proccess-card-conainer card-3"
+                : "treatment-proccess-card-conainer animate-3"
+            }
+            // ref={ref}
           >
             <TreatmentProcess
               img="docpat"
               title="Therapiebesprechung"
-              txt="In der Therapiebesprechung stellen wir Ihnen die Behandlungsoptionen vor und erläutern mögliche
-              kieferorthopädische Geräte, welche wir zu einem großen Teil in unserem eigenen Praxislabor
-              in unserem Hause herstellen."
+              txt="In der Therapiebesprechung stellen wir Ihnen die Behandlungsoptionen vor und erläutern 
+              mögliche kieferorthopädische Geräte, welche wir zu einem großen Teil in unserem eigenen Praxislabor
+              herstellen."
             />
           </div>
           <div
-            className="treatment-proccess-card-conainer"
+            className={
+              !inView
+                ? "treatment-proccess-card-conainer card-4"
+                : "treatment-proccess-card-conainer animate-4"
+            }
             ref={ref}
-            style={{
-              position: "relative",
-              left: !inView ? "-33%" : "0",
-              zIndex: "7",
-              transition: "all 2.5s ",
-            }}
           >
             <TreatmentProcess
               img="control"
@@ -133,15 +123,12 @@ const Home = () => {
             />
           </div>
           <div
-            className="treatment-proccess-card-conainer"
-            ref={ref}
-            style={{
-              width: "65%",
-              position: "relative",
-              left: !inView ? "-100%" : "0",
-              zIndex: "6",
-              transition: "all 3s ",
-            }}
+            className={
+              !inView
+                ? "treatment-proccess-card-conainer card-5"
+                : "treatment-proccess-card-conainer animate-5"
+            }
+            // ref={ref}
           >
             <TreatmentProcess
               img="retainer"

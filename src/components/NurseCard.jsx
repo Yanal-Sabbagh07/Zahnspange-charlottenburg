@@ -1,26 +1,22 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "../styles/components/NurseCard.scss";
-import { useState } from "react";
+// import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 const NurseCard = (props) => {
-  const nurseRef = useRef();
-  const [nurseIsVisible, setNurseIsVisible] = useState(false);
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setNurseIsVisible(entry.isIntersecting);
-      console.log(nurseIsVisible);
-    });
-    observer.observe(nurseRef.current);
-  }, [nurseIsVisible]);
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+    triggerOnce: true,
+  });
+
   return (
     <div
       className="card-container"
-      ref={nurseRef}
+      ref={ref}
       style={{
-        scale: !nurseIsVisible ? "0.75" : "1",
+        scale: !inView ? "0.75" : "1",
         // transform: !nurseIsVisible ? "translateY(50vh)" : "translateY(0px)",
-        transition: "all 1.5s ease-out",
+        transition: "all 1s ease-in-out",
       }}
     >
       {/* <div
