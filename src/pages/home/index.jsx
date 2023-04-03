@@ -10,15 +10,28 @@ import homeSlider from "../../helpers/homeSlider";
 import { useInView } from "react-intersection-observer";
 
 const Home = () => {
-  const { ref, inView } = useInView({ threshold: 0.25, triggerOnce: true });
+  const [ref, inView] = useInView({ threshold: 0, triggerOnce: true });
+  const [ref1, inView1] = useInView({ threshold: 0, triggerOnce: true });
+
+  const [ref2, inView2] = useInView({ threshold: 0, triggerOnce: true });
+  const [ref3, inView3] = useInView({ threshold: 0, triggerOnce: true });
+  const [ref4, inView4] = useInView({ threshold: 0, triggerOnce: true });
+  const [ref5, inView5] = useInView({ threshold: 0, triggerOnce: true });
+
   return (
-    <div className="home-page">
+    <div className="home-page" ref={ref}>
       <section className="hero-section" id="/">
         <div className="home-slider-container">
           <Slider sliderData={homeSlider} count={2} type=".jpg" />
         </div>
         <div className="welcome-title-mobile-container">
-          <h1 className="welcome-title-mobile">
+          <h1
+            className={
+              !inView
+                ? "welcome-title-mobile"
+                : "welcome-title-mobile animate-welcome"
+            }
+          >
             Willkommen in unserer kieferorthopädischen Facharztpraxis in <br />
             <span>Berlin-Charlottenburg</span>
           </h1>
@@ -56,14 +69,14 @@ const Home = () => {
         <div className="treatment-process-title-container">
           <h1>Ablauf einer Behandlung</h1>
         </div>
-        <div className="treatment-process-container" ref={ref}>
+        <div className="treatment-process-container">
           <div
             className={
-              !inView
+              !inView1
                 ? "treatment-proccess-card-conainer card-1"
                 : "treatment-proccess-card-conainer animate-1"
             }
-            // ref={ref}
+            ref={ref1}
           >
             <TreatmentProcess
               img="dental-checkup"
@@ -76,11 +89,11 @@ const Home = () => {
           </div>
           <div
             className={
-              !inView
+              !inView2
                 ? "treatment-proccess-card-conainer card-2"
                 : "treatment-proccess-card-conainer animate-2"
             }
-            // ref={ref}
+            ref={ref2}
           >
             <TreatmentProcess
               img="x-ray"
@@ -92,12 +105,12 @@ const Home = () => {
             />
           </div>
           <div
+            ref={ref3}
             className={
-              !inView
+              !inView3
                 ? "treatment-proccess-card-conainer card-3"
                 : "treatment-proccess-card-conainer animate-3"
             }
-            // ref={ref}
           >
             <TreatmentProcess
               img="docpat"
@@ -108,12 +121,12 @@ const Home = () => {
             />
           </div>
           <div
+            ref={ref4}
             className={
-              !inView
+              !inView4
                 ? "treatment-proccess-card-conainer card-4"
                 : "treatment-proccess-card-conainer animate-4"
             }
-            ref={ref}
           >
             <TreatmentProcess
               img="control"
@@ -123,12 +136,12 @@ const Home = () => {
             />
           </div>
           <div
+            ref={ref5}
             className={
-              !inView
+              !inView5
                 ? "treatment-proccess-card-conainer card-5"
                 : "treatment-proccess-card-conainer animate-5"
             }
-            // ref={ref}
           >
             <TreatmentProcess
               img="retainer"

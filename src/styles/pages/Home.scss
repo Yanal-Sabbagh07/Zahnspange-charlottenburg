@@ -174,7 +174,7 @@
         z-index: 10;
       }
       .card-2 {
-        left: -75%;
+        left: -66%;
         opacity: 0;
       }
       .animate-2 {
@@ -184,7 +184,7 @@
         transition: all 1.5s ease-out;
       }
       .card-3 {
-        left: -105%;
+        left: -99%;
         z-index: 8;
         opacity: 0;
       }
@@ -271,6 +271,7 @@
         justify-content: center;
         margin-top: 24px;
         // background-color: red;
+        // scale: 0;
 
         .welcome-title-mobile {
           color: $gray-5;
@@ -281,10 +282,19 @@
           color: $dark-blue;
           // background-color: black;
           margin-top: 0px;
+          transform: scale(0);
+
           span {
             font-size: $medium;
             font-weight: 900;
+
+            transition: scale 1s ease;
           }
+        }
+        .animate-welcome {
+          // color: red;
+          transform: scale(1);
+          transition: all 1s ease;
         }
       }
     }
@@ -366,47 +376,50 @@
           height: 375px !important;
         }
         .card-1 {
-          left: 0;
-          opacity: 0;
+          left: -99%;
+          // opacity: 0;
           transition: all 1s ease-out;
         }
         .animate-1 {
           left: 0;
-          opacity: 1;
+          // opacity: 1;
           transition: all 1s ease-out;
         }
         .card-2 {
-          left: 0;
-          opacity: 0;
-          transition: all 2s ease-out;
+          left: 99%;
+          // opacity: 0;
+          transition: all 1s ease-out;
         }
         .animate-2 {
-          opacity: 1;
-          transition: all 2s ease-out;
+          // opacity: 1;
+          left: 0;
+          transition: all 1s ease-out;
         }
         .card-3 {
-          left: 0;
+          left: -99%;
           opacity: 0;
         }
         .animate-3 {
-          opacity: 1;
-          transition: all 3s ease-out;
+          // opacity: 1;
+          left: 0;
+          transition: all 1s ease-out;
         }
         .card-4 {
-          left: 0;
+          left: 99%;
           opacity: 0;
         }
         .animate-4 {
+          left: 0;
           opacity: 1;
-          transition: all 4s ease-out;
+          transition: all 1s ease-out;
         }
         .card-5 {
-          left: 0;
+          left: -99%;
           opacity: 0;
         }
         .animate-5 {
           opacity: 1;
-          transition: all 5s ease-out;
+          transition: all 1s ease-out;
         }
       }
     }
