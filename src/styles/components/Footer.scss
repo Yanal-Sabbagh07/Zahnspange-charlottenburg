@@ -365,7 +365,7 @@
     width: 100%;
     height: 100%;
     .footer-content-container {
-      height: calc(100% - 75px);
+      height: 800px;
       flex-direction: column;
       justify-content: space-evenly;
       // background-color: red;
@@ -373,7 +373,7 @@
       .google-map-container {
         align-items: flex-start;
         justify-content: center;
-        flex: 0.5;
+        flex: 0.42;
         .map-before-loading {
           background-image: url("../../../public/imgs/google-map.png");
           background-size: cover;
@@ -429,7 +429,7 @@
         }
       }
       .footer-content-top-container {
-        flex: 0.5;
+        flex: 0.58;
         display: flex;
         flex-direction: column;
         // background-color: black;
@@ -442,9 +442,12 @@
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
+            // background-color: #fff;
             .footer-left-details {
-              font-size: $x-small;
+              font-size: $small;
               height: 50%;
+              // background-color: red;
+              // margin-bottom: 8px;
               .details-name {
                 justify-content: flex-start;
                 align-items: flex-start;
@@ -455,7 +458,7 @@
                   .footer-icon {
                     font-size: $xx-large;
                     margin-left: 16px;
-                    margin-right: 8px;
+                    margin-right: 12px;
                   }
                 }
                 .rose {
@@ -463,17 +466,17 @@
                   height: 22px;
                   font-weight: bolder;
                   margin-left: 16px;
-                  margin-right: 8px;
+                  margin-right: 12px;
                 }
 
                 .name-txt {
                   flex: 0;
-                  font-size: $x-small;
+                  font-size: $small;
                   font-weight: 400;
                 }
                 .name {
-                  font-size: $small;
-                  font-weight: 900;
+                  font-size: $medium;
+                  font-weight: 700;
                 }
                 .open-times {
                   display: none;
@@ -508,17 +511,18 @@
               flex-direction: column;
               align-items: flex-start;
               justify-content: space-evenly;
+              // margin-bottom: 8px;
               .open-times {
                 display: flex;
                 margin-left: 18px;
-                font-size: $x-small;
+                font-size: $small;
                 .day {
-                  width: 50px;
+                  width: 70px;
                   text-align: left;
                 }
                 .time {
                   margin-left: 8px;
-                  font-size: $x-small;
+                  font-size: $small;
                   span {
                     margin-left: 12px;
                     margin-right: 12px;
@@ -526,23 +530,25 @@
                 }
               }
               .open-times-header {
-                font-weight: 900;
-                font-size: $small;
+                font-weight: 700;
+                font-size: $medium;
+                letter-spacing: 0.5px;
               }
             }
           }
         }
         .btn-footer-mobile {
           width: 100%;
-          height: 60px;
+          height: 70px;
           display: block;
           display: flex;
-          align-items: flex-start;
+          align-items: center;
           justify-content: center;
           border-radius: 8px;
+          margin-bottom: 18px;
 
           .termin-button {
-            width: 97%;
+            width: 91%;
             height: 48px;
             .appointment-button {
               border-radius: 8px;
@@ -570,12 +576,13 @@
 
         .copy-sign {
           padding-right: 8px;
-          font-size: $x-small;
+          font-size: 4px;
         }
 
         span {
           color: $gray-7;
           font-size: 8px;
+          // display: none;
         }
       }
       .footer-social-media {

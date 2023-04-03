@@ -5,6 +5,7 @@
   scroll-behavior: smooth;
   overflow: overlay;
   scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 
   .hero-section {
     max-width: 100vw;
@@ -424,7 +425,7 @@
       }
     }
     .hero-section3 {
-      height: calc(125vh - 60px);
+      height: 100%;
       // display: flex;
       margin-top: 0px;
     }
