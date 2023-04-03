@@ -232,7 +232,7 @@
           height: 100%;
 
           .Dr-N-img {
-            width: 95%;
+            width: 90%;
             height: 450px;
           }
         }
@@ -245,14 +245,14 @@
           text-align: center;
           // margin-bottom: 60px;
           .dr-name {
-            font-size: $x-large;
-            height: 40px;
+            font-size: $large;
+            height: 30px;
             h3 {
               height: 40px;
             }
           }
           .dr-job {
-            font-size: $large;
+            font-size: $medium;
           }
         }
       }
@@ -271,7 +271,7 @@
           align-items: center;
           // justify-content: flex-start;
           .Dr-P-img {
-            width: 95%;
+            width: 90%;
             height: 450px;
           }
         }
@@ -283,8 +283,11 @@
           text-align: center;
           margin-top: 0px;
           .dr-name {
-            font-size: 20px;
+            font-size: $large;
             height: 40px;
+          }
+          .dr-job {
+            font-size: $medium;
           }
         }
       }
