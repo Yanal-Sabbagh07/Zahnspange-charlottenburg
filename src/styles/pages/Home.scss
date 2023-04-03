@@ -378,22 +378,22 @@
         .card-1 {
           left: -99%;
           // opacity: 0;
-          transition: all 1s ease-out;
+          transition: all 2s ease-out;
         }
         .animate-1 {
           left: 0;
           // opacity: 1;
-          transition: all 1s ease-out;
+          transition: all 2s ease-out;
         }
         .card-2 {
           left: 99%;
           // opacity: 0;
-          transition: all 1s ease-out;
+          transition: all 2s ease-out;
         }
         .animate-2 {
           // opacity: 1;
           left: 0;
-          transition: all 1s ease-out;
+          transition: all 2s ease-out;
         }
         .card-3 {
           left: -99%;
@@ -402,7 +402,7 @@
         .animate-3 {
           // opacity: 1;
           left: 0;
-          transition: all 1s ease-out;
+          transition: all 2s ease-out;
         }
         .card-4 {
           left: 99%;
@@ -411,7 +411,7 @@
         .animate-4 {
           left: 0;
           opacity: 1;
-          transition: all 1s ease-out;
+          transition: all 2s ease-out;
         }
         .card-5 {
           left: -99%;
@@ -419,7 +419,7 @@
         }
         .animate-5 {
           opacity: 1;
-          transition: all 1s ease-out;
+          transition: all 2s ease-out;
         }
       }
     }
