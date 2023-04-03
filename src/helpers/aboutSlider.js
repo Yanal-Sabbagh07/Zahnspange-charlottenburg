@@ -1,11 +1,11 @@
 export const aboutSlider = [
   {
     id: 1,
-    slideClassName: "waiting2",
+    slideClassName: "waiting1",
   },
   {
     id: 2,
-    slideClassName: "waiting1",
+    slideClassName: "waiting2",
   },
   {
     id: 3,
