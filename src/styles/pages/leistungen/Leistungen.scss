@@ -156,14 +156,14 @@
     }
     .secound-container {
       width: 100%;
-      height: calc(100svh - 160px);
+      height: 100%;
       color: white;
       display: flex;
       flex-direction: column;
 
       .secound-left-container {
         width: 100%;
-        height: 50%;
+        height: 250px;
         .adult-img {
           background-size: cover;
           background-position: center;
@@ -176,9 +176,9 @@
       }
       .secound-right-container {
         width: 100%;
-        height: 50%;
+        height: 250px;
         .adults-title-container {
-          height: 25%;
+          height: 33%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -193,14 +193,14 @@
         .adults-btn-container {
           // background-color: green;
           width: 100%;
-          height: 25%;
+          height: 33%;
           // background-color: red;
           display: flex;
           align-items: center;
           justify-content: center;
           .adults-btn {
             font-size: $small;
-            padding: 14px 20px;
+            padding: 14px 14px;
             &:hover {
               background-color: $light-blue;
               color: $white;
@@ -212,15 +212,15 @@
     }
     .third-container {
       width: 100%;
-      height: calc(100lvh - 160px);
+      height: 100%;
       display: flex;
       flex-direction: column-reverse;
 
       .third-left-container {
         width: 100%;
-        height: 50%;
+        height: 300px;
         .kids-title-container {
-          height: 25%;
+          height: 33%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -233,19 +233,19 @@
         }
         .kids-btn-container {
           width: 95%;
-          height: 25%;
+          height: 33%;
           display: flex;
           align-items: center;
           justify-content: center;
           .kids-btn {
             font-size: $small;
-            padding: 14px 20px;
+            padding: 14px 14px;
           }
         }
       }
       .third-right-container {
         width: 100%;
-        height: 50%;
+        height: 300px;
 
         background-size: cover;
         background-position: center;
