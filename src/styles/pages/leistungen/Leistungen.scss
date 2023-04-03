@@ -176,9 +176,9 @@
       }
       .secound-right-container {
         width: 100%;
-        height: 250px;
+        height: 350px;
         .adults-title-container {
-          height: 33%;
+          height: 25%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -200,7 +200,7 @@
           justify-content: center;
           .adults-btn {
             font-size: $small;
-            padding: 14px 14px;
+            padding: 14px 12px;
             &:hover {
               background-color: $light-blue;
               color: $white;
@@ -218,9 +218,9 @@
 
       .third-left-container {
         width: 100%;
-        height: 300px;
+        height: 350px;
         .kids-title-container {
-          height: 33%;
+          height: 25%;
           display: flex;
           align-items: center;
           justify-content: center;
