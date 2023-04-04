@@ -11,13 +11,13 @@ const NurseCard = (props) => {
 
   return (
     <div
-      className="card-container"
+      className={!inView ? "card-container" : "card-container animate-nurse"}
       ref={ref}
-      style={{
-        scale: !inView ? "0.75" : "1",
-        // transform: !nurseIsVisible ? "translateY(50vh)" : "translateY(0px)",
-        transition: "all 1s ease-in-out",
-      }}
+      // style={{
+      //   scale: !inView ? "0.75" : "1",
+      //   // transform: !nurseIsVisible ? "translateY(50vh)" : "translateY(0px)",
+      //   transition: "all .8s ease-in-out",
+      // }}
     >
       {/* <div
         className="image-contianer"
