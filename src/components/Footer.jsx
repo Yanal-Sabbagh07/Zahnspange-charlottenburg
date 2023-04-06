@@ -166,7 +166,7 @@ const Footer = () => {
             >
               <InstagramIcon className="social-icon" />
             </a>
-            <a href="/">Datenschutzerklärung</a>
+            <a href="/Datenschutz">Datenschutzerklärung</a>
           </div>
         </div>
         <div className="footer-impressum">

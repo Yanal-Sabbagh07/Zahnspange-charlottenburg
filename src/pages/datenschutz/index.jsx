@@ -1,9 +1,7 @@
 import React from "react";
 import "../../styles/pages/datenschutz/Datenschutz.scss";
 import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 const Index = () => {
   const [expanded, setExpanded] = React.useState(false);
