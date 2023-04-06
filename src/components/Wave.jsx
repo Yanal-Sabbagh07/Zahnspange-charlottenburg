@@ -11,7 +11,7 @@ const Wave = (props) => {
       <div
         className="welcome-title-container"
         ref={ref}
-        style={{ scale: !inView ? "0" : "1", transition: "all 1s ease-out" }}
+        style={{ scale: !inView ? "0" : "1", transition: "all 1.8s ease-out" }}
       >
         <h1 className="welcome-title">{props.header}</h1>
       </div>

@@ -55,7 +55,7 @@ export const routes = [
   },
   {
     title: "Impressium",
-    path: "/Impressium",
+    path: "/Impressum",
     element: <Impressium />,
   },
   {
