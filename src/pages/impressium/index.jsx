@@ -29,7 +29,11 @@ const index = () => {
           <section className="section-1">
             <h3>Kammerzugehörigkeit</h3>
             <p>Zahnärztekammer Berlin, Stallstraße 1, 10585 Berlin</p>
-            <a href="http://www.zaek-berlin.de/" target="_blank" rel="noopener">
+            <a
+              href="http://www.zaek-berlin.de/"
+              target="_blank"
+              rel="noreferrer"
+            >
               www.zaek-berlin.de
             </a>
           </section>
@@ -55,7 +59,11 @@ const index = () => {
           <section className="section-1">
             <p>
               Regelungen einsehbar unter:{" "}
-              <a href="https://www.zaek-berlin.de/" target="_blank">
+              <a
+                href="https://www.zaek-berlin.de/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 https://www.zaek-berlin.de/
               </a>
             </p>
@@ -67,7 +75,11 @@ const index = () => {
               Kassenzahnärztliche Vereinigung Berlin, Georg-Wilhelm-Straße 16,
               10711 Berlin
             </p>
-            <a href="http://www.kzv-berlin.de/" target="_blank" rel="noopener">
+            <a
+              href="http://www.kzv-berlin.de/"
+              target="_blank"
+              rel="noreferrer"
+            >
               www.kzv-berlin.de
             </a>
           </section>
@@ -77,7 +89,11 @@ const index = () => {
             <p>
               Die Europäische Kommission stellt eine Plattform zur
               Online-Streitbeilegung (OS) bereit:{" "}
-              <a href="https://ec.europa.eu/consumers/odr" target="_blank">
+              <a
+                href="https://ec.europa.eu/consumers/odr"
+                target="_blank"
+                rel="noreferrer"
+              >
                 https://ec.europa.eu/consumers/odr
               </a>
               .<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.
@@ -97,7 +113,7 @@ const index = () => {
                 title="4selected GmbH"
                 href="https://yanal-sabbagh07.github.io/Portfolio/"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 yanal-sabbagh.com
               </a>
@@ -122,7 +138,11 @@ const index = () => {
               </a>
             </span>
             &nbsp;/
-            <a href="https://stock.adobe.com/de" target="_blank" rel="noopener">
+            <a
+              href="https://stock.adobe.com/de"
+              target="_blank"
+              rel="noreferrer"
+            >
               Adobe Stock
             </a>
             <br />
@@ -130,11 +150,17 @@ const index = () => {
             <a
               title="Das komplette Portfolio von sonya etchison ansehen"
               href="https://de.fotolia.com/id/5906245"
+              target="_blank"
+              rel="noreferrer"
             >
               sonya etchison
             </a>
             &nbsp;/{" "}
-            <a href="https://stock.adobe.com/de" target="_blank" rel="noopener">
+            <a
+              href="https://stock.adobe.com/de"
+              target="_blank"
+              rel="noreferrer"
+            >
               Adobe Stock
             </a>
             <br />
@@ -146,7 +172,11 @@ const index = () => {
               Tyler Olson
             </a>
             &nbsp;/{" "}
-            <a href="https://stock.adobe.com/de" target="_blank" rel="noopener">
+            <a
+              href="https://stock.adobe.com/de"
+              target="_blank"
+              rel="noreferrer"
+            >
               Adobe Stock
             </a>
           </section>

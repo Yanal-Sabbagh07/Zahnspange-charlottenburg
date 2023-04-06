@@ -149,7 +149,7 @@ const Footer = () => {
         </div>
         <div className="footer-social-media">
           <div className="footer-impressum-mobile">
-            <a href="/">Impressum</a>
+            <a href="/Impressum">Impressum</a>
             <a
               href="https://www.facebook.com/Zahnspangeberlin"
               target="_blank"
