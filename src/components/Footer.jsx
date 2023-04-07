@@ -144,8 +144,6 @@ const Footer = () => {
             <CopyrightIcon className="c-icon" />
           </strong>
           2022 Zahnspange-Charlottenburg | <span>Dr.Nawras Darkazanly </span>
-          &nbsp; bei &nbsp;
-          <span> Yanal Sabbagh</span>
         </div>
         <div className="footer-social-media">
           <div className="footer-impressum-mobile">

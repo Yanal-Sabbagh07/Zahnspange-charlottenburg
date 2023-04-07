@@ -3,6 +3,7 @@ import "../../styles/pages/datenschutz/Datenschutz.scss";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Footer from "../../components/Footer";
 const Index = () => {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -435,7 +436,7 @@ const Index = () => {
                 Abs. 1 lit. f DSGVO dar.
               </p>
               <p>
-                <span class="THAL_text-white">
+                <span>
                   Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in
                   der Datenschutzerklärung von Google:{" "}
                   <a
@@ -452,6 +453,9 @@ const Index = () => {
             <div className="line"></div>
           </section>
         </div>
+      </div>
+      <div className="footer-container">
+        <Footer />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/pages/impressium/Impressium.scss";
+import Footer from "../../components/Footer";
 
 const index = () => {
   return (
@@ -243,6 +244,9 @@ const index = () => {
             </p>
           </section>
         </div>
+      </div>
+      <div className="footer-container">
+        <Footer />
       </div>
     </div>
   );
