@@ -22,7 +22,7 @@ const Index = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://89.116.227.217/contact", {
+      .post("https://api.zahnspange-charlottenburg.de/contact", {
         data: state,
       })
       .then((response) => {
@@ -100,7 +100,7 @@ const Index = () => {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Ihr Email addresse"
+                placeholder="Ihre Email addresse"
                 required
                 onChange={handleChange}
               ></input>
@@ -116,7 +116,7 @@ const Index = () => {
                 type="number"
                 name="phone"
                 id="phone"
-                placeholder="Ihr Telefonnummer"
+                placeholder="Ihre Telefonnummer"
                 onChange={handleChange}
               ></input>
             </div>
@@ -130,7 +130,7 @@ const Index = () => {
                 className="input-name"
                 name="message"
                 id="message"
-                placeholder="Ihr Nachricht"
+                placeholder="Ihre Nachricht"
                 onChange={handleChange}
               ></textarea>
             </div>
