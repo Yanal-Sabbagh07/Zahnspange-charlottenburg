@@ -22,6 +22,10 @@ body {
   overflow: overlay;
   height: 100%;
 } */
+.cky-revisit-bottom-left {
+  bottom: 8px !important;
+  left: 8px !important;
+}
 @font-face {
   font-family: "Merri";
   src: url("./fonts/Merriweather/Merriweather-Black.ttf"),

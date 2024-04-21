@@ -58,11 +58,7 @@ const About = () => {
               job={nurses[1].job}
               img={nurses[1].img}
             />
-            <NurseCard
-              name={nurses[2].name}
-              job={nurses[2].job}
-              img={nurses[2].img}
-            />
+
             <NurseCard
               name={nurses[3].name}
               job={nurses[3].job}
