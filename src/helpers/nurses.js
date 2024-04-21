@@ -6,6 +6,12 @@ const nurses = [
     img: "url(../../imgs/nurse1.jpg)",
   },
   {
+    id: 2,
+    name: "L. Waal",
+    job: "Qualitätsmanagement Abrechnung",
+    img: "url(../../imgs/nurse2.jpg)",
+  },
+  {
     id: 3,
     name: "L. Miari",
     job: "Verwaltung Rezeption",
