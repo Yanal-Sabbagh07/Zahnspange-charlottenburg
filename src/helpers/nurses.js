@@ -1,33 +1,40 @@
 const nurses = [
+
   {
     id: 1,
     name: "S. Wegener",
-    job: "Praxismanagement Buchhaltung",
-    img: "url(../../imgs/nurse1.jpg)",
+    job: "Qualitätsmanagement Buchhaltung",
+    img: "url(../../imgs/nurse-1.jpeg)",
   },
   {
     id: 2,
     name: "L. Waal",
     job: "Qualitätsmanagement Abrechnung",
-    img: "url(../../imgs/nurse2.jpg)",
+    img: "url(../../imgs/woman.jpg)",
+  },
+  {
+    id: 10,
+    name: "N. Merz",
+    job: "Praxismanagement",
+    img: "url(../../imgs/woman.jpg)",
   },
   {
     id: 3,
-    name: "L. Miari",
+    name: "B. Karama",
     job: "Verwaltung Rezeption",
-    img: "url(../../imgs/nurse3.jpg)",
+    img: "url(../../imgs/nurse-10.jpeg)",
   },
   {
     id: 4,
     name: "K. Soumah",
     job: "Zahnmedizinische Fachangestellte Qualitatsmanagement",
-    img: "url(../../imgs/nurse6.jpg)",
+    img: "url(../../imgs/nurse-3.jpeg)",
   },
   {
     id: 5,
     name: "Y. Amrai",
     job: "Zahnmedizinische Fachangestellte",
-    img: "url(../../imgs/nurse4.jpg)",
+    img: "url(../../imgs/nurse-11.jpeg)",
   },
   {
     id: 6,
@@ -35,19 +42,44 @@ const nurses = [
     job: "Zahnmedizinische Fachangestellte",
     img: "url(../../imgs/nurse5.jpg)",
   },
-
   {
     id: 7,
     name: "M. Amer",
     job: "Auszubildende",
-    img: "url(../../imgs/nurse7.jpg)",
+    img: "url(../../imgs/nurse-7.jpeg)",
   },
+
+  {
+    id: 9,
+    name: "A. Zakharova",
+    job: "Zahnmedizinische Fachangestellte",
+    img: "url(../../imgs/nurse-4.jpeg)",
+  },
+
+
+
+  {
+    id: 11,
+    name: "T. Aziza",
+    job: "Zahnmedizinische Fachangestellte",
+    img: "url(../../imgs/nurse-12.jpeg)",
+  },
+  {
+    id: 10,
+    name: "F. Abd Alwahed",
+    job: "Auszubildende",
+    img: "url(../../imgs/woman.jpg)",
+  },
+
+
   {
     id: 8,
     name: "A. Kalanderi",
     job: "Zahntechniker",
-    img: "url(../../imgs/nurse8.jpg)",
+    img: "url(../../imgs/nurse-8.jpeg)",
   },
+
+
 ];
 
 export default nurses;

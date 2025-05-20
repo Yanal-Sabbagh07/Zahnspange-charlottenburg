@@ -29,13 +29,9 @@ const Slider = (props) => {
       setDelay(500000);
       console.log("swipe", isLeftSwipe ? "left" : "right");
     }
-    //   console.log("swipe", isLeftSwipe ? "left" : "right");
-    // // add your conditional logic here
-    // setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 0);
     else if (isRightSwipe) {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 0);
       setDelay(500000);
-      console.log("swipe", isLeftSwipe ? "left" : "right");
     }
   };
 

@@ -95,16 +95,16 @@
     .waiting1 {
       width: 100%;
       height: 100%;
-      background-image: url("../../../public/imgs/25.webp");
+      background-image: url("../../../public/imgs/reception.jpeg");
       background-size: cover;
-      background-position: center;
+      background-position: center 5%;
     }
     .waiting2 {
       width: 100%;
       height: 100%;
-      background-image: url("../../../public/imgs/27.webp");
+      background-image: url("../../../public/imgs/waiting-room.jpeg");
       background-size: cover;
-      background-position: 50% 65%;
+      background-position: center;
     }
     .waiting3 {
       width: 100%;
@@ -182,10 +182,10 @@
       width: 100%;
       height: 99%;
       .waiting1 {
-        background-image: url("../../../public/imgs/25m.jpg");
+        background-image: url("../../../public/imgs/reception.jpeg");
       }
       .waiting2 {
-        background-image: url("../../../public/imgs/27m.jpg");
+        background-image: url("../../../public/imgs/waiting-room.jpeg");
       }
       .waiting3 {
         background-image: url("../../../public/imgs/24m.jpg");

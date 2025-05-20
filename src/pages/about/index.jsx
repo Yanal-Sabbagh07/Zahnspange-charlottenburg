@@ -7,11 +7,12 @@ import NurseCard from "../../components/NurseCard";
 import nurses from "../../helpers/nurses";
 import Footer from "../../components/Footer";
 import { aboutSlider } from "../../helpers/aboutSlider";
+
 const About = () => {
   return (
     <div className="aboutus-page-container">
       <section className="about-slider-contianer">
-        <Slider sliderData={aboutSlider} count={6} />
+        <Slider sliderData={aboutSlider} count={6}/>
         {/* <div className="about-hero-img"></div> */}
       </section>
       <section className="team-section-container">
@@ -30,13 +31,13 @@ const About = () => {
               <p>Fachzahnarzt für Kieferorthopädie</p>
             </div>
 
-            <Collapsable className="dr-cv" />
+            <Collapsable className="dr-cv"/>
           </div>
         </div>
         <div className="Dr-P-container" id="/about">
           <div className="Dr-P-cv-container">
             <div className="dr-name">
-              <h3>Dr. Petra Löffler </h3>
+              <h3>Dr. Senem Kaya</h3>
             </div>
             <div className="dr-job">
               <p>Fachzahnarzt für Kieferorthopädie</p>
@@ -48,56 +49,22 @@ const About = () => {
         </div>
         <div className="Nurses-container">
           <div className="Nurses-wrapper">
-            <NurseCard
-              name={nurses[0].name}
-              job={nurses[0].job}
-              img={nurses[0].img}
-            />
-            <NurseCard
-              name={nurses[1].name}
-              job={nurses[1].job}
-              img={nurses[1].img}
-            />
-
-            <NurseCard
-              name={nurses[3].name}
-              job={nurses[3].job}
-              img={nurses[3].img}
-            />
-            <NurseCard
-              name={nurses[4].name}
-              job={nurses[4].job}
-              img={nurses[4].img}
-            />
-            <NurseCard
-              name={nurses[5].name}
-              job={nurses[5].job}
-              img={nurses[5].img}
-            />
-            <NurseCard
-              name={nurses[6].name}
-              job={nurses[6].job}
-              img={nurses[6].img}
-            />
-            <NurseCard
-              name={nurses[7].name}
-              job={nurses[7].job}
-              img={nurses[7].img}
-            />
+            {nurses.map((nurse, index) => {
+              return (
+                <NurseCard
+                  name={nurses[index].name}
+                  job={nurses[index].job}
+                  img={nurses[index].img}
+                />
+              )
+            })}
           </div>
         </div>
-        {/* <div className="title-container">
-          <h1 className="title">Unsere Praxis</h1>
-        </div> */}
       </section>
 
       <div className="about-footer">
-        <Footer />
+        <Footer/>
       </div>
-
-      {/* <section className="slider-contianer">
-        <Slider hero2="25" hero1="29" hero3="26" count={2} type=".png" />
-      </section> */}
     </div>
   );
 };
