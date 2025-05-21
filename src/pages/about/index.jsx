@@ -40,7 +40,7 @@ const About = () => {
               <h3>Dr. Senem Kaya</h3>
             </div>
             <div className="dr-job">
-              <p>Fachzahnarzt für Kieferorthopädie</p>
+              <p>Zahnärztin</p>
             </div>
           </div>
           <div className="Dr-P-img-container">

@@ -27,7 +27,7 @@ const nurses = [
   {
     id: 4,
     name: "K. Soumah",
-    job: "Zahnmedizinische Fachangestellte Qualitatsmanagement",
+    job: "Zahnmedizinische Fachangestellte ",
     img: "url(../../imgs/nurse-3.jpeg)",
   },
   {
@@ -40,12 +40,12 @@ const nurses = [
     id: 6,
     name: "D. Khoshnaw",
     job: "Zahnmedizinische Fachangestellte",
-    img: "url(../../imgs/nurse5.jpg)",
+    img: "url(../../imgs/woman.jpg)",
   },
   {
     id: 7,
     name: "M. Amer",
-    job: "Auszubildende",
+    job: "Zahnmedizinische Fachangestellte ",
     img: "url(../../imgs/nurse-7.jpeg)",
   },
 
@@ -56,14 +56,6 @@ const nurses = [
     img: "url(../../imgs/nurse-4.jpeg)",
   },
 
-
-
-  {
-    id: 11,
-    name: "T. Aziza",
-    job: "Zahnmedizinische Fachangestellte",
-    img: "url(../../imgs/nurse-12.jpeg)",
-  },
   {
     id: 10,
     name: "F. Abd Alwahed",
@@ -71,6 +63,12 @@ const nurses = [
     img: "url(../../imgs/woman.jpg)",
   },
 
+  {
+    id: 11,
+    name: "T. Aziza",
+    job: "Zahnmedizinischer Fachangestellter",
+    img: "url(../../imgs/nurse-12.jpeg)",
+  },
 
   {
     id: 8,
