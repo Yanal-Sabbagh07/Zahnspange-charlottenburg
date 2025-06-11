@@ -45,7 +45,7 @@ const Home = () => {
     <div className="home-page" ref={ref}>
       <section className="hero-section" id="/">
         <div className="home-slider-container">
-          <Slider sliderData={homeSlider} count={2} type=".jpg" />
+          <Slider sliderData={homeSlider} count={3} type=".jpg" />
         </div>
         <div className="welcome-title-mobile-container">
           <h1

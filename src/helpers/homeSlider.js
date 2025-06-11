@@ -1,5 +1,9 @@
 const homeSlider = [
   {
+    id:0,
+    slideClassName: "image0",
+  },
+  {
     id: 1,
     slideClassName: "image1",
   },
