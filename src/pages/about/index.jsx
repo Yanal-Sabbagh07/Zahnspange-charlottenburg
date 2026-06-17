@@ -18,6 +18,7 @@ const About = () => {
       <section className="team-section-container">
         <div className="title-container">
           <h1 className="title">Unser Praxisteam</h1>
+          <p className="title-subtitle">Lernen Sie unser Team kennen</p>
         </div>
         <div className="Dr-N-container" id="/about">
           <div className="Dr-N-img-container">
