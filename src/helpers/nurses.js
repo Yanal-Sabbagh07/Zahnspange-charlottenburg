@@ -37,31 +37,12 @@ const nurses = [
     img: "url(../../imgs/nurse-11.jpeg)",
   },
   {
-    id: 6,
-    name: "D. Khoshnaw",
-    job: "Zahnmedizinische Fachangestellte",
-    img: "url(../../imgs/woman.jpg)",
-  },
-  {
     id: 7,
     name: "M. Amer",
     job: "Zahnmedizinische Fachangestellte ",
     img: "url(../../imgs/nurse-7.jpeg)",
   },
 
-  {
-    id: 9,
-    name: "A. Zakharova",
-    job: "Zahnmedizinische Fachangestellte",
-    img: "url(../../imgs/nurse-4.jpeg)",
-  },
-
-  {
-    id: 10,
-    name: "F. Abd Alwahed",
-    job: "Auszubildende",
-    img: "url(../../imgs/woman.jpg)",
-  },
 
   {
     id: 11,

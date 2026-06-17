@@ -34,19 +34,6 @@ const About = () => {
             <Collapsable className="dr-cv"/>
           </div>
         </div>
-        <div className="Dr-P-container" id="/about">
-          <div className="Dr-P-cv-container">
-            <div className="dr-name">
-              <h3>Dr. Senem Kaya</h3>
-            </div>
-            <div className="dr-job">
-              <p>Zahnärztin</p>
-            </div>
-          </div>
-          <div className="Dr-P-img-container">
-            <div className="Dr-P-img"></div>
-          </div>
-        </div>
         <div className="Nurses-container">
           <div className="Nurses-wrapper">
             {nurses.map((nurse, index) => {
