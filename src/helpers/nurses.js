@@ -10,13 +10,13 @@ const nurses = [
     id: 2,
     name: "L. Waal",
     job: "Qualitätsmanagement Abrechnung",
-    img: null,
+    img: "url(../../imgs/woman.jpg)",
   },
   {
     id: 10,
     name: "N. Merz",
     job: "Praxismanagement",
-    img: null,
+    img: "url(../../imgs/woman.jpg)",
   },
   {
     id: 3,

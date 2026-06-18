@@ -26,21 +26,6 @@
       opacity: 0.5;
       transform: scale(0.7);
 
-      &.nurse-initials {
-        background-color: $gray-1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        span {
-          font-size: 72px;
-          font-weight: 900;
-          font-family: "Merri";
-          color: $dark-blue;
-          opacity: 1;
-          letter-spacing: 4px;
-        }
-      }
     }
     .nurse-animate {
       opacity: 1;
@@ -110,11 +95,6 @@
           background-position: center 2%;
           border-radius: 16px;
 
-          &.nurse-initials {
-            span {
-              font-size: 56px;
-            }
-          }
         }
       }
     }
